@@ -56,3 +56,59 @@
 2018-01-09 15:35:09 INFO  Test11:(96) - Array Authentication passed successfully with Login- nedved198725 and Password- nedved1987
 2018-01-09 15:35:12 INFO  Test11:(96) - Array Authentication passed successfully with Login- nedved198725 and Password- nedved1987
 2018-01-09 15:35:13 INFO  Test11:(106) - Browser closed
+2018-01-09 16:20:10 INFO  Test11:(57) - User was logged in successfully
+2018-01-09 16:20:11 INFO  Test11:(65) - User profile page is open
+2018-01-09 16:20:11 INFO  Test11:(74) - User was successfully logged out
+2018-01-09 16:20:15 INFO  Test11:(96) - Array Authentication passed successfully with Login- nedved198725 and Password- nedved1987
+2018-01-09 16:20:19 INFO  Test11:(96) - Array Authentication passed successfully with Login- nedved198725 and Password- nedved1987
+2018-01-09 16:20:22 INFO  Test11:(96) - Array Authentication passed successfully with Login- nedved198725 and Password- nedved1987
+2018-01-09 16:20:29 INFO  Test11:(106) - Browser closed
+2018-01-09 16:23:58 INFO  Test11:(57) - User was logged in successfully
+2018-01-09 16:24:00 INFO  Test11:(106) - Browser closed
+2018-01-09 16:24:24 INFO  Test22:(85) - File Authentication passed successfully with not correct Login- nedved198725 and Password not correct- nedved1986
+2018-01-09 16:24:25 INFO  Test22:(85) - File Authentication passed successfully with not correct Login- nedved198726 and Password not correct- nedved1987
+2018-01-09 16:24:25 INFO  Test22:(85) - File Authentication passed successfully with not correct Login- nedved198727 and Password not correct- nedved1988
+2018-01-09 16:24:26 INFO  Test22:(85) - File Authentication passed successfully with not correct Login- nedved198728 and Password not correct- nedved1989
+2018-01-09 16:24:26 INFO  Test22:(85) - File Authentication passed successfully with not correct Login- nedved198729 and Password not correct- nedved1990
+2018-01-09 16:24:27 INFO  Test22:(85) - File Authentication passed successfully with not correct Login- nedved198730 and Password not correct- nedved1991
+2018-01-09 16:24:27 INFO  Test22:(85) - File Authentication passed successfully with not correct Login- nedved198731 and Password not correct- nedved1992
+2018-01-09 16:24:27 INFO  Test22:(85) - File Authentication passed successfully with not correct Login- nedved198732 and Password not correct- nedved1993
+2018-01-09 16:24:27 INFO  Test22:(85) - File Authentication passed successfully with not correct Login- nedved198733 and Password not correct- nedved1994
+2018-01-09 16:24:28 INFO  Test22:(85) - File Authentication passed successfully with not correct Login- nedved198734 and Password not correct- nedved1995
+2018-01-09 16:24:28 INFO  Test22:(54) - Found Favourites Links: 6
+2018-01-09 16:24:28 INFO  Test22:(65) - Color of new category links is rgba(34, 87, 158, 1)
+2018-01-09 16:24:28 INFO  Test22:(70) - Menu contain such category: Rozetka
+2018-01-09 16:24:28 INFO  Test22:(70) - Menu contain such category: modnaKasta
+2018-01-09 16:24:28 INFO  Test22:(70) - Menu contain such category: Work.ua
+2018-01-09 16:24:28 INFO  Test22:(70) - Menu contain such category: MakeUp
+2018-01-09 16:24:28 INFO  Test22:(70) - Menu contain such category: Aliexpress
+2018-01-09 16:24:28 INFO  Test22:(70) - Menu contain such category: LeBoutique
+2018-01-09 16:24:29 INFO  Test22:(117) - Browser closed
+2018-01-09 16:24:40 INFO  Test33:(35) - 'Find' button present!
+2018-01-09 16:24:40 INFO  Test33:(42) - 'Find' button doesn't present!
+2018-01-09 16:24:41 INFO  Test33:(59) - Browser closed
+2018-01-09 16:24:53 INFO  Test44:(38) - Found Main Links: 16
+2018-01-09 16:24:55 INFO  Test44:(45) - Colors of Main Links are 34, 87, 158
+2018-01-09 16:24:56 INFO  Test44:(50) - Browser closed
+2018-01-09 16:25:12 INFO  Test55:(56) - Search string nedved198725@gmail.com into input field
+2018-01-09 16:25:27 INFO  Test55:(65) - Your message has been successfully sent
+2018-01-09 16:25:29 INFO  Test55:(72) - Browser closed
+2018-01-09 16:25:40 INFO  Test66:(73) - Browser closed
+2018-01-09 16:25:50 WARN  HibernatePersistence:(58) - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2018-01-09 16:25:50 WARN  HibernatePersistence:(58) - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2018-01-09 16:25:50 WARN  HibernatePersistence:(58) - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2018-01-09 16:25:51 INFO  LogHelper:(46) - HHH000204: Processing PersistenceUnitInfo [
+	name: JPATest
+	...]
+2018-01-09 16:25:51 INFO  Version:(54) - HHH000412: Hibernate Core {4.3.11.Final}
+2018-01-09 16:25:51 INFO  Environment:(239) - HHH000206: hibernate.properties not found
+2018-01-09 16:25:51 INFO  Environment:(346) - HHH000021: Bytecode provider name : javassist
+2018-01-09 16:25:51 INFO  Version:(66) - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2018-01-09 16:25:51 WARN  DriverManagerConnectionProviderImpl:(93) - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2018-01-09 16:25:51 INFO  DriverManagerConnectionProviderImpl:(166) - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://127.0.0.1:3306/test_data]
+2018-01-09 16:25:51 INFO  DriverManagerConnectionProviderImpl:(175) - HHH000046: Connection properties: {user=root}
+2018-01-09 16:25:51 INFO  DriverManagerConnectionProviderImpl:(180) - HHH000006: Autocommit mode: false
+2018-01-09 16:25:51 INFO  DriverManagerConnectionProviderImpl:(102) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2018-01-09 16:25:52 INFO  Test77:(85) - Browser closed
+2018-01-09 16:26:06 INFO  Test88:(56) - Browser closed
+2018-01-09 16:30:14 INFO  Test33:(59) - Browser closed

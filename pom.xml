@@ -16,6 +16,8 @@
         <allure.adapter.version>1.5.2</allure.adapter.version>
         <aspectj.version>1.8.9</aspectj.version>
         <compiler.version>1.8</compiler.version>
+        <!--selenium.version-->
+        <selenium.version>3.4.0</selenium.version>
     </properties>
 
     <build>
@@ -33,6 +35,13 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.20</version>
+                <configuration>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>testng.xml</suiteXmlFile>
+                        <!--<suiteXmlFile>testng-parrallel.xml</suiteXmlFile>-->
+                    </suiteXmlFiles>
+                </configuration>
+
             </plugin>
         </plugins>
     </build>
@@ -41,7 +50,7 @@
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>3.4.0</version>
+            <version>${selenium.version}</version>
         </dependency>
         <dependency>
             <groupId>org.testng</groupId>

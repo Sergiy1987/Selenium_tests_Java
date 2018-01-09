@@ -47,7 +47,7 @@ public class Test1 extends MainTest  {
              homePage.LoginDB(USER_LOGIN,USER_PASSWORD);
              wait.waitForClickable(By.linkText(SIGNOUT_MENU1));
              //WebElement LogOut = webDriver.findElement(By.linkText(SIGNOUT_MENU1));
-             if (SIGNOUT_MENU.isDisplayed() && SIGNOUT_MENU.isEnabled()) {
+             if (logoutablePage.isInitialized() && SIGNOUT_MENU.isEnabled()) {
              //if (LogOut.isDisplayed() && LogOut.isEnabled()) {
             logoutablePage.logOut();
         }
