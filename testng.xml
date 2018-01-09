@@ -1,0 +1,43 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="UkrNetSuite" verbose="1">
+	<test name="test11" preserve-order="true">
+		<classes>
+			<class name="Test_POM.Test11" />
+		</classes>
+	</test>
+	<test name="test22" preserve-order="true">
+		<classes>
+			<class name="Test_POM.Test22" />
+		</classes>
+	</test>
+	<test name="test33" preserve-order="true">
+		<classes>
+			<class name="Test_POM.Test33" />
+		</classes>
+	</test>
+	<test name="test44" preserve-order="true">
+		<classes>
+			<class name="Test_POM.Test44" />
+		</classes>
+	</test>
+	<test name="test55" preserve-order="true">
+		<classes>
+			<class name="Test_POM.Test55" />
+		</classes>
+	</test>
+	<test name="test66" preserve-order="true">
+		<classes>
+			<class name="Test_POM.Test66" />
+		</classes>
+	</test>
+	<test name="test77" preserve-order="true">
+		<classes>
+			<class name="Test_POM.Test77" />
+		</classes>
+	</test>
+	<test name="test88" preserve-order="true">
+		<classes>
+			<class name="Test_POM.Test88" />
+		</classes>
+	</test>
+</suite>
