@@ -20,7 +20,7 @@ public abstract class MainTest {
     public Wait wait;
     @BeforeClass
     public void setUp() {
-        System.setProperty("webdriver.chrome.driver", "C:\\Program Files/Java/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "Driver/chromedriver.exe");
         webDriver = new ChromeDriver();
         webDriver.manage().window().maximize();
         webDriver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);

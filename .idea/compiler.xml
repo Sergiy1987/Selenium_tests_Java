@@ -22,11 +22,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="UkrNet_TestCases" />
+        <module name="UkrNet" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="UkrNet_TestCases" target="1.8" />
+      <module name="UkrNet" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
