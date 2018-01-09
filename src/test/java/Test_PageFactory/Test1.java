@@ -1,7 +1,7 @@
 package Test_PageFactory;
+
 import Tools.Tools;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -40,14 +40,15 @@ public class Test1 extends MainTest  {
         System.out.println(logoutablePage.toString());
         Tools.takeScreenShot(webDriver, ClassName + "_" + method.getName()+ ".png");
     }
-     @Test(dataProvider = "Authentication_array", dependsOnMethods = "verifyLogout")
+    @Test(dataProvider = "Authentication_array", dependsOnMethods = "verifyLogout")
     public void ArrayAuthentication(String USER_LOGIN, String USER_PASSWORD) {
         StringBuffer verificationErrors = new StringBuffer();
          try {
              homePage.LoginDB(USER_LOGIN,USER_PASSWORD);
              wait.waitForClickable(By.linkText(SIGNOUT_MENU1));
-             WebElement LogOut = webDriver.findElement(By.linkText(SIGNOUT_MENU1));
-        if (LogOut.isDisplayed() && LogOut.isEnabled()) {
+             //WebElement LogOut = webDriver.findElement(By.linkText(SIGNOUT_MENU1));
+             if (SIGNOUT_MENU.isDisplayed() && SIGNOUT_MENU.isEnabled()) {
+             //if (LogOut.isDisplayed() && LogOut.isEnabled()) {
             logoutablePage.logOut();
         }
         } catch (Error e) {

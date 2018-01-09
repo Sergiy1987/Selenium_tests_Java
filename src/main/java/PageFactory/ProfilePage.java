@@ -3,7 +3,6 @@ package PageFactory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 public class ProfilePage extends AbstractPage {
 
 	@FindBy(linkText = "Листи")//check
@@ -14,7 +13,7 @@ public class ProfilePage extends AbstractPage {
 	public static WebElement USER_SIGNOUT_LINK;
 	public ProfilePage(WebDriver webDriver) {
 		super(webDriver);
-		PageFactory.initElements(webDriver, this);
+	//	PageFactory.initElements(webDriver, this);
 	}
 	public ProfilePage goToProfilePage() {
 		USER_PROFILE_LINK.click();

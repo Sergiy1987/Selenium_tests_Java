@@ -3,7 +3,6 @@ package PageFactory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 
 public class HomePage extends AbstractPage {
     //Test01
@@ -32,7 +31,7 @@ public class HomePage extends AbstractPage {
 
     public HomePage(WebDriver webDriver) {
         super(webDriver);
-        PageFactory.initElements(webDriver, this);
+     //   PageFactory.initElements(webDriver, this);
      }
     public HomePage logIn() {
         LOGIN_FIELD.sendKeys(USER_LOGIN);
