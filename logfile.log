@@ -116,3 +116,21 @@
 2018-01-10 20:55:26 INFO  Test11:(65) - User profile page is open
 2018-01-10 20:55:27 INFO  Test11:(74) - User was successfully logged out
 2018-01-10 20:55:32 INFO  Test11:(106) - Browser closed
+2018-01-10 21:01:19 INFO  Test11:(57) - User was logged in successfully
+2018-01-10 21:01:20 INFO  Test11:(65) - User profile page is open
+2018-01-10 21:01:21 INFO  Test11:(74) - User was successfully logged out
+2018-01-10 21:01:24 INFO  Test11:(96) - Array Authentication passed successfully with Login- nedved198725 and Password- nedved1987
+2018-01-10 21:01:28 INFO  Test11:(106) - Browser closed
+2018-01-10 21:02:27 INFO  Test11:(96) - Array Authentication passed successfully with Login- nedved198725 and Password- nedved1987
+2018-01-10 21:02:32 INFO  Test11:(96) - Array Authentication passed successfully with Login- nedved198725 and Password- nedved1987
+2018-01-10 21:02:37 INFO  Test11:(96) - Array Authentication passed successfully with Login- nedved198725 and Password- nedved1987
+2018-01-10 21:02:40 INFO  Test11:(96) - Array Authentication passed successfully with Login- nedved198725 and Password- nedved1987
+2018-01-10 21:02:42 INFO  Test11:(106) - Browser closed
+2018-01-10 21:03:10 INFO  Test11:(57) - User was logged in successfully
+2018-01-10 21:03:11 INFO  Test11:(65) - User profile page is open
+2018-01-10 21:03:12 INFO  Test11:(74) - User was successfully logged out
+2018-01-10 21:03:16 INFO  Test11:(96) - Array Authentication passed successfully with Login- nedved198725 and Password- nedved1987
+2018-01-10 21:03:19 INFO  Test11:(96) - Array Authentication passed successfully with Login- nedved198725 and Password- nedved1987
+2018-01-10 21:03:22 INFO  Test11:(96) - Array Authentication passed successfully with Login- nedved198725 and Password- nedved1987
+2018-01-10 21:03:25 INFO  Test11:(96) - Array Authentication passed successfully with Login- nedved198725 and Password- nedved1987
+2018-01-10 21:03:27 INFO  Test11:(106) - Browser closed
