@@ -1,13 +1,18 @@
 package Test_PageFactory;
 
-import PageFactory.*;
+import PageFactory.HomePage;
+import PageFactory.LogoutAblePage;
+import PageFactory.ProfilePage;
+import PageFactory.SearchResultsPage;
 import Tools.Wait;
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+
 import java.util.concurrent.TimeUnit;
+
 import static PageFactory.AbstractPage.HOMEPAGE_URL;
 
 
@@ -18,7 +23,8 @@ public abstract class MainTest {
     public LogoutAblePage logoutablePage;
     public SearchResultsPage searchResultsPage;
     public Wait wait;
-    @BeforeClass
+
+    @BeforeClass(alwaysRun = true)
     public void setUp() {
         System.setProperty("webdriver.chrome.driver", "Driver/chromedriver.exe");
         webDriver = new ChromeDriver();
@@ -33,7 +39,7 @@ public abstract class MainTest {
         wait = new Wait(webDriver);
         DOMConfigurator.configure("log4j.xml");
     }
-    @AfterClass
+    @AfterClass(alwaysRun = true)
     public void tearDown() {webDriver.quit();}
     }
 

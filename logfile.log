@@ -134,3 +134,36 @@
 2018-01-10 21:03:22 INFO  Test11:(96) - Array Authentication passed successfully with Login- nedved198725 and Password- nedved1987
 2018-01-10 21:03:25 INFO  Test11:(96) - Array Authentication passed successfully with Login- nedved198725 and Password- nedved1987
 2018-01-10 21:03:27 INFO  Test11:(106) - Browser closed
+2018-01-10 22:59:45 INFO  Test11:(57) - User was logged in successfully
+2018-01-10 22:59:51 INFO  Test11:(106) - Browser closed
+2018-01-10 23:00:03 INFO  Test22:(85) - File Authentication passed successfully with not correct Login- nedved198725 and Password not correct- nedved1986
+2018-01-10 23:00:05 INFO  Test22:(85) - File Authentication passed successfully with not correct Login- nedved198726 and Password not correct- nedved1987
+2018-01-10 23:00:06 INFO  Test22:(85) - File Authentication passed successfully with not correct Login- nedved198727 and Password not correct- nedved1988
+2018-01-10 23:00:07 INFO  Test22:(85) - File Authentication passed successfully with not correct Login- nedved198728 and Password not correct- nedved1989
+2018-01-10 23:00:09 INFO  Test22:(70) - Menu contain such category: Rozetka
+2018-01-10 23:00:09 INFO  Test22:(70) - Menu contain such category: modnaKasta
+2018-01-10 23:00:09 INFO  Test22:(70) - Menu contain such category: Work.ua
+2018-01-10 23:00:09 INFO  Test22:(70) - Menu contain such category: MakeUp
+2018-01-10 23:00:09 INFO  Test22:(70) - Menu contain such category: Aliexpress
+2018-01-10 23:00:09 INFO  Test22:(70) - Menu contain such category: LeBoutique
+2018-01-10 23:00:10 INFO  Test22:(117) - Browser closed
+2018-01-10 23:00:17 INFO  Test33:(59) - Browser closed
+2018-01-10 23:00:39 INFO  Test55:(72) - Browser closed
+2018-01-10 23:00:51 INFO  Test66:(73) - Browser closed
+2018-01-10 23:00:59 WARN  HibernatePersistence:(58) - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2018-01-10 23:00:59 WARN  HibernatePersistence:(58) - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2018-01-10 23:00:59 WARN  HibernatePersistence:(58) - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2018-01-10 23:01:00 INFO  LogHelper:(46) - HHH000204: Processing PersistenceUnitInfo [
+	name: JPATest
+	...]
+2018-01-10 23:01:01 INFO  Version:(54) - HHH000412: Hibernate Core {4.3.11.Final}
+2018-01-10 23:01:01 INFO  Environment:(239) - HHH000206: hibernate.properties not found
+2018-01-10 23:01:01 INFO  Environment:(346) - HHH000021: Bytecode provider name : javassist
+2018-01-10 23:01:02 INFO  Version:(66) - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2018-01-10 23:01:02 WARN  DriverManagerConnectionProviderImpl:(93) - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2018-01-10 23:01:02 INFO  DriverManagerConnectionProviderImpl:(166) - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://127.0.0.1:3306/test_data]
+2018-01-10 23:01:02 INFO  DriverManagerConnectionProviderImpl:(175) - HHH000046: Connection properties: {user=root}
+2018-01-10 23:01:02 INFO  DriverManagerConnectionProviderImpl:(180) - HHH000006: Autocommit mode: false
+2018-01-10 23:01:02 INFO  DriverManagerConnectionProviderImpl:(102) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2018-01-10 23:01:04 INFO  Test77:(85) - Browser closed
+2018-01-10 23:01:35 INFO  Test88:(56) - Browser closed

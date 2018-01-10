@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite">
+	<test name="GroupsHomePage">
+		<groups>
+			<run>
+				<include name="HomePage" />
+			</run>
+		</groups>
+				<classes>
+                    <class name="Test_PageFactory.Test1" >
+                        <methods>
+							<include name="ArrayAuthentication" />
+                            <include name="verifyLogin" />
+                        </methods>
+                    </class>
+                </classes>
+	</test>
+
+	<test name="GroupsProfilePage">
+		<groups>
+			<run>
+				<include name="ProfilePage" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Test_PageFactory.Test1" >
+				<methods>
+					<include name="verifyUserProfileOpened" />
+					</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="LogOutPage">
+		<groups>
+			<run>
+				<include name="LogOutPage" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Test_PageFactory.Test1" >
+				<methods>
+					<include name="verifyLogout" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

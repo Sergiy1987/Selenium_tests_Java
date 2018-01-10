@@ -16,7 +16,7 @@ import static org.testng.AssertJUnit.assertTrue;
 
 public class Test1 extends MainTest  {
      String ClassName = this.getClass().getSimpleName();
-    @Test
+    @Test(groups = "HomePage")
     public void verifyLogin() {
         if (wait.elementDisplayedByWebElement(LOGIN_BUTTON)){
             homePage.logIn();
@@ -25,14 +25,14 @@ public class Test1 extends MainTest  {
         else {System.out.println(HOMEPAGE_URL + "the page is not loaded, please try again later");
         }
     }
-    @Test(dependsOnMethods = "verifyLogin")
+    @Test(groups ="ProfilePage",dependsOnMethods = "verifyLogin")
     public void verifyUserProfileOpened()  {
         wait.waitForWebElementToBeClickAble(USER_PROFILE_LINK);
         assertTrue(USER_PROFILE_LINK.isEnabled());
         profilePage.goToProfilePage();
         System.out.println(profilePage.toString());
         }
-    @Test(dependsOnMethods = "verifyUserProfileOpened")
+    @Test(groups = "LogOutPage", dependsOnMethods = "verifyLogin")
     public void verifyLogout(Method method) {
         wait.waitForWebElementToBeClickAble(SIGNOUT_MENU);
         assertTrue(SIGNOUT_MENU.isEnabled());
@@ -40,7 +40,7 @@ public class Test1 extends MainTest  {
         System.out.println(logoutablePage.toString());
         Tools.takeScreenShot(webDriver, ClassName + "_" + method.getName()+ ".png");
     }
-    @Test(dataProvider = "Authentication_array", dependsOnMethods = "verifyLogout")
+    @Test(dataProvider = "Authentication_array", groups = "HomePage")
     public void ArrayAuthentication(String USER_LOGIN, String USER_PASSWORD) {
         StringBuffer verificationErrors = new StringBuffer();
          try {

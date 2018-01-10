@@ -38,7 +38,8 @@
                 <configuration>
                     <suiteXmlFiles>
                         <suiteXmlFile>testng.xml</suiteXmlFile>
-                        <!--<suiteXmlFile>testng-parrallel.xml</suiteXmlFile>-->
+                        <!-- <suiteXmlFile>GroupsPageFactory.xml</suiteXmlFile>
+                         <suiteXmlFile>testng-parrallel.xml</suiteXmlFile>-->
                     </suiteXmlFiles>
                 </configuration>
 
