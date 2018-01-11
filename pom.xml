@@ -18,7 +18,6 @@
         <!--selenium.version-->
         <selenium.version>3.4.0</selenium.version>
     </properties>
-
     <build>
         <plugins>
             <plugin>
@@ -41,10 +40,21 @@
                       <!--  <suiteXmlFile>testng-parrallel.xml</suiteXmlFile>-->
                     </suiteXmlFiles>
                 </configuration>
-
             </plugin>
         </plugins>
     </build>
+    <reporting>
+        <excludeDefaults>true</excludeDefaults>
+    <plugins>
+    <plugin>
+        <groupId>ru.yandex.qatools.allure</groupId>
+        <artifactId>allure-maven-plugin</artifactId>
+        <version>2.6</version>
+    </plugin>
+    </plugins>
+    </reporting>
+
+
 
     <dependencies>
         <dependency>
@@ -103,5 +113,10 @@
                  <artifactId>log4j</artifactId>
                  <version>1.2.17</version>
              </dependency>
+        <dependency>
+            <groupId>ru.yandex.qatools.allure</groupId>
+            <artifactId>allure-testng-adaptor</artifactId>
+            <version>1.5.4</version>
+        </dependency>
        </dependencies>
      </project>
