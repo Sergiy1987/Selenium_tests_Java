@@ -91,7 +91,8 @@ public class Test11 {
             wait.waitForClickable(By.linkText(SIGNOUT_MENU));
          /* WebElement LogOut = webDriver.findElement(By.linkText(SIGNOUT_MENU));
             if (LogOut.isDisplayed() && LogOut.isEnabled() ) {
-                LogOut.click();}*/
+                LogOut.click();
+            }*/
             if (webDriver.findElement(By.linkText(SIGNOUT_MENU)).isDisplayed() && logoutablePage.isInitialized()){
                 logoutablePage.logOut();
             }
