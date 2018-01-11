@@ -61,6 +61,6 @@ public class HomePage extends AbstractPage {
 
         WebElement Button = webDriver.findElement(By.xpath(LOGIN_BUTTON));
         Button.click();
-        return this;
+        return new HomePage(webDriver);
     }
    }

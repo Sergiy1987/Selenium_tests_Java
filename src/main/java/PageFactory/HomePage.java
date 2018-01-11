@@ -52,6 +52,6 @@ public class HomePage extends AbstractPage {
         PASSWORD_FIELD.clear();
         PASSWORD_FIELD.sendKeys(USER_PASSWORD);
         LOGIN_BUTTON.submit();
-        return this;
+        return new HomePage(webDriver);
     }
  }

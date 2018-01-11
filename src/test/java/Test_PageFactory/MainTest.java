@@ -5,7 +5,6 @@ import PageFactory.LogoutAblePage;
 import PageFactory.ProfilePage;
 import PageFactory.SearchResultsPage;
 import Tools.Wait;
-import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
@@ -29,15 +28,14 @@ public abstract class MainTest {
         System.setProperty("webdriver.chrome.driver", "Driver/chromedriver.exe");
         webDriver = new ChromeDriver();
         webDriver.manage().window().maximize();
-        webDriver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-        webDriver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
         webDriver.get(HOMEPAGE_URL);
+        webDriver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+        webDriver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         homePage = new HomePage(webDriver);
         profilePage = new ProfilePage(webDriver);
         logoutablePage = new LogoutAblePage(webDriver);
         searchResultsPage = new SearchResultsPage(webDriver);
         wait = new Wait(webDriver);
-        DOMConfigurator.configure("log4j.xml");
     }
     @AfterClass(alwaysRun = true)
     public void tearDown() {webDriver.quit();}

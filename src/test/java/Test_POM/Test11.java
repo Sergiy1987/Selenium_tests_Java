@@ -9,7 +9,6 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -40,7 +39,7 @@ public class Test11 {
         webDriver = new ChromeDriver();
         webDriver.manage().window().maximize();
         webDriver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-        webDriver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+        webDriver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
         webDriver.get(HOMEPAGE_URL);
         homePage = new HomePage(webDriver);
         profilePage = new ProfilePage(webDriver);
@@ -83,15 +82,18 @@ public class Test11 {
                 new Object[]{"nedved198725", "nedved1987"}
         };
     }
-    @Test(dataProvider = "Authentication_array", dependsOnMethods = "verifyLogout")
+    @Test(dataProvider = "Authentication_array",dependsOnMethods = "verifyLogout")
     public void ArrayAuthentication(String USER_LOGIN, String USER_PASSWORD) {
         StringBuffer verificationErrors = new StringBuffer();
         try {
             homePage.LoginDB(USER_LOGIN,USER_PASSWORD);
+            wait.waitForPageLoaded();
             wait.waitForClickable(By.linkText(SIGNOUT_MENU));
-            WebElement LogOut = webDriver.findElement(By.linkText(SIGNOUT_MENU));
+         /* WebElement LogOut = webDriver.findElement(By.linkText(SIGNOUT_MENU));
             if (LogOut.isDisplayed() && LogOut.isEnabled() ) {
-                LogOut.click();
+                LogOut.click();}*/
+            if (webDriver.findElement(By.linkText(SIGNOUT_MENU)).isDisplayed() && logoutablePage.isInitialized()){
+                logoutablePage.logOut();
             }
             Log.info("Array Authentication passed successfully with Login- " + USER_LOGIN +
                     " and Password- " + USER_PASSWORD);

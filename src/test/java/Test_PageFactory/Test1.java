@@ -1,7 +1,6 @@
 package Test_PageFactory;
 
 import Tools.Tools;
-import org.openqa.selenium.By;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -10,7 +9,6 @@ import java.lang.reflect.Method;
 import static PageFactory.AbstractPage.HOMEPAGE_URL;
 import static PageFactory.HomePage.LOGIN_BUTTON;
 import static PageFactory.LogoutAblePage.SIGNOUT_MENU;
-import static PageFactory.LogoutAblePage.SIGNOUT_MENU1;
 import static PageFactory.ProfilePage.USER_PROFILE_LINK;
 import static org.testng.AssertJUnit.assertTrue;
 
@@ -45,12 +43,15 @@ public class Test1 extends MainTest  {
         StringBuffer verificationErrors = new StringBuffer();
          try {
              homePage.LoginDB(USER_LOGIN,USER_PASSWORD);
-             wait.waitForClickable(By.linkText(SIGNOUT_MENU1));
+             wait.waitForPageLoaded();
+             //wait.waitForClickable(By.linkText(SIGNOUT_MENU1));
+             wait.waitForWebElementToBeClickAble(SIGNOUT_MENU);
+            // System.out.println(SIGNOUT_MENU.getText());
              //WebElement LogOut = webDriver.findElement(By.linkText(SIGNOUT_MENU1));
              if (logoutablePage.isInitialized() && SIGNOUT_MENU.isEnabled()) {
              //if (LogOut.isDisplayed() && LogOut.isEnabled()) {
             logoutablePage.logOut();
-        }
+             }
         } catch (Error e) {
             //Capture and append Exceptions/Errors
             verificationErrors.append(e.toString());

@@ -13,4 +13,7 @@ public class LogoutAblePage extends AbstractPage {
         webDriver.findElement(By.linkText(SIGNOUT_MENU)).click();
         return new HomePage(webDriver);
     }
+    public boolean isInitialized() {
+        return webDriver.findElement(By.linkText(SIGNOUT_MENU)).isEnabled();
+    }
 }

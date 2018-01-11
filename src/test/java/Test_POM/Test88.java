@@ -35,7 +35,7 @@ public class Test88 {
         webDriver = new ChromeDriver();
         webDriver.manage().window().maximize();
         webDriver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-        webDriver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+        webDriver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
         webDriver.get(HOMEPAGE_URL);
         wait = new Wait(webDriver);
         DOMConfigurator.configure("log4j.xml");
