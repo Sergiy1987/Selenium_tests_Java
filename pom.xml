@@ -37,24 +37,22 @@
                     <suiteXmlFiles>
                         <suiteXmlFile>testng.xml</suiteXmlFile>
                         <suiteXmlFile>GroupsPageFactory.xml</suiteXmlFile>
-                      <!--  <suiteXmlFile>testng-parrallel.xml</suiteXmlFile>-->
+                    <!--   <suiteXmlFile>testng-parrallel.xml</suiteXmlFile>-->
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
         </plugins>
     </build>
     <reporting>
-        <excludeDefaults>true</excludeDefaults>
+    <excludeDefaults>true</excludeDefaults>
     <plugins>
-    <plugin>
-        <groupId>ru.yandex.qatools.allure</groupId>
-        <artifactId>allure-maven-plugin</artifactId>
-        <version>2.6</version>
-    </plugin>
+        <plugin>
+            <groupId>ru.yandex.qatools.allure</groupId>
+            <artifactId>allure-maven-plugin</artifactId>
+            <version>2.6</version>
+        </plugin>
     </plugins>
     </reporting>
-
-
 
     <dependencies>
         <dependency>
