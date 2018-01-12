@@ -13,7 +13,6 @@ public class ProfilePage extends AbstractPage {
 	public static WebElement USER_SIGNOUT_LINK;
 	public ProfilePage(WebDriver webDriver) {
 		super(webDriver);
-	//	PageFactory.initElements(webDriver, this);
 	}
 	public ProfilePage goToProfilePage() {
 		USER_PROFILE_LINK.click();

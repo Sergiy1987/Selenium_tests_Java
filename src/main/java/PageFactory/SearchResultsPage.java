@@ -21,7 +21,6 @@ public class SearchResultsPage extends AbstractPage {
 
     public SearchResultsPage(WebDriver webDriver) {
         super(webDriver);
-    //    PageFactory.initElements(webDriver, this);
     }
     public SearchResultsPage doSearch(String searchValue) {
         SEARCH_INPUT.click();

@@ -31,7 +31,6 @@ public class HomePage extends AbstractPage {
 
     public HomePage(WebDriver webDriver) {
         super(webDriver);
-     //   PageFactory.initElements(webDriver, this);
      }
     public HomePage logIn() {
         LOGIN_FIELD.sendKeys(USER_LOGIN);

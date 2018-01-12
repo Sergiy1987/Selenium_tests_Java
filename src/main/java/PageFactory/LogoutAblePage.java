@@ -10,7 +10,6 @@ public class LogoutAblePage extends AbstractPage {
     public static String SIGNOUT_MENU1 = "Вийти";
     public LogoutAblePage(WebDriver webDriver) {
         super(webDriver);
-    //    PageFactory.initElements(webDriver, this);
     }
     public HomePage logOut() {
         SIGNOUT_MENU.click();
