@@ -15,12 +15,11 @@ public class HomePage extends AbstractPage {
     public static final String LOGIN_FIELD = "Login";
     public static final String PASSWORD_FIELD = "Password";
     public static final String LOGIN_BUTTON = "//button[@type='submit']";
-    public static final String ERROR_DATA = "error-text";
     //test02
     public static final String NEW_FAVOURITES_LABELS_LEFT = "div.left"; //div.left
     public static final String NEW_FAVOURITES_LABELS_RIGHT = "div.right";
     public static final String COLOR_FAVOURITES_LABELS = "div.left>a";
-
+    public static final String ERROR_DATA = "error-text";
     //Test03
     public static final String SEARCH_BUTTON = "input[type^='submit']";//Поиск по началу строки
     //Test04

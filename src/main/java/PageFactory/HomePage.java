@@ -4,6 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import java.util.List;
+
 public class HomePage extends AbstractPage {
     //Test01
     public final String USER_LOGIN = "nedved198725";
@@ -20,14 +22,22 @@ public class HomePage extends AbstractPage {
     public static WebElement MAIL_PASSWORD;
     @FindBy(className="button__content")
     public static WebElement MAIL_SUBMIT;
+    //Test02
+    @FindBy(css = "div.left")
+    public static WebElement NEW_FAVOURITES_LABELS_LEFT;
+    @FindBy(css="div.right")
+    public static List<WebElement> NEW_FAVOURITES_LABELS_RIGHT;
+    @FindBy(css = "div.left>a")
+    public static WebElement COLOR_FAVOURITES_LABELS;
+    @FindBy(className = "error-text")
+    public static WebElement ERROR_DATA;
     //Test03
     @FindBy(css = "input[type^='submit']")//Поиск по началу строки//
     public static WebElement SEARCH_BUTTON;
     //Test04
     @FindBy(css = "#feed")
     public static WebElement SEARCH_MAIN_LINKS;
-    @FindBy(className = "error-text")
-    public static WebElement ERROR_DATA;
+
 
     public HomePage(WebDriver webDriver) {
         super(webDriver);

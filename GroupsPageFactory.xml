@@ -8,7 +8,8 @@
 			</run>
 		</groups>
 				<classes>
-                    <class name="Test_PageFactory.Test1" >
+                    <class name="Test_PageFactory.Test1" />
+					<class name="Test_PageFactory.Test2" >
                         <methods>
 							<include name="ArrayAuthentication" />
                             <include name="verifyLogin" />
