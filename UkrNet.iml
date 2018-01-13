@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="jpa" name="JPA">
+      <configuration>
+        <setting name="validation-enabled" value="true" />
+        <setting name="provider-name" value="" />
+        <datasource-mapping />
+        <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/src/main/resources/META-INF/persistence.xml" />
+      </configuration>
+    </facet>
+  </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8" inherit-compiler-output="false">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
@@ -81,16 +91,20 @@
     <orderEntry type="library" name="Maven: stax:stax-api:1.0.1" level="project" />
     <orderEntry type="library" name="Maven: jexcelapi:jxl:2.4.2" level="project" />
     <orderEntry type="library" name="Maven: log4j:log4j:1.2.17" level="project" />
-    <orderEntry type="library" name="Maven: ru.yandex.qatools.allure:allure-testng-adaptor:1.5.4" level="project" />
-    <orderEntry type="library" name="Maven: ru.yandex.qatools.allure:allure-java-aspects:1.5.4" level="project" />
-    <orderEntry type="library" name="Maven: ru.yandex.qatools.allure:allure-java-adaptor-api:1.5.4" level="project" />
-    <orderEntry type="library" name="Maven: ru.yandex.qatools.allure:allure-java-annotations:1.5.4" level="project" />
-    <orderEntry type="library" name="Maven: ru.yandex.qatools.allure:allure-model:1.5.4" level="project" />
-    <orderEntry type="library" name="Maven: org.jvnet.jaxb2_commons:jaxb2-basics-runtime:0.9.3" level="project" />
-    <orderEntry type="library" name="Maven: ru.qatools.commons:properties:2.0.RC5" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.tika:tika-core:1.7" level="project" />
-    <orderEntry type="library" name="Maven: org.aspectj:aspectjrt:1.8.3" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-simple:1.7.18" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.18" level="project" />
+    <orderEntry type="library" name="Maven: io.qameta.allure:allure-testng:2.0-BETA21" level="project" />
+    <orderEntry type="library" name="Maven: io.qameta.allure:allure-descriptions-javadoc:2.0-BETA21" level="project" />
+    <orderEntry type="library" name="Maven: io.qameta.allure:allure-java-commons:2.0-BETA21" level="project" />
+    <orderEntry type="library" name="Maven: io.qameta.allure:allure2-model-api:1.0-BETA6" level="project" />
+    <orderEntry type="library" name="Maven: io.qameta.allure:allure2-model-pojo:1.0-BETA6" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.tika:tika-core:1.14" level="project" />
+    <orderEntry type="library" name="Maven: io.qameta.allure:allure2-model-jackson:1.0-BETA6" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.7.0" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.7.0" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.7.0" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.module:jackson-module-jaxb-annotations:2.7.0" level="project" />
+    <orderEntry type="library" name="Maven: org.aspectj:aspectjrt:1.8.10" level="project" />
+    <orderEntry type="library" name="Maven: org.jooq:joor:0.9.6" level="project" />
   </component>
 </module>

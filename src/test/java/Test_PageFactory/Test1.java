@@ -11,7 +11,8 @@ import static PageFactory.HomePage.LOGIN_BUTTON;
 import static PageFactory.LogoutAblePage.SIGNOUT_MENU;
 import static PageFactory.ProfilePage.USER_PROFILE_LINK;
 import static org.testng.AssertJUnit.assertTrue;
-
+//https://www.swtestacademy.com/allure-testng/
+//allure serve allure-results
 public class Test1 extends MainTest  {
      String ClassName = this.getClass().getSimpleName();
     @Test(groups = "HomePage")

@@ -11,10 +11,8 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <allure.version>2.5</allure.version>
-        <allure.adapter.version>1.5.2</allure.adapter.version>
-        <aspectj.version>1.8.9</aspectj.version>
         <compiler.version>1.8</compiler.version>
+        <aspectj.version>1.8.9</aspectj.version>
         <!--selenium.version-->
         <selenium.version>3.4.0</selenium.version>
     </properties>
@@ -39,11 +37,21 @@
                         <!--    <suiteXmlFile>testng.xml</suiteXmlFile>
                            <suiteXmlFile>testng-parrallel.xml</suiteXmlFile>-->
                     </suiteXmlFiles>
+                    <argLine>
+                        -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+                    </argLine>
                 </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.aspectj</groupId>
+                        <artifactId>aspectjweaver</artifactId>
+                        <version>${aspectj.version}</version>
+                    </dependency>
+                </dependencies>
             </plugin>
-         </plugins>
+        </plugins>
     </build>
-    <reporting>
+<!--    <reporting>
         <excludeDefaults>true</excludeDefaults>
         <plugins>
             <plugin>
@@ -52,8 +60,7 @@
                 <version>2.6</version>
             </plugin>
         </plugins>
-    </reporting>
-
+    </reporting>-->
     <dependencies>
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
@@ -112,15 +119,16 @@
                  <version>1.2.17</version>
              </dependency>
         <dependency>
-            <groupId>ru.yandex.qatools.allure</groupId>
-            <artifactId>allure-testng-adaptor</artifactId>
-            <version>1.5.4</version>
-        </dependency>
-        <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
             <version>1.7.18</version>
         </dependency>
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-testng</artifactId>
+            <version>2.0-BETA21</version>
+        </dependency>
+
 
 <!--        <dependency>
             <groupId>net.thucydides</groupId>
