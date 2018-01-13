@@ -1,7 +1,6 @@
 package Test_PageFactory;
 
 import Tools.DataProvider;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
@@ -19,11 +18,8 @@ public class Test2 extends MainTest {
     private final String RGB_OF_BLACK_COLOR = "0, 0, 0";
     @Test(groups = "HomePage")
     public void verifyNewFavouritesLabelsFromPage() {
-        List<WebElement> links = NEW_FAVOURITES_LABELS_LEFT.findElements(By.tagName("a"));
-        System.out.println("Found Favourites Links: " + links.size());
-
-        for (WebElement link : links){System.out.println(link.getText()); }
-
+        System.out.println("Found Favourites Links: " + NEW_FAVOURITES_LABELS_LEFT_LIST.size());
+        for (WebElement link : NEW_FAVOURITES_LABELS_LEFT_LIST){System.out.println(link.getText()); }
         final String color = COLOR_FAVOURITES_LABELS.getCssValue("color");
         System.out.println("Color of Favourites Links: " + color.toString());
         final boolean colorIsBlack = color.contains(RGB_OF_BLACK_COLOR);

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Suite">
+<suite name="PageFactorySuite">
 	<test name="GroupsHomePage">
 		<groups>
 			<run>
@@ -9,7 +9,9 @@
 		</groups>
 				<classes>
                     <class name="Test_PageFactory.Test1" />
-					<class name="Test_PageFactory.Test2" >
+					<class name="Test_PageFactory.Test2" />
+					<class name="Test_PageFactory.Test3" />
+					<class name="Test_PageFactory.Test4" >
                         <methods>
 							<include name="ArrayAuthentication" />
                             <include name="verifyLogin" />

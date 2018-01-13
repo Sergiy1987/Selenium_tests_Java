@@ -2,7 +2,9 @@ package PageFactory;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
 
 import java.util.List;
 
@@ -23,8 +25,8 @@ public class HomePage extends AbstractPage {
     @FindBy(className="button__content")
     public static WebElement MAIL_SUBMIT;
     //Test02
-    @FindBy(css = "div.left")
-    public static WebElement NEW_FAVOURITES_LABELS_LEFT;
+    @FindAll(@FindBy(how = How.CSS, using = "div.left>a"))
+    public static List<WebElement> NEW_FAVOURITES_LABELS_LEFT_LIST;
     @FindBy(css="div.right")
     public static List<WebElement> NEW_FAVOURITES_LABELS_RIGHT;
     @FindBy(css = "div.left>a")
@@ -35,9 +37,10 @@ public class HomePage extends AbstractPage {
     @FindBy(css = "input[type^='submit']")//Поиск по началу строки//
     public static WebElement SEARCH_BUTTON;
     //Test04
-    @FindBy(css = "#feed")
-    public static WebElement SEARCH_MAIN_LINKS;
-
+    @FindBy(tagName = "h2")
+    public static List<WebElement> h2;
+    @FindAll(@FindBy(how = How.CSS, using = "#feed"))
+    public static List<WebElement> allElements;
 
     public HomePage(WebDriver webDriver) {
         super(webDriver);

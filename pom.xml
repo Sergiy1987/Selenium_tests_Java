@@ -33,9 +33,9 @@
                 <version>2.20.1</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>GroupsPageFactory.xml</suiteXmlFile>
-                        <!--    <suiteXmlFile>testng.xml</suiteXmlFile>
-                           <suiteXmlFile>testng-parrallel.xml</suiteXmlFile>-->
+                        <!--  <suiteXmlFile>GroupsPageFactory.xml</suiteXmlFile>
+                           <suiteXmlFile>testng.xml</suiteXmlFile>-->
+                            <suiteXmlFile>testng-parrallel.xml</suiteXmlFile>
                     </suiteXmlFiles>
                     <argLine>
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"

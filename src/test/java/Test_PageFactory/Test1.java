@@ -26,6 +26,7 @@ public class Test1 extends MainTest  {
     }
     @Test(groups ="ProfilePage",dependsOnMethods = "verifyLogin")
     public void verifyUserProfileOpened()  {
+        wait.waitForPageLoaded();
         wait.waitForWebElementToBeClickAble(USER_PROFILE_LINK);
         assertTrue(USER_PROFILE_LINK.isEnabled());
         profilePage.goToProfilePage();
@@ -33,6 +34,7 @@ public class Test1 extends MainTest  {
         }
     @Test(groups = "LogOutPage", dependsOnMethods = "verifyLogin")
     public void verifyLogout(Method method) {
+        wait.waitForPageLoaded();
         wait.waitForWebElementToBeClickAble(SIGNOUT_MENU);
         assertTrue(SIGNOUT_MENU.isEnabled());
         logoutablePage.logOut();
