@@ -57,6 +57,7 @@ public class Test66 {
             String UserData = result.getString("UserData");
             String User_Password = result.getString("Password");
             homePage.LoginDB(UserData,User_Password);
+            wait.waitForPageLoaded();
             wait.waitForClickable(By.linkText(SIGNOUT_MENU));
             logoutablePage.logOut();
             System.out.println("Passed");
