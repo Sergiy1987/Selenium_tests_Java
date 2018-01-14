@@ -56,6 +56,7 @@ public class HomePage extends AbstractPage {
         //return new HomePage(webDriver);
     }
     public HomePage Mail_logIn() {
+        webDriver.navigate().to(MAIL_URL);
         MAIL_LOGIN.sendKeys(USER_LOGIN);
         MAIL_PASSWORD.sendKeys(USER_PASSWORD);
         MAIL_SUBMIT.submit();

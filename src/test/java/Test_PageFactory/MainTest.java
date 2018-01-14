@@ -39,4 +39,18 @@ public abstract class MainTest {
     @AfterClass(alwaysRun = true)
     public void tearDown() {webDriver.quit();}
     }
+/*
+http://darrellgrainger.blogspot.com/2013/11/opening-two-windows-for-one-webdriver.html
+WebDriver driver = new ChromeDriver();
+driver.get(adminToolURL);
+Set<String> windows = driver.getWindowHandles();
+String adminToolHandle = driver.getWindowHandle();
+((JavascriptExecutor)driver).executeScript("window.open();");
+Set<String> customerWindow = driver.getWindowHandles();
+customerWindow.removeAll(windows);
+String customerSiteHandle = ((String)customerWindow.toArray()[0]);
+driver.switchTo().window(customerSiteHandle);
+driver.get(customerSiteURL);
+driver.switchTo().window(adminToolHandle);
+ */
 
