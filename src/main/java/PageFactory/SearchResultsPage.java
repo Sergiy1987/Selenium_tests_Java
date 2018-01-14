@@ -18,10 +18,14 @@ public class SearchResultsPage extends AbstractPage {
     public static WebElement SUBJECT_MAIL;
     @FindBy(xpath = "//div[@id='screens']/div/div/div/button")
     public static WebElement BUTTON_SEND_EMAIL;
+    @FindBy(linkText = "лист")
+    public static WebElement LINK_TEXT_SEND;
 
     public SearchResultsPage(WebDriver webDriver) {
         super(webDriver);
     }
+
+
     public SearchResultsPage doSearch(String searchValue) {
         SEARCH_INPUT.click();
         SEARCH_INPUT.sendKeys(searchValue);

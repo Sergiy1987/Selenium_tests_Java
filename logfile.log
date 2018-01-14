@@ -53,3 +53,6 @@
 2018-01-13 23:57:36 INFO  DriverManagerConnectionProviderImpl:(281) - HHH000030: Cleaning up connection pool [jdbc:mysql://127.0.0.1:3306/test_data]
 2018-01-13 23:57:37 INFO  Test77:(85) - Browser closed
 2018-01-13 23:57:49 INFO  Test88:(56) - Browser closed
+2018-01-14 22:13:23 INFO  Test55:(57) - Search string nedved198725@gmail.com into input field
+2018-01-14 22:13:26 INFO  Test55:(66) - Your message has been successfully sent
+2018-01-14 22:13:29 INFO  Test55:(73) - Browser closed

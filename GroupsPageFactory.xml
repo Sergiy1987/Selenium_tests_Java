@@ -49,4 +49,36 @@
 			</class>
 		</classes>
 	</test>
+
+	<test name="SearchResultsPage">
+		<groups>
+			<run>
+				<include name="SearchResultsPage" />
+				<exclude name="ProfilePage"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="Test_PageFactory.Test5" >
+				<methods>
+					<include name="verifySearch" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="ProfilePage">
+		<groups>
+			<run>
+				<include name="ProfilePage" />
+				<exclude name="SearchResultsPage"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="Test_PageFactory.Test5" >
+				<methods>
+					<include name="testSendEmail" />
+				</methods>
+			</class>
+		</classes>
+	</test>
 </suite>

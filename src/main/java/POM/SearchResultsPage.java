@@ -14,6 +14,7 @@ public class SearchResultsPage extends AbstractPage {
     public static final String MESSAGE = "//[@id='tinymce']/div/br";
     public static final String MESSAGE_TEXT = "Mail_Test";
     public static final String BUTTON_SEND_EMAIL = "//div[@id='screens']/div/div/div/button";
+    public static final String LINK_TEXT_SEND = "лист";
 
     public SearchResultsPage(WebDriver webDriver) {
         super(webDriver);

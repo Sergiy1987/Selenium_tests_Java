@@ -70,10 +70,6 @@ public class Test22 {
         Log.info("Menu contain such category: " + categoryFromFile);
         System.out.println("Menu contain such category: " + categoryFromFile);
     }
-    @org.testng.annotations.DataProvider(name = "ExcelDataProvider")
-    public Iterator<Object[]> dataProvider() {
-        return DataProvider.getDataFromXLSFile("/TestData.xls", "MenuCategories");
-    }
     @Test(dataProvider = "empLogin")
     public void VerifyInvalidLoginData(String userName, String password) {
        homePage.LoginDB(userName,password);
@@ -85,26 +81,16 @@ public class Test22 {
         Log.info("File Authentication passed successfully with not correct Login- "
                 + userName + " and Password not correct- " + password);
     }
-
+    @org.testng.annotations.DataProvider(name = "ExcelDataProvider")
+    public Iterator<Object[]> dataProvider() {
+        return DataProvider.getDataFromXLSFile("/TestData.xls", "MenuCategories");
+    }
     @org.testng.annotations.DataProvider(name="empLogin")
     public Object[][] loginData() throws IOException {
         Object[][] arrayObject = DataProvider.getExcelData("/User_Password_uncorrect.xls","User_Password");
         return arrayObject;
     }
-  /*  @Test(dataProvider = "ExcelData", dependsOnMethods = "verifyNewLinks")
-    public void FileAuthentication(String user, String password) {
-        webDriver.findElement(By.name(LOGIN_FIELD)).sendKeys(user);
-        webDriver.findElement(By.name(PASSWORD_FIELD)).sendKeys(password);
-        webDriver.findElement(By.xpath(LOGIN_BUTTON)).click();
-        wait.waitForElement(By.linkText(SIGNOUT_MENU));
-        webDriver.findElement(By.linkText(SIGNOUT_MENU)).click();
-    }
-    @org.testng.annotations.DataProvider(name = "ExcelData")
-    public Iterator<Object[]> dataProvider_file() {
-        return DataProvider.getDataFromXLSFile("/User_Password.xls","User_Password");
-    }*/
-
-    public String getAllMenuCategoriesFromSite() {
+     public String getAllMenuCategoriesFromSite() {
         final StringBuilder menuCategoriesFromSite = new StringBuilder();
         final List<WebElement> spans = webDriver.findElements(By.cssSelector(NEW_FAVOURITES_LABELS_RIGHT));
         for (WebElement span : spans) {

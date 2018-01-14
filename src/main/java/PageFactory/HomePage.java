@@ -41,6 +41,9 @@ public class HomePage extends AbstractPage {
     public static List<WebElement> h2;
     @FindAll(@FindBy(how = How.CSS, using = "#feed"))
     public static List<WebElement> allElements;
+    //Test5
+    @FindBy(linkText = "Листи")
+    public static WebElement MESSAGES;
 
     public HomePage(WebDriver webDriver) {
         super(webDriver);

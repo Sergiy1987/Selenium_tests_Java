@@ -1,5 +1,6 @@
 package Test_POM;
 
+import Tools.Wait;
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.By;
@@ -18,6 +19,7 @@ import static org.testng.Assert.assertFalse;
 import static org.testng.AssertJUnit.assertTrue;
 public class Test33 {
     private WebDriver webDriver;
+    private Wait wait;
     private Logger Log = Logger.getLogger(this.getClass().getName());
     @BeforeClass
     public void setUp() {
@@ -36,6 +38,7 @@ public class Test33 {
     }
     @Test(priority = 1)
     public void verifyThatFindButtonIsNotVisible() {
+        wait.waitForPageLoaded();
         JavascriptExecutor js = (JavascriptExecutor) webDriver;
         js.executeScript("arguments[0].style = 'display: none';", webDriver.findElement(By.cssSelector(SEARCH_BUTTON)));
         assertFalse(webDriver.findElement(By.cssSelector(SEARCH_BUTTON)).isDisplayed());

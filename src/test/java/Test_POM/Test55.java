@@ -20,6 +20,7 @@ import java.util.concurrent.TimeUnit;
 import static POM.AbstractPage.MAIL_URL;
 import static POM.ProfilePage.USER_SIGNOUT_MENU;
 import static POM.SearchResultsPage.BUTTON_WRITE_EMAIL;
+import static POM.SearchResultsPage.LINK_TEXT_SEND;
 import static POM.SearchResultsPage.SEARCH_INPUT;
 import static org.testng.Assert.assertTrue;
 
@@ -60,7 +61,7 @@ public class Test55 {
         wait.waitForClickable(By.xpath(BUTTON_WRITE_EMAIL));
         searchResultsPage.SendEmail();
         assertTrue(true,"Ваш лист надіслано");
-        wait.waitForClickable(By.linkText("лист"));
+        wait.waitForClickable(By.linkText(LINK_TEXT_SEND));
         Tools.takeScreenShot(webDriver, ClassName + "_" + method.getName()+ ".jpg");
         Log.info("Your message has been successfully sent");
         wait.waitForVisibility(By.cssSelector(USER_SIGNOUT_MENU));
