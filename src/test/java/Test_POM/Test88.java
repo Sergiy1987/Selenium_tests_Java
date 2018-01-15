@@ -1,6 +1,5 @@
 package Test_POM;
 
-import Tools.SendMailSSL;
 import Tools.Wait;
 import Tools.db.Item;
 import Tools.db.ItemDao;
@@ -46,11 +45,11 @@ public class Test88 {
         parsePage();
         printMap();
         putResultsInTable();
-        SendMailSSL.send(System.getenv("UserData"),
+    /*    SendMailSSL.send(System.getenv("UserData"),
                 System.getenv("UserPassword"),
                 "nedved198725@gmail.com",
                 "UkrNet_Test",
-                getResultsFromTable());
+                getResultsFromTable());*/
         Log.info("Email email was sent successfully with data from table " + Item.TABLE_NAME);
     }
     @AfterClass
