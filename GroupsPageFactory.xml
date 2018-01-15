@@ -27,7 +27,8 @@
 			</run>
 		</groups>
 		<classes>
-			<class name="Test_PageFactory.Test1" >
+			<class name="Test_PageFactory.Test1" />
+			<class name="Test_PageFactory.Test5" >
 				<methods>
 					<include name="verifyUserProfileOpened" />
 					</methods>
@@ -61,22 +62,6 @@
 			<class name="Test_PageFactory.Test5" >
 				<methods>
 					<include name="verifySearch" />
-				</methods>
-			</class>
-		</classes>
-	</test>
-
-	<test name="ProfilePage">
-		<groups>
-			<run>
-				<include name="ProfilePage" />
-				<exclude name="SearchResultsPage"/>
-			</run>
-		</groups>
-		<classes>
-			<class name="Test_PageFactory.Test5" >
-				<methods>
-					<include name="testSendEmail" />
 				</methods>
 			</class>
 		</classes>

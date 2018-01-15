@@ -2,13 +2,12 @@ package Test_POM;
 
 import POM.HomePage;
 import POM.LogoutAblePage;
-import Tools.db_hb.SimpleData;
 import Tools.Wait;
+import Tools.db_hb.SimpleData;
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -56,18 +55,16 @@ public class Test77 {
             List<SimpleData> list = (List<SimpleData>) query.getResultList();
             for (SimpleData d : list) {
                 //System.out.println(d.toString()+ " Status-->Passed # " + i++);
-
                 //System.out.println(d.getUserData()+"\t"+d.getPassword());
                 String UserData = d.getUserData();
                 String User_Password = d.getPassword();
                 homePage.LoginDB(UserData, User_Password);
                 wait.waitForClickable(By.linkText(SIGNOUT_MENU));
-                WebElement LogOut = webDriver.findElement(By.linkText(SIGNOUT_MENU));
-                if (LogOut.isDisplayed() && LogOut.isEnabled() ) {
+                if (webDriver.findElement(By.linkText(SIGNOUT_MENU)).isDisplayed() && logoutablePage.isInitialized()){
                     logoutablePage.logOut();
                     System.out.println(d.toString()+ " Status-->Passed # " + i++);
                 }
-                Log.info("Hibernate DataBase Authentication passed successfully with Login- "
+            Log.info("Hibernate DataBase Authentication passed successfully with Login- "
                         + UserData + " and Password- " + User_Password);
             }
         }finally {

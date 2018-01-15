@@ -46,8 +46,11 @@ public class Test88 {
         parsePage();
         printMap();
         putResultsInTable();
-        SendMailSSL.send("nedved198724@gmail.com", "your_password","nedved198725@ukr.net",
-                        "UkrNet_Test", getResultsFromTable());
+        SendMailSSL.send(System.getenv("UserData"),
+                System.getenv("UserPassword"),
+                "nedved198725@gmail.com",
+                "UkrNet_Test",
+                getResultsFromTable());
         Log.info("Email email was sent successfully with data from table " + Item.TABLE_NAME);
     }
     @AfterClass
