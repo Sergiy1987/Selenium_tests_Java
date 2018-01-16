@@ -12,7 +12,8 @@ public class HomePage extends AbstractPage {
     //Test01
     public final String USER_LOGIN = "nedved198725";
     public final String USER_PASSWORD = "nedved1987";
-    @FindBy(name="Login")
+    //@FindBy(name="Login")
+    @FindBy(how=How.NAME, using="Login")
     public static WebElement LOGIN_FIELD;
     @FindBy(name="Password")
     public static WebElement PASSWORD_FIELD;
