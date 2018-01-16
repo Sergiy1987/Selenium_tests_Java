@@ -1,5 +1,4 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-
 <suite name="UkrNetParallelSuite" verbose="1" parallel="tests" thread-count="8">
 	<test name="test11" preserve-order="true">
 		<classes>
