@@ -21,6 +21,7 @@ public class Test5 extends MainTest  {
         System.out.println(homePage.toString());
         wait.waitForWebElementToBeClickAble(USER_PROFILE_LINK);
         profilePage.goToProfilePage();
+        System.out.println(profilePage.toString());
         SwitchToWindow.Switch_to_new_opened_window(webDriver);
         wait.waitForPageLoaded();
         searchResultsPage.doSearch(searchTerm);

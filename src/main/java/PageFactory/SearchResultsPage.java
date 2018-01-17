@@ -7,8 +7,8 @@ import org.openqa.selenium.support.FindBy;
 
 public class SearchResultsPage extends AbstractPage {
     public final String EMAIL = "nedved198725@gmail.com";
-    public final String SUBJECT_TEXT = "UkrNet_test";
-    public final String BODY_TEXT = "UkrNet_Test_MessageFromPageFactoryPage";
+    public final String SUBJECT_TEXT = "PageFactoryPattern_Test";
+    public final String BODY_TEXT = "UkrNet_Test_MessageFromPageFactoryPattern";
     @FindBy(css = "input[type='text']")  //input[type^='text']	search	//input[@type='text']
     public static WebElement SEARCH_INPUT;
     @FindBy(xpath = "//div[@id='content']/aside/button")

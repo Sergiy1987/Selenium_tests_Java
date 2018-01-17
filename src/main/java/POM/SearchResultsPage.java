@@ -10,10 +10,10 @@ public class SearchResultsPage extends AbstractPage {
     public static final String SEND_TO = "toInput";
     public static final String SUBJECT_MAIL = "subject";
     public static final String EMAIL = "nedved198725@gmail.com";
-    public static final String SUBJECT_TEXT = "Subject_test";
+    public static final String SUBJECT_TEXT = "PageObjectPattern_Test";
     public static final String FRAME_ID = "mce_0_ifr";
     public static final String BODY_MAIL  = "tinymce";
-    public static final String BODY_TEXT  = "UkrNet_Test_Message_FromPageObjectPatternPage";
+    public static final String BODY_TEXT  = "UkrNet_Test_Message_FromPageObjectPattern";
     public static final String BUTTON_SEND_EMAIL = "//div[@id='screens']/div/div/div/button";
     public static final String LINK_TEXT_SEND = "лист";
 

@@ -24,9 +24,6 @@ public class HomePage extends AbstractPage {
     public static final String SEARCH_BUTTON = "input[type^='submit']";//Поиск по началу строки
     //Test04
     public static final String SEARCH_MAIN_LINKS = "#feed";
-    public static final String MAIL_LOGIN = "id-1";
-    public static final String MAIL_PASSWORD = "id-2";
-    public static final String MAIL_SUBMIT = "button__content";
 
     public HomePage(WebDriver webDriver) {
         super(webDriver);
@@ -42,12 +39,6 @@ public class HomePage extends AbstractPage {
         return this;
         //return new HomePage(webDriver);
     }
-    public HomePage Mail_logIn() {
-        webDriver.findElement(By.id(MAIL_LOGIN)).sendKeys(USER_LOGIN);
-        webDriver.findElement(By.id(MAIL_PASSWORD)).sendKeys(USER_PASSWORD);
-        webDriver.findElement(By.className(MAIL_SUBMIT)).submit();
-        return this;
-       }
     public HomePage LoginDB(String USER_LOGIN, String USER_PASSWORD){
         WebElement Login = webDriver.findElement(By.name(LOGIN_FIELD));
         Login.clear();

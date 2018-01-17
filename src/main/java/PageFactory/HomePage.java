@@ -19,12 +19,6 @@ public class HomePage extends AbstractPage {
     public static WebElement PASSWORD_FIELD;
     @FindBy(xpath = "//button[@type='submit']")
     public static WebElement LOGIN_BUTTON;
-    @FindBy(id="id-1")
-    public static WebElement MAIL_LOGIN;
-    @FindBy(id="id-2")
-    public static WebElement MAIL_PASSWORD;
-    @FindBy(className="button__content")
-    public static WebElement MAIL_SUBMIT;
     //Test2
     @FindAll(@FindBy(how = How.CSS, using = "div.left>a"))
     public static List<WebElement> NEW_FAVOURITES_LABELS_LEFT_LIST;
@@ -42,9 +36,6 @@ public class HomePage extends AbstractPage {
     public static List<WebElement> h2;
     @FindAll(@FindBy(how = How.CSS, using = "#feed"))
     public static List<WebElement> allElements;
-    //Test5
-    @FindBy(linkText = "Листи")
-    public static WebElement MESSAGES;
 
     public HomePage(WebDriver webDriver) {
         super(webDriver);
@@ -55,13 +46,6 @@ public class HomePage extends AbstractPage {
         LOGIN_BUTTON.submit();
         return this;
         //return new HomePage(webDriver);
-    }
-    public HomePage Mail_logIn() {
-        webDriver.navigate().to(MAIL_URL);
-        MAIL_LOGIN.sendKeys(USER_LOGIN);
-        MAIL_PASSWORD.sendKeys(USER_PASSWORD);
-        MAIL_SUBMIT.submit();
-        return this;
     }
     public HomePage LoginDB(String USER_LOGIN, String USER_PASSWORD){
         LOGIN_FIELD.clear();

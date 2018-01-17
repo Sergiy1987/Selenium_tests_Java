@@ -3,6 +3,7 @@ package Test_POM;
 import POM.HomePage;
 import POM.ProfilePage;
 import POM.SearchResultsPage;
+import Tools.SwitchToWindow;
 import Tools.Tools;
 import Tools.Wait;
 import org.apache.log4j.Logger;
@@ -17,11 +18,10 @@ import org.testng.annotations.Test;
 import java.lang.reflect.Method;
 import java.util.concurrent.TimeUnit;
 
-import static POM.AbstractPage.MAIL_URL;
+import static POM.AbstractPage.HOMEPAGE_URL;
+import static POM.ProfilePage.USER_PROFILE_LINK;
 import static POM.ProfilePage.USER_SIGNOUT_MENU;
-import static POM.SearchResultsPage.BUTTON_WRITE_EMAIL;
-import static POM.SearchResultsPage.LINK_TEXT_SEND;
-import static POM.SearchResultsPage.SEARCH_INPUT;
+import static POM.SearchResultsPage.*;
 import static org.testng.Assert.assertTrue;
 
 public class Test55 {
@@ -39,7 +39,7 @@ public class Test55 {
         webDriver.manage().window().maximize();
         webDriver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         webDriver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
-        webDriver.get(MAIL_URL);
+        webDriver.get(HOMEPAGE_URL);
         homePage = new HomePage(webDriver);
         profilePage = new ProfilePage(webDriver);
         searchResultsPage = new SearchResultsPage(webDriver);
@@ -49,13 +49,18 @@ public class Test55 {
     @Test
     public void verifySearch() {
         final String searchTerm = "nedved198725@gmail.com";
-        homePage.Mail_logIn();
+        homePage.logIn();
         System.out.println(homePage.toString());
+        wait.waitForClickable(By.xpath(USER_PROFILE_LINK));
+        profilePage.goToProfilePage();
+        System.out.println(profilePage.toString());
+        SwitchToWindow.Switch_to_new_opened_window(webDriver);
+        wait.waitForPageLoaded();
         searchResultsPage.doSearch(searchTerm);
         System.out.println(searchResultsPage.toString());
         assertTrue(webDriver.findElement(By.cssSelector(SEARCH_INPUT)).isEnabled());
         Log.info("Search string " + searchTerm + " into input field");
-    }
+     }
     @Test(dependsOnMethods = "verifySearch")
     public void testSendEmail (Method method){
         wait.waitForClickable(By.xpath(BUTTON_WRITE_EMAIL));
