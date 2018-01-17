@@ -43,10 +43,10 @@ public class Test88 {
     }
     @Test
     public void test_DAO_DB (){
-        //truncateTable();
-        //parsePage();
-        //printMap();
-        //putResultsInTable();
+        truncateTable();
+        parsePage();
+        printMap();
+        putResultsInTable();
         SendMailSSL.send(PropConfig.getProperty("UserLogin"),
                          PropConfig.getProperty("Password"),
                          PropConfig.getProperty("EmailTo"),

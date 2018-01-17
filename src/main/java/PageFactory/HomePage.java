@@ -9,7 +9,7 @@ import org.openqa.selenium.support.How;
 import java.util.List;
 
 public class HomePage extends AbstractPage {
-    //Test01
+    //Test1
     public final String USER_LOGIN = "nedved198725";
     public final String USER_PASSWORD = "nedved1987";
     //@FindBy(name="Login")
@@ -25,7 +25,7 @@ public class HomePage extends AbstractPage {
     public static WebElement MAIL_PASSWORD;
     @FindBy(className="button__content")
     public static WebElement MAIL_SUBMIT;
-    //Test02
+    //Test2
     @FindAll(@FindBy(how = How.CSS, using = "div.left>a"))
     public static List<WebElement> NEW_FAVOURITES_LABELS_LEFT_LIST;
     @FindBy(css="div.right")
@@ -34,10 +34,10 @@ public class HomePage extends AbstractPage {
     public static WebElement COLOR_FAVOURITES_LABELS;
     @FindBy(className = "error-text")
     public static WebElement ERROR_DATA;
-    //Test03
+    //Test3
     @FindBy(css = "input[type^='submit']")//Поиск по началу строки//
     public static WebElement SEARCH_BUTTON;
-    //Test04
+    //Test4
     @FindBy(tagName = "h2")
     public static List<WebElement> h2;
     @FindAll(@FindBy(how = How.CSS, using = "#feed"))

@@ -62,7 +62,7 @@ public class Test11 {
         profilePage.goToProfilePage();
         System.out.println(profilePage.toString());
         Log.info("User profile page is open");
-        Switch_to_previously_opened_window();
+        Switch_to_new_opened_window();
     }
     @Test(dependsOnMethods = "verifyUserProfileOpened")
     public void verifyLogout(Method method) {
@@ -108,9 +108,16 @@ public class Test11 {
         webDriver.quit();
         Log.info("Browser closed");
     }
-    public void Switch_to_previously_opened_window ()//move to previously opened window
+    public void Switch_to_new_opened_window ()//move to new opened window
     {
-        String winHandleBefore = webDriver.getWindowHandle();
-        webDriver.switchTo().window(winHandleBefore);
+        String parentHandle = webDriver.getWindowHandle();
+        //webDriver.switchTo().window(parentHandle);
+        for(String childHandle : webDriver.getWindowHandles()){
+            if (!childHandle.equals(parentHandle)){
+                webDriver.switchTo().window(childHandle);
+                System.out.println("New window title: " + webDriver.getTitle());
+            }
+        }
+
     }
 }

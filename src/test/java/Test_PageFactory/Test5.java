@@ -1,10 +1,12 @@
 package Test_PageFactory;
 
 import Tools.Tools;
+import Tools.SwitchToWindow;
 import org.testng.annotations.Test;
 
 import java.lang.reflect.Method;
 
+import static PageFactory.ProfilePage.USER_PROFILE_LINK;
 import static PageFactory.ProfilePage.USER_SIGNOUT_MENU;
 import static PageFactory.SearchResultsPage.*;
 import static org.testng.Assert.assertTrue;
@@ -15,8 +17,12 @@ public class Test5 extends MainTest  {
     @Test(groups = "SearchResultsPage")
     public void verifySearch() {
         final String searchTerm = "nedved198725@gmail.com";
-        homePage.Mail_logIn();
+        homePage.logIn();
         System.out.println(homePage.toString());
+        wait.waitForWebElementToBeClickAble(USER_PROFILE_LINK);
+        profilePage.goToProfilePage();
+        SwitchToWindow.Switch_to_new_opened_window(webDriver);
+        wait.waitForPageLoaded();
         searchResultsPage.doSearch(searchTerm);
         System.out.println(searchResultsPage.toString());
         assertTrue(SEARCH_INPUT.isEnabled());
