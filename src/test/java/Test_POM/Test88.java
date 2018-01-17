@@ -96,7 +96,7 @@ public class Test88 {
         List<Item> result = itemDao.findAll();
         StringBuilder resultString = new StringBuilder();
         for (int i = 0; i< result.size(); i++){
-            resultString.append(" \n ").append(result.get(i).getNameColumn()).append(" = ").append(result.get(i).getColor());
+            resultString.append(result.get(i).getNameColumn()).append(" = ").append(result.get(i).getColor()).append(" \n ");
         }
         return resultString.toString();
     }

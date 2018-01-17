@@ -23,6 +23,9 @@ public class SendMailSSL {
                     }
                 });
         try {
+            //SimpleDateFormat dateFormat = new SimpleDateFormat("DD-MM-YYYY hh:mm:ss zzz");
+            //Date date = new Date();
+            //System.out.println(dateFormat.format(date));
             Message message = new MimeMessage(session);
             Multipart multipart = new MimeMultipart();
             MimeBodyPart htmlPart = new MimeBodyPart();
@@ -39,10 +42,10 @@ public class SendMailSSL {
                             + "To: " + to + "<br>"
                             + "Subject: " + subject + "<br>"
                             + "Data: " + new Date() + "<br>"
-                            + "<b>Result from DataBase: </b>"
+                            + "<b>Result from DataBase: " + "</b>"
                             + "</body></html>";
 
-            htmlPart.setContent(htmlContent, "text/html");
+            htmlPart.setContent(htmlContent, "text/html;charset=UTF-8");
             multipart.addBodyPart(htmlPart);
             message.setContent(multipart);
 
