@@ -31,6 +31,7 @@ public class Test1 extends MainTest  {
         assertTrue(USER_PROFILE_LINK.isEnabled());
         profilePage.goToProfilePage();
         System.out.println(profilePage.toString());
+        Switch_to_parrent_opened_window();
         }
     @Test(groups = "LogOutPage", dependsOnMethods = "verifyLogin")
     public void verifyLogout(Method method) {
@@ -66,6 +67,13 @@ public class Test1 extends MainTest  {
                 new Object[]{"nedved198725", "nedved1987"},
                 new Object[]{"nedved198725", "nedved1987"},
                 new Object[]{"nedved198725", "nedved1987"},
-                new Object[]{"nedved198725", "nedved1987"}};
+                new Object[]{"nedved198725", "nedved1987"}
+        };
+    }
+    public void Switch_to_parrent_opened_window ()//move to parrent opened window
+    {
+        String parentHandle = webDriver.getWindowHandle();
+        webDriver.switchTo().window(parentHandle);
+        System.out.println("New window title: " + webDriver.getTitle());
     }
 }
