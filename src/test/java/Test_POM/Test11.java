@@ -60,6 +60,7 @@ public class Test11 {
     @Test(dependsOnMethods = "verifyLogin")
     public void verifyUserProfileOpened()  {
         profilePage.goToProfilePage();
+        wait.waitForPageLoaded();
         System.out.println(profilePage.toString());
         Log.info("User profile page is open");
         Switch_to_parrent_opened_window();
