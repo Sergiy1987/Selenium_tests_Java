@@ -71,7 +71,7 @@ public class Test22 {
         System.out.println("Menu contain such category: " + categoryFromFile);
     }
     @Test(dataProvider = "empLogin")
-    public void VerifyInvalidLoginData(String userName, String password) {
+    public void VerifyWithNotCorrectLoginData(String userName, String password) {
        homePage.LoginDB(userName,password);
        wait.waitForClickable(By.className(ERROR_DATA));
 

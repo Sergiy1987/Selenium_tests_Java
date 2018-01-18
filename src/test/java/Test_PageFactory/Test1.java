@@ -42,7 +42,7 @@ public class Test1 extends MainTest  {
         System.out.println(logoutablePage.toString());
         Tools.takeScreenShot(webDriver, ClassName + "_" + method.getName()+ ".png");
     }
-    @Test(groups = "HomePage", dataProvider = "Authentication_array", dependsOnMethods = "verifyLogout")
+    @Test(groups = "HomePage", dataProvider = "Authentication_array")
     public void ArrayAuthentication(String USER_LOGIN, String USER_PASSWORD) {
         StringBuffer verificationErrors = new StringBuffer();
          try {
@@ -54,7 +54,7 @@ public class Test1 extends MainTest  {
              //WebElement LogOut = webDriver.findElement(By.linkText(SIGNOUT_MENU1));
              if (logoutablePage.isInitialized() && SIGNOUT_MENU.isEnabled()) {
              //if (LogOut.isDisplayed() && LogOut.isEnabled()) {
-            logoutablePage.logOut();
+             logoutablePage.logOut();
              }
         } catch (Error e) {
             //Capture and append Exceptions/Errors

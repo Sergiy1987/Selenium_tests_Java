@@ -3,8 +3,8 @@ package Test_POM;
 import POM.HomePage;
 import POM.LogoutAblePage;
 import POM.ProfilePage;
-import Tools.Tools;
 import Tools.SwitchToWindow;
+import Tools.Tools;
 import Tools.Wait;
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
@@ -75,15 +75,6 @@ public class Test11 {
         Log.info("User was successfully logged out");
         Tools.takeScreenShot(webDriver, ClassName + "_" + method.getName()+ ".jpg");
     }
-    @DataProvider(name = "Authentication_array")
-    public Object[][] testData() {
-        return new Object[][]{
-                new Object[]{"nedved198725", "nedved1987"},
-                new Object[]{"nedved198725", "nedved1987"},
-                new Object[]{"nedved198725", "nedved1987"},
-                new Object[]{"nedved198725", "nedved1987"}
-        };
-    }
     @Test(dataProvider = "Authentication_array",dependsOnMethods = "verifyLogout")
     public void ArrayAuthentication(String USER_LOGIN, String USER_PASSWORD) {
         StringBuffer verificationErrors = new StringBuffer();
@@ -110,10 +101,13 @@ public class Test11 {
         webDriver.quit();
         Log.info("Browser closed");
     }
-    public void Switch_to_parrent_opened_window ()//move to parrent opened window
-    {
-        String parentHandle = webDriver.getWindowHandle();
-        webDriver.switchTo().window(parentHandle);
-        System.out.println("New window title: " + webDriver.getTitle());
+    @DataProvider(name = "Authentication_array")
+    public Object[][] testData() {
+        return new Object[][]{
+                new Object[]{"nedved198725", "nedved1987"},
+                new Object[]{"nedved198725", "nedved1987"},
+                new Object[]{"nedved198725", "nedved1987"},
+                new Object[]{"nedved198725", "nedved1987"}
+        };
     }
 }
