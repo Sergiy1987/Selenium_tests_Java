@@ -1,5 +1,5 @@
 package Test_PageFactory;
-
+import Tools.SwitchToWindow;
 import Tools.Tools;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -31,9 +31,9 @@ public class Test1 extends MainTest  {
         assertTrue(USER_PROFILE_LINK.isEnabled());
         profilePage.goToProfilePage();
         System.out.println(profilePage.toString());
-        Switch_to_parrent_opened_window();
-        }
-    @Test(groups = "LogOutPage", dependsOnMethods = "verifyLogin")
+        SwitchToWindow.Switch_to_parrent_opened_window(webDriver);
+    }
+    @Test(groups = "LogOutPage", dependsOnMethods = "verifyUserProfileOpened")
     public void verifyLogout(Method method) {
         wait.waitForPageLoaded();
         wait.waitForWebElementToBeClickAble(SIGNOUT_MENU);
@@ -42,7 +42,7 @@ public class Test1 extends MainTest  {
         System.out.println(logoutablePage.toString());
         Tools.takeScreenShot(webDriver, ClassName + "_" + method.getName()+ ".png");
     }
-    @Test(dataProvider = "Authentication_array", groups = "HomePage")
+    @Test(groups = "HomePage", dataProvider = "Authentication_array", dependsOnMethods = "verifyLogout")
     public void ArrayAuthentication(String USER_LOGIN, String USER_PASSWORD) {
         StringBuffer verificationErrors = new StringBuffer();
          try {
@@ -69,11 +69,5 @@ public class Test1 extends MainTest  {
                 new Object[]{"nedved198725", "nedved1987"},
                 new Object[]{"nedved198725", "nedved1987"}
         };
-    }
-    public void Switch_to_parrent_opened_window ()//move to parrent opened window
-    {
-        String parentHandle = webDriver.getWindowHandle();
-        webDriver.switchTo().window(parentHandle);
-        System.out.println("New window title: " + webDriver.getTitle());
     }
 }

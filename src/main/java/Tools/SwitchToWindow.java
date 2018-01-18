@@ -16,7 +16,7 @@ public class SwitchToWindow {
             }
         }
     }
-    public void Switch_to_parrent_opened_window () {
+    public static void Switch_to_parrent_opened_window (WebDriver webDriver) {
         String parentHandle = webDriver.getWindowHandle();
         webDriver.switchTo().window(parentHandle);
         System.out.println("Parrent window title: " + webDriver.getTitle());

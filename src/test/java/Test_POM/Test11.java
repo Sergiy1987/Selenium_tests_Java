@@ -4,6 +4,7 @@ import POM.HomePage;
 import POM.LogoutAblePage;
 import POM.ProfilePage;
 import Tools.Tools;
+import Tools.SwitchToWindow;
 import Tools.Wait;
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
@@ -63,7 +64,7 @@ public class Test11 {
         wait.waitForPageLoaded();
         System.out.println(profilePage.toString());
         Log.info("User profile page is open");
-        Switch_to_parrent_opened_window();
+        SwitchToWindow.Switch_to_parrent_opened_window(webDriver);
     }
     @Test(dependsOnMethods = "verifyUserProfileOpened")
     public void verifyLogout(Method method) {
