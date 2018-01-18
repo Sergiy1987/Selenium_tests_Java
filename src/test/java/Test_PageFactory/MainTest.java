@@ -19,7 +19,7 @@ public abstract class MainTest {
     public SearchResultsPage searchResultsPage;
     public Wait wait;
 
-    @BeforeClass(alwaysRun = true)
+    @BeforeClass(alwaysRun = true,description = "Class Level setUp!")
     public void setUp() {
         System.setProperty("webdriver.chrome.driver", "Driver/chromedriver.exe");
         webDriver = new ChromeDriver();
@@ -33,7 +33,7 @@ public abstract class MainTest {
         searchResultsPage = new SearchResultsPage(webDriver);
         wait = new Wait(webDriver);
     }
-    @AfterClass(alwaysRun = true)
+    @AfterClass(alwaysRun = true,description = "Class Level tearDown!")
     public void tearDown() {webDriver.quit();}
     }
 /*

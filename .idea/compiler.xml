@@ -27,6 +27,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="UkrNet" target="1.8" />
+      <module name="UkrNet (1)" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
