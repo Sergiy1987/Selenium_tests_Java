@@ -14,6 +14,7 @@ import static PageFactory.ProfilePage.USER_PROFILE_LINK;
 import static org.testng.AssertJUnit.assertTrue;
 //https://www.swtestacademy.com/allure-testng/
 //allure serve allure-results
+//allure generate allure-results/ -o allure-report
 public class Test1 extends MainTest  {
      String ClassName = this.getClass().getSimpleName();
     @Test(groups = "HomePage")
