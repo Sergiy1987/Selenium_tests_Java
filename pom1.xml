@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>UkrNet</groupId>
     <artifactId>UkrNet</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
     <name>UkrNet</name>
 
     <properties>
@@ -35,7 +33,7 @@
                     <suiteXmlFiles>
                           <suiteXmlFile>GroupsPageFactory.xml</suiteXmlFile>
                         <!--  <suiteXmlFile>testng.xml</suiteXmlFile>
-                              <suiteXmlFile>testng-parallel.xml</suiteXmlFile>-->
+                           <suiteXmlFile>testng-parallel.xml</suiteXmlFile>-->
                     </suiteXmlFiles>
                     <argLine>
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
@@ -47,7 +45,24 @@
                         <artifactId>aspectjweaver</artifactId>
                         <version>${aspectj.version}</version>
                     </dependency>
+            </dependencies>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-archetype-plugin</artifactId>
+                <version>3.0.1</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.apache.maven.shared</groupId>
+                        <artifactId>maven-invoker</artifactId>
+                        <version>3.0.0</version>
+                    </dependency>
                 </dependencies>
+            </plugin>
+            <plugin>
+                <groupId>net.thucydides.maven.plugins</groupId>
+                <artifactId>maven-thucydides-plugin</artifactId>
+                <version>0.9.12</version>
             </plugin>
         </plugins>
     </build>
@@ -60,6 +75,7 @@
                 <version>2.6</version>
             </plugin>
         </plugins>
+        mvn archetype:generate -DarchetypeGroupId=UkrNet -DarchetypeArtifactId=UkrNet -DarchetypeVersion=1.0-SNAPSHOT -DarchetypeRepository=PageFactory
     </reporting>-->
     <dependencies>
         <dependency>
@@ -128,5 +144,20 @@
             <artifactId>allure-testng</artifactId>
             <version>2.0-BETA21</version>
         </dependency>
+        <dependency>
+            <groupId>net.thucydides</groupId>
+            <artifactId>thucydides-core</artifactId>
+            <version>0.9.12</version>
+        </dependency>
+        <dependency>
+            <groupId>net.thucydides</groupId>
+            <artifactId>thucydides-jbehave-plugin</artifactId>
+            <version>0.9.12</version>
+        </dependency>
+        <dependency>
+            <groupId>net.thucydides</groupId>
+            <artifactId>thucydides-junit</artifactId>
+            <version>0.9.12</version>
+        </dependency>
     </dependencies>
-    </project>
+</project>
