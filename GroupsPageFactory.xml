@@ -55,7 +55,7 @@
 		<groups>
 			<run>
 				<include name="SearchResultsPage" />
-				<exclude name="ProfilePage"/>
+		<!--		<exclude name="ProfilePage"/>-->
 			</run>
 		</groups>
 		<classes>
