@@ -126,11 +126,21 @@
             <artifactId>allure-testng</artifactId>
             <version>2.0-BETA21</version>
         </dependency>
-        <dependency>
-            <groupId>com.relevantcodes</groupId>
-            <artifactId>extentreports</artifactId>
-            <version>2.41.2</version>
             <!--https://qavalidation.com/2016/10/selenium-html-result-reporting-using-extentreports-3-x.html/-->
+        <dependency>
+            <groupId>com.aventstack</groupId>
+            <artifactId>extentreports</artifactId>
+            <version>3.1.2</version>
         </dependency>
+ <!--       <dependency>
+            <groupId>org.freemarker</groupId>
+            <artifactId>freemarker</artifactId>
+            <version>2.3.27-incubating</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mongodb</groupId>
+            <artifactId>bson</artifactId>
+            <version>3.6.1</version>
+        </dependency>-->
     </dependencies>
 </project>

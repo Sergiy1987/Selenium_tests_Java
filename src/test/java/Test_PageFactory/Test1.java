@@ -1,35 +1,46 @@
 package Test_PageFactory;
 
 import Tools.SwitchToWindow;
-import Tools.Tools;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import java.lang.reflect.Method;
 
-import static PageFactory.AbstractPage.HOMEPAGE_URL;
 import static PageFactory.HomePage.LOGIN_BUTTON;
 import static PageFactory.LogoutAblePage.SIGNOUT_MENU;
 import static PageFactory.ProfilePage.USER_PROFILE_LINK;
+import static Tools.ExtentManager.createTest;
+import static Tools.Tools.takeScreenShot;
 import static org.testng.AssertJUnit.assertTrue;
 //https://www.swtestacademy.com/allure-testng/
 //allure serve allure-results
 //allure generate allure-results/ -o allure-report
 public class Test1 extends MainTest  {
-     String ClassName = this.getClass().getSimpleName();
+    private ExtentTest test;
+    private String ClassName = this.getClass().getSimpleName();
     @Test(groups = "HomePage")
     public void verifyLogin() {
-        if (wait.elementDisplayedByWebElement(LOGIN_BUTTON)){
-            homePage.logIn();
-            System.out.println(homePage.toString());
-        }
-        else {System.out.println(HOMEPAGE_URL + "the page is not loaded, please try again later");
+        try {
+        test = createTest("HomePage", "VerifyLogin");
+        if (wait.elementDisplayedByWebElement(LOGIN_BUTTON)) {
+        test.pass("LOGIN_BUTTON: " + LOGIN_BUTTON.getText() + " Status: " + LOGIN_BUTTON.isDisplayed() + " and is Displayed");
+        homePage.logIn();
+        System.out.println(homePage.toString());
+        } else {
+        test.log(Status.FAIL,"LOGIN_BUTTON: " + LOGIN_BUTTON.getText() + " Status: " + LOGIN_BUTTON.isDisplayed() + " and doesn't Displayed");}
+        } catch (Exception e) {
+        test.log(Status.ERROR, e.getMessage());
         }
     }
     @Test(groups ="ProfilePage",dependsOnMethods = "verifyLogin")
     public void verifyUserProfileOpened()  {
+        //test = extent.createTest("ProfilePage", "verifyUserProfileOpened");
+        test = createTest("ProfilePage", "verifyUserProfileOpened");
         wait.waitForPageLoaded();
         wait.waitForWebElementToBeClickAble(USER_PROFILE_LINK);
+        test.pass("USER_PROFILE_LINK: " + USER_PROFILE_LINK.getText() + " Status: " + USER_PROFILE_LINK.isEnabled() + " and is Enabled");
         assertTrue(USER_PROFILE_LINK.isEnabled());
         profilePage.goToProfilePage();
         System.out.println(profilePage.toString());
@@ -37,30 +48,33 @@ public class Test1 extends MainTest  {
     }
     @Test(groups = "LogOutPage", dependsOnMethods = "verifyUserProfileOpened")
     public void verifyLogout(Method method) {
+        test = createTest("LogOutPage", "verifyLogout");
         wait.waitForPageLoaded();
         wait.waitForWebElementToBeClickAble(SIGNOUT_MENU);
         assertTrue(SIGNOUT_MENU.isEnabled());
         logoutablePage.logOut();
         System.out.println(logoutablePage.toString());
-        Tools.takeScreenShot(webDriver, ClassName + "_" + method.getName()+ ".png");
+        takeScreenShot(webDriver, ClassName + "_" + method.getName()+ ".png");
+        test.pass("SIGNOUT_MENU: " + SIGNOUT_MENU.getText() + " Status: " + SIGNOUT_MENU.isEnabled() + " and is Enabled");
     }
     @Test(groups = "HomePage", dataProvider = "Authentication_array")
     public void ArrayAuthentication(String USER_LOGIN, String USER_PASSWORD) {
         StringBuffer verificationErrors = new StringBuffer();
-         try {
-             homePage.LoginDB(USER_LOGIN,USER_PASSWORD);
-             wait.waitForPageLoaded();
-             //wait.waitForClickable(By.linkText(SIGNOUT_MENU1));
-             wait.waitForWebElementToBeClickAble(SIGNOUT_MENU);
+        try {
+            test = createTest("HomePage", "Authentication_array");
+            homePage.LoginDB(USER_LOGIN,USER_PASSWORD);
+            wait.waitForPageLoaded();
+            test.pass("USER_LOGIN: " + USER_LOGIN + ", USER_PASSWORD: " + USER_PASSWORD + " successfully");
+            //wait.waitForClickable(By.linkText(SIGNOUT_MENU1));
+            wait.waitForWebElementToBeClickAble(SIGNOUT_MENU);
             // System.out.println(SIGNOUT_MENU.getText());
-             //WebElement LogOut = webDriver.findElement(By.linkText(SIGNOUT_MENU1));
+            //WebElement LogOut = webDriver.findElement(By.linkText(SIGNOUT_MENU1));
              if (logoutablePage.isInitialized() && SIGNOUT_MENU.isEnabled()) {
              //if (LogOut.isDisplayed() && LogOut.isEnabled()) {
-             logoutablePage.logOut();
-             }
+             logoutablePage.logOut();}
         } catch (Error e) {
-            //Capture and append Exceptions/Errors
-            verificationErrors.append(e.toString());
+        //Capture and append Exceptions/Errors
+        verificationErrors.append(e.toString());
         }
     }
     @DataProvider(name = "Authentication_array")
