@@ -26,7 +26,6 @@ INSERT INTO `simpledata`(`id`, `Password`, `UserData`) VALUES (3,'nedved1987','n
 INSERT INTO `simpledata`(`id`, `Password`, `UserData`) VALUES (4,'nedved1987','nedved198725');
 INSERT INTO `simpledata`(`id`, `Password`, `UserData`) VALUES (5,'nedved1987','nedved198725');
 
-
 CREATE TABLE IF NOT EXISTS `test_DAO` (
     `id` int(11) NOT NULL AUTO_INCREMENT,
     `name_link` VARCHAR(255),
