@@ -60,7 +60,6 @@ public class Test22 {
         final String color = webDriver.findElement(By.cssSelector(COLOR_FAVOURITES_LABELS)).getCssValue("color");
         System.out.println("Color of Favourites Links: " + color.toString());
         final boolean colorIsBlack = color.contains(RGB_OF_BLACK_COLOR);
-
         assertFalse(colorIsBlack, "Color of new category links isn't black.");
         Log.info("Color of new category links is " + color);
     }
