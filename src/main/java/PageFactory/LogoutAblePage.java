@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 public class LogoutAblePage extends AbstractPage {
     @FindBy(linkText="Вийти")
     public static WebElement SIGNOUT_MENU;
-    public static String SIGNOUT_MENU1 = "Вийти";
+
     public LogoutAblePage(WebDriver webDriver) {
         super(webDriver);
     }

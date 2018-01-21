@@ -3,6 +3,7 @@ package Test_PageFactory;
 import Tools.Tools;
 import Tools.SwitchToWindow;
 import com.aventstack.extentreports.ExtentTest;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.testng.annotations.Test;
 
 import java.lang.reflect.Method;
@@ -18,19 +19,23 @@ public class Test5 extends MainTest  {
     private ExtentTest test;
     private final String searchTerm = "nedved198725@gmail.com";
     @Test(groups = "SearchResultsPage")
-    public void verifySearch() {
+    public void verifySearch() throws StaleElementReferenceException {
         test = createTest("SearchResultsPage", "verifySearch");
-        homePage.logIn();
-        System.out.println(homePage.toString());
-        wait.waitForWebElementToBeClickAble(USER_PROFILE_LINK);
-        profilePage.goToProfilePage();
-        wait.waitForPageLoaded();
-        System.out.println(profilePage.toString());
-        SwitchToWindow.Switch_to_new_opened_window(webDriver);
-        searchResultsPage.doSearch(searchTerm);
-        System.out.println(searchResultsPage.toString());
-        assertTrue(SEARCH_INPUT.isEnabled());
-        test.pass("SEARCH_INPUT: " + SEARCH_INPUT.getText() + " Status: " + SEARCH_INPUT.isEnabled() + " and is Enabled");
+        try {
+            homePage.logIn();
+            System.out.println(homePage.toString());
+            wait.waitForWebElementToBeClickAble(USER_PROFILE_LINK);
+            if (USER_PROFILE_LINK.isDisplayed() && USER_PROFILE_LINK.isEnabled()) {
+                profilePage.goToProfilePage();
+                // wait.waitForPageLoaded();
+                System.out.println(profilePage.toString());
+                SwitchToWindow.Switch_to_new_opened_window(webDriver);
+                searchResultsPage.doSearch(searchTerm);
+                System.out.println(searchResultsPage.toString());
+                assertTrue(SEARCH_INPUT.isEnabled());
+                test.pass("SEARCH_INPUT: " + SEARCH_INPUT.getText() + " Status: " + SEARCH_INPUT.isEnabled() + " and is Enabled");
+            }
+        }catch (StaleElementReferenceException ex){ex.getMessage();}
     }
     @Test(groups = "ProfilePage",dependsOnMethods = "verifySearch")
     public void testSendEmail (Method method){

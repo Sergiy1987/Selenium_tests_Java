@@ -17,13 +17,15 @@ import java.util.concurrent.TimeUnit;
 
 import static POM.HomePage.HOMEPAGE_URL;
 import static POM.LogoutAblePage.SIGNOUT_MENU;
+import static Tools.PropConfig.getProperty;
+
 public class Test66 {
     private HomePage homePage;
     private LogoutAblePage logoutablePage;
     private WebDriver webDriver;
     private Logger Log = Logger.getLogger(this.getClass().getName());
-    String url ="jdbc:mysql://localhost:3306/test_data";
-    String dbClass = "com.mysql.jdbc.Driver";
+    /*String url ="jdbc:mysql://localhost:3306/test_data";
+    String dbClass = "com.mysql.jdbc.Driver";*/
     private Wait wait;
     @BeforeClass
     public void setUp() throws Exception{
@@ -42,16 +44,16 @@ public class Test66 {
     @Test
     public void CreateDB() throws InstantiationException, IllegalAccessException, ClassNotFoundException, SQLException {
 
-        Class.forName(dbClass).newInstance();
-        Connection con = DriverManager.getConnection(url, "root", "");
+        Class.forName(getProperty("dbClass")).newInstance();
+        Connection con = DriverManager.getConnection(getProperty("url"), getProperty("login"), getProperty("password"));
         Statement stmt = con.createStatement();
-        stmt.execute("CREATE  DATABASE IF NOT EXISTS `test_data`");
-        stmt.execute("CREATE TABLE IF NOT EXISTS `test_data` " +
+        stmt.execute("CREATE  DATABASE IF NOT EXISTS " + getProperty("DATABASE"));
+        stmt.execute("CREATE TABLE IF NOT EXISTS " + getProperty("TABLE") +
                 "(`id` int(11) NOT NULL AUTO_INCREMENT," +
                 "`UserData` varchar(20) NOT NULL," +
                 "`Password` varchar(20) NOT NULL," +
                 "PRIMARY KEY (`id`)) DEFAULT CHARSET=utf8");
-        ResultSet result = stmt.executeQuery("SELECT * FROM `test_data`");
+        ResultSet result = stmt.executeQuery("SELECT * FROM " + getProperty("TABLE"));
 
         while (result.next()) {
             String UserData = result.getString("UserData");
@@ -61,8 +63,8 @@ public class Test66 {
             wait.waitForClickable(By.linkText(SIGNOUT_MENU));
             logoutablePage.logOut();
             System.out.println("Passed");
-            Log.info("DataBase Authentication passed successfully with Login- "
-                    + UserData + " and Password- " + User_Password);
+            Log.info("DataBase Authentication passed successfully with Login - "
+                    + UserData + " and Password - " + User_Password);
         }
         con.close();
         stmt.close();

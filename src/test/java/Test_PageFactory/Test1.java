@@ -7,6 +7,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import java.lang.reflect.Method;
+import java.util.NoSuchElementException;
 
 import static PageFactory.HomePage.LOGIN_BUTTON;
 import static PageFactory.LogoutAblePage.SIGNOUT_MENU;
@@ -47,19 +48,21 @@ public class Test1 extends MainTest  {
         SwitchToWindow.Switch_to_parrent_opened_window(webDriver);
     }
     @Test(groups = "LogOutPage", dependsOnMethods = "verifyUserProfileOpened")
-    public void verifyLogout(Method method) {
+    public void verifyLogout(Method method) throws NoSuchElementException {
         test = createTest("LogOutPage", "verifyLogout");
-        wait.waitForPageLoaded();
-        wait.waitForWebElementToBeClickAble(SIGNOUT_MENU);
-        assertTrue(SIGNOUT_MENU.isEnabled());
-        logoutablePage.logOut();
-        System.out.println(logoutablePage.toString());
-        takeScreenShot(webDriver, ClassName + "_" + method.getName()+ ".png");
-        test.pass("SIGNOUT_MENU: " + SIGNOUT_MENU.getText() + " Status: " + SIGNOUT_MENU.isEnabled() + " and is Enabled");
+        try {
+            wait.waitForPageLoaded();
+            wait.waitForWebElementToBeClickAble(SIGNOUT_MENU);
+            test.pass("SIGNOUT_MENU: " + SIGNOUT_MENU.getText() + " Status: " + SIGNOUT_MENU.isEnabled() + " and is Enabled");
+            assertTrue(SIGNOUT_MENU.isEnabled());
+            logoutablePage.logOut();
+            System.out.println(logoutablePage.toString());
+            takeScreenShot(webDriver, ClassName + "_" + method.getName() + ".png");
+        }catch (NoSuchElementException e){e.getMessage();}
     }
     @Test(groups = "HomePage", dataProvider = "Authentication_array")
     public void ArrayAuthentication(String USER_LOGIN, String USER_PASSWORD) {
-        StringBuffer verificationErrors = new StringBuffer();
+        StringBuilder verificationErrors = new StringBuilder();
         try {
             test = createTest("HomePage", "Authentication_array");
             homePage.LoginDB(USER_LOGIN,USER_PASSWORD);

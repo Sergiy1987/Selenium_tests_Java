@@ -31,6 +31,7 @@
 			<class name="Test_PageFactory.Test5" >
 				<methods>
 					<include name="verifyUserProfileOpened" />
+					<include name="testSendEmail" />
 					</methods>
 			</class>
 		</classes>
