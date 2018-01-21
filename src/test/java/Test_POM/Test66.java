@@ -24,8 +24,6 @@ public class Test66 {
     private LogoutAblePage logoutablePage;
     private WebDriver webDriver;
     private Logger Log = Logger.getLogger(this.getClass().getName());
-    /*String url ="jdbc:mysql://localhost:3306/test_data";
-    String dbClass = "com.mysql.jdbc.Driver";*/
     private Wait wait;
     @BeforeClass
     public void setUp() throws Exception{
