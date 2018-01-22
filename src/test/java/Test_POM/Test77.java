@@ -28,9 +28,9 @@ public class Test77 {
     private LogoutAblePage logoutablePage;
     private WebDriver webDriver;
     private Wait wait;
-    static EntityManagerFactory emf;
-    static EntityManager em;
-    static int i=1;
+    private EntityManagerFactory emf;
+    private EntityManager em;
+    private static int i=1;
     private Logger Log = Logger.getLogger(this.getClass().getName());
     @BeforeClass
     public void setUp() throws Exception{
@@ -46,7 +46,7 @@ public class Test77 {
         DOMConfigurator.configure("log4j.xml");
     }
     @Test
-    public void DB_Hibernate (){
+    public void DB_Hibernate(){
         try {
             emf = Persistence.createEntityManagerFactory("JPATest");
             try{
@@ -62,20 +62,19 @@ public class Test77 {
                 wait.waitForClickable(By.linkText(SIGNOUT_MENU));
                 if (webDriver.findElement(By.linkText(SIGNOUT_MENU)).isDisplayed() && logoutablePage.isInitialized()){
                     logoutablePage.logOut();
-                    System.out.println(d.toString()+ " Status-->Passed # " + i++);
+                    System.out.println(d.toString()+ " Status-->Passed");
                 }
-            Log.info("Hibernate DataBase Authentication passed successfully with Login- "
-                        + UserData + " and Password- " + User_Password);
+                Log.info("Hibernate DataBase Authentication passed successfully with Login - "
+                        + UserData + " and Password - " + User_Password +
+                        " Status-->Passed # " + i++);
             }
         }finally {
             em.close();
             emf.close();
         }
         }
-        catch (Exception ex) {
-            ex.printStackTrace();
-        }
-        }
+        catch (Exception ex) {ex.printStackTrace();}
+    }
     @AfterClass
     public void tearDown() {
         webDriver.quit();

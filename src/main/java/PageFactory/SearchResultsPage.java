@@ -30,7 +30,6 @@ public class SearchResultsPage extends AbstractPage {
         super(webDriver);
     }
 
-
     public SearchResultsPage doSearch(String searchValue) {
         SEARCH_INPUT.click();
         SEARCH_INPUT.sendKeys(searchValue);

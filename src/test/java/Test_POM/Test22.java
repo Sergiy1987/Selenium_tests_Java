@@ -8,7 +8,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -21,16 +20,17 @@ import java.util.concurrent.TimeUnit;
 import static POM.AbstractPage.HOMEPAGE_URL;
 import static POM.HomePage.*;
 import static org.testng.Assert.assertFalse;
+import static org.testng.Assert.assertTrue;
 import static org.testng.AssertJUnit.assertEquals;
 //http://autoqa.org/tips-and-tricks/poisk-vsex-ssylok-na-stranice.html
 //http://qaat.ru/kak-najti-bitye-ssylki-na-stranice-s-pomoshhyu-selenium-webdriver/
 //https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/index_exports_WebElement.html
 public class Test22 {
     private WebDriver webDriver;
-    private String menuCategoriesFromSite;
-    private final String RGB_OF_BLACK_COLOR = "0, 0, 0";
     private HomePage homePage;
     private Wait wait;
+    private String menuCategoriesFromSite;
+    private final String RGB_OF_BLACK_COLOR = "0, 0, 0";
     private Logger Log = Logger.getLogger(this.getClass().getName());
 
     @BeforeClass
@@ -65,7 +65,7 @@ public class Test22 {
     }
     @Test(dataProvider = "ExcelDataProvider")
     public void verifyNewLinks(String categoryFromFile) {
-        Assert.assertTrue(menuCategoriesFromSite.contains(categoryFromFile), "Menu doesn't contain such category: " + categoryFromFile);
+        assertTrue(menuCategoriesFromSite.contains(categoryFromFile), "Menu doesn't contain such category: " + categoryFromFile);
         Log.info("Menu contain such category: " + categoryFromFile);
         System.out.println("Menu contain such category: " + categoryFromFile);
     }

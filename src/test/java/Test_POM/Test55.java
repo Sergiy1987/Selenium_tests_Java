@@ -22,6 +22,7 @@ import static POM.AbstractPage.HOMEPAGE_URL;
 import static POM.ProfilePage.USER_PROFILE_LINK;
 import static POM.ProfilePage.USER_SIGNOUT_MENU;
 import static POM.SearchResultsPage.*;
+import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 public class Test55 {
@@ -30,8 +31,9 @@ public class Test55 {
     private ProfilePage profilePage;
     private SearchResultsPage searchResultsPage;
     private Wait wait;
-    String ClassName = this.getClass().getSimpleName();
+    private String ClassName = this.getClass().getSimpleName();
     private Logger Log = Logger.getLogger(this.getClass().getName());
+    private final String searchTerm = "nedved198725@gmail.com";
     @BeforeClass
     public void setUp() {
         System.setProperty("webdriver.chrome.driver", "Driver/chromedriver.exe");
@@ -48,7 +50,6 @@ public class Test55 {
     }
     @Test
     public void verifySearch() {
-        final String searchTerm = "nedved198725@gmail.com";
         homePage.logIn();
         System.out.println(homePage.toString());
         wait.waitForClickable(By.xpath(USER_PROFILE_LINK));
@@ -59,6 +60,8 @@ public class Test55 {
         searchResultsPage.doSearch(searchTerm);
         System.out.println(searchResultsPage.toString());
         assertTrue(webDriver.findElement(By.cssSelector(SEARCH_INPUT)).isEnabled());
+        final String SEARCH_INPUT_TEXT = webDriver.findElement(By.cssSelector(SEARCH_INPUT)).getAttribute("value");
+        assertEquals(searchTerm,SEARCH_INPUT_TEXT);
         Log.info("Search string " + searchTerm + " into input field");
      }
     @Test(dependsOnMethods = "verifySearch")

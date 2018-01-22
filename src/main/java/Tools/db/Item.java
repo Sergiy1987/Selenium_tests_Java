@@ -13,25 +13,19 @@ public class Item {
     public int getId() {
         return id;
     }
-
     public void setId(int id) {
         this.id = id;
     }
-
     public String getNameColumn() {return name_link;}
-
     public void setNameColumn(String name_link) {
         this.name_link = name_link;
     }
-
     public String getColor() {
         return color;
     }
-
     public void setColumn(String color) {
         this.color = color;
     }
-
     public String toString() {
         return "Item[id=" + this.id +
                 ", User_link=" + this.name_link +

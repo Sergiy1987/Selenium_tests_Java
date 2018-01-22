@@ -24,23 +24,18 @@ public class SimpleData {
     public long getId() {
         return id;
     }
-
     public void setId(int id) {
         this.id = id;
     }
-
     public String getUserData() {
         return UserData;
     }
-
     public void setUserData(String UserData) {
         this.UserData = UserData;
     }
-
     public String getPassword() {
         return Password;
     }
-
     public void setPassword(String Password) {
         this.Password = Password;
     }

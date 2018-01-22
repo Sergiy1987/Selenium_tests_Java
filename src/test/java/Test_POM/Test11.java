@@ -31,7 +31,7 @@ public class Test11 {
     private ProfilePage profilePage;
     private LogoutAblePage logoutablePage;
     private Wait wait;
-    String ClassName = this.getClass().getSimpleName();// Test11.class.getSimpleName();
+    private String ClassName = this.getClass().getSimpleName();// Test11.class.getSimpleName();
     private Logger Log = Logger.getLogger(this.getClass().getName());
 
     @BeforeClass

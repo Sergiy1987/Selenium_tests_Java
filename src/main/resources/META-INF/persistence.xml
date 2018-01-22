@@ -4,7 +4,6 @@
              version="2.0">
     <persistence-unit name="JPATest">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-
         <properties>
             <property name="hibernate.show_sql" value="true" />
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />

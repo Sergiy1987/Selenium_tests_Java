@@ -23,15 +23,16 @@ public class Test66 {
     private HomePage homePage;
     private LogoutAblePage logoutablePage;
     private WebDriver webDriver;
-    private Logger Log = Logger.getLogger(this.getClass().getName());
     private Wait wait;
+    private Logger Log = Logger.getLogger(this.getClass().getName());
     @BeforeClass
-    public void setUp() throws Exception{
+    public void setUp() {
         System.setProperty("webdriver.chrome.driver", "Driver/chromedriver.exe");
         webDriver = new ChromeDriver();
         webDriver.manage().window().maximize();
         webDriver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         webDriver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+        webDriver.manage().timeouts().setScriptTimeout(100, TimeUnit.SECONDS);
         webDriver.get(HOMEPAGE_URL);
         homePage = new HomePage(webDriver);
         logoutablePage = new LogoutAblePage(webDriver);
@@ -41,7 +42,6 @@ public class Test66 {
     //https://github.com/alex00x6/TestTask_selenium_jdbc_maven
     @Test
     public void CreateDB() throws InstantiationException, IllegalAccessException, ClassNotFoundException, SQLException {
-
         Class.forName(getProperty("dbClass")).newInstance();
         Connection con = DriverManager.getConnection(getProperty("url"), getProperty("login"), getProperty("password"));
         Statement stmt = con.createStatement();

@@ -42,7 +42,7 @@ public class Test88 {
         DOMConfigurator.configure("log4j.xml");
     }
     @Test
-    public void test_DAO_DB (){
+    public void ResultSend_Message_DAO_DB (){
         truncateTable();
         parsePage();
         printMap();

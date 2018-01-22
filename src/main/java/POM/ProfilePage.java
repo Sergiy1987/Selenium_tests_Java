@@ -3,7 +3,6 @@ package POM;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-
 public class ProfilePage extends AbstractPage {
 	public static final String USER_PROFILE_LINK = "//*[@id=\"login-block\"]/div/ul/li[1]/a";
 	public static final String USER_SIGNOUT_MENU = ".login-button__menu-icon";

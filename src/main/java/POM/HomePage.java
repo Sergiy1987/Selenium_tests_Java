@@ -6,10 +6,8 @@ import org.openqa.selenium.WebElement;
 //https://www.slideshare.net/QAFest/qa-fes-2016-page-objects-e
 //http://www.autotest.org.ua/optimization-test-page-object/
 
-
 public class HomePage extends AbstractPage {
     //Test01
-
     public static final String USER_LOGIN = "nedved198725";//
     public static final String USER_PASSWORD = "nedved1987";//
     public static final String LOGIN_FIELD = "Login";
@@ -27,7 +25,6 @@ public class HomePage extends AbstractPage {
 
     public HomePage(WebDriver webDriver) {
         super(webDriver);
-        webDriver.getTitle();
 //        assertTrue(webDriver.findElement(By.name(LOGIN_FIELD)).isEnabled());
 //        assertTrue(webDriver.findElement(By.name(PASSWORD_FIELD)).isEnabled());
 //        assertTrue(webDriver.findElement(By.xpath(LOGIN_BUTTON)).isEnabled());

@@ -19,6 +19,7 @@ import static org.testng.Assert.assertTrue;
 public class Test44 {
     private WebDriver webDriver;
     private Logger Log = Logger.getLogger(this.getClass().getName());
+    private final String BlueColorRGB = "34, 87, 158";
     @BeforeClass
     public void setUp() {
         System.setProperty("webdriver.chrome.driver", "Driver/chromedriver.exe");
@@ -31,7 +32,6 @@ public class Test44 {
     }
     @Test
     public void verifyTermColor() {
-        final String BlueColorRGB = "34, 87, 158";
         WebElement links_main = webDriver.findElement(By.cssSelector(SEARCH_MAIN_LINKS));
         List<WebElement> links = links_main.findElements(By.tagName("h2"));
         System.out.println("Found Main Links: " + links.size());

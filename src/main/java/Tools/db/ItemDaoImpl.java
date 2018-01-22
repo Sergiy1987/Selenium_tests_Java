@@ -5,9 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ItemDaoImpl implements ItemDao {
-
     private DB db;
-
     public ItemDaoImpl() {
         this.db = new DB();
     }
