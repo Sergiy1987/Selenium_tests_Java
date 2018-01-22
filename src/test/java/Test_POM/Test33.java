@@ -1,6 +1,5 @@
 package Test_POM;
 
-import POM.HomePage;
 import Tools.Wait;
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
@@ -21,7 +20,6 @@ import static org.testng.AssertJUnit.assertTrue;
 public class Test33 {
     private WebDriver webDriver;
     private Wait wait;
-    private HomePage homePage;
     private Logger Log = Logger.getLogger(this.getClass().getName());
     @BeforeClass
     public void setUp() {
@@ -32,7 +30,6 @@ public class Test33 {
         webDriver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
         webDriver.get(HOMEPAGE_URL);
         DOMConfigurator.configure("log4j.xml");
-        homePage = new HomePage(webDriver);
         wait = new Wait(webDriver);
     }
     @Test(priority = 0)
