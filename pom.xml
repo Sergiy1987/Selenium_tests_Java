@@ -33,9 +33,10 @@
                 <configuration>
                     <testFailureIgnore>false</testFailureIgnore>
                     <suiteXmlFiles>
-                          <suiteXmlFile>GroupsPageFactory.xml</suiteXmlFile>
+                          <suiteXmlFile>PageObjectAndPageFactoryTests.xml</suiteXmlFile>
                         <!--  <suiteXmlFile>TestsPageObjectPattern.xml</suiteXmlFile>
-                              <suiteXmlFile>Parallel-Testing_PageObject.xml</suiteXmlFile>-->
+                              <suiteXmlFile>Parallel-Testing_PageObject.xml</suiteXmlFile>
+                              <suiteXmlFile>PageObjectAndPageFactoryTests.xml</suiteXmlFile>-->
                     </suiteXmlFiles>
                     <argLine>
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
