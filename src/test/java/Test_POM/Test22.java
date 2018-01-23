@@ -76,8 +76,8 @@ public class Test22 {
         String actualErrorDisplayed = webDriver.findElement(By.className(ERROR_DATA)).getText();
         String requiredErrorMessage = "Неправильно вказано логін чи пароль. Спробуйте знову.";
         assertEquals(requiredErrorMessage, actualErrorDisplayed);
-        Log.info("File Authentication passed successfully with not correct Login- "
-                + userName + " and Password not correct- " + password);
+        Log.info("File Authentication passed successfully with not correct Login - "
+                + userName + " and Password not correct - " + password);
     }
     @org.testng.annotations.DataProvider(name = "ExcelDataProvider")
     public Iterator<Object[]> dataProvider() {

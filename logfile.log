@@ -1,69 +1,14 @@
-2018-01-22 12:23:21 INFO  Version:(66) - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
-2018-01-22 12:23:22 WARN  DriverManagerConnectionProviderImpl:(93) - HHH000402: Using Hibernate built-in connection pool (not for production use!)
-2018-01-22 12:23:22 INFO  DriverManagerConnectionProviderImpl:(166) - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://127.0.0.1:3306/test_data]
-2018-01-22 12:23:22 INFO  DriverManagerConnectionProviderImpl:(175) - HHH000046: Connection properties: {user=root}
-2018-01-22 12:23:22 INFO  DriverManagerConnectionProviderImpl:(180) - HHH000006: Autocommit mode: false
-2018-01-22 12:23:22 INFO  DriverManagerConnectionProviderImpl:(102) - HHH000115: Hibernate connection pool size: 20 (min=1)
-2018-01-22 12:23:22 INFO  Dialect:(145) - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2018-01-22 12:23:22 INFO  ASTQueryTranslatorFactory:(47) - HHH000397: Using ASTQueryTranslatorFactory
-2018-01-22 12:23:23 INFO  SchemaUpdate:(207) - HHH000228: Running hbm2ddl schema update
-2018-01-22 12:23:23 INFO  SchemaUpdate:(218) - HHH000102: Fetching database metadata
-2018-01-22 12:23:23 INFO  SchemaUpdate:(230) - HHH000396: Updating schema
-2018-01-22 12:23:23 INFO  TableMetadata:(65) - HHH000261: Table found: test_data.simpledata
-2018-01-22 12:23:23 INFO  TableMetadata:(66) - HHH000037: Columns: [userdata, password, id]
-2018-01-22 12:23:23 INFO  TableMetadata:(68) - HHH000108: Foreign keys: []
-2018-01-22 12:23:23 INFO  TableMetadata:(69) - HHH000126: Indexes: [primary]
-2018-01-22 12:23:23 INFO  SchemaUpdate:(267) - HHH000232: Schema update complete
-2018-01-22 12:23:26 INFO  Test77:(66) - Hibernate DataBase Authentication passed successfully with Login - nedved198725 and Password - nedved1987 Status-->Passed # 2
-2018-01-22 12:23:29 INFO  Test77:(66) - Hibernate DataBase Authentication passed successfully with Login - nedved198725 and Password - nedved1987 Status-->Passed # 4
-2018-01-22 12:23:31 INFO  Test77:(66) - Hibernate DataBase Authentication passed successfully with Login - nedved198725 and Password - nedved1987 Status-->Passed # 6
-2018-01-22 12:23:34 INFO  DriverManagerConnectionProviderImpl:(281) - HHH000030: Cleaning up connection pool [jdbc:mysql://127.0.0.1:3306/test_data]
-2018-01-22 12:23:35 INFO  Test77:(83) - Browser closed
-2018-01-22 12:24:57 WARN  HibernatePersistence:(58) - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
-2018-01-22 12:24:57 WARN  HibernatePersistence:(58) - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
-2018-01-22 12:24:57 WARN  HibernatePersistence:(58) - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
-2018-01-22 12:24:57 INFO  LogHelper:(46) - HHH000204: Processing PersistenceUnitInfo [
-	name: JPATest
-	...]
-2018-01-22 12:24:58 INFO  Version:(54) - HHH000412: Hibernate Core {4.3.11.Final}
-2018-01-22 12:24:58 INFO  Environment:(239) - HHH000206: hibernate.properties not found
-2018-01-22 12:24:58 INFO  Environment:(346) - HHH000021: Bytecode provider name : javassist
-2018-01-22 12:24:58 INFO  Version:(66) - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
-2018-01-22 12:24:58 WARN  DriverManagerConnectionProviderImpl:(93) - HHH000402: Using Hibernate built-in connection pool (not for production use!)
-2018-01-22 12:24:58 INFO  DriverManagerConnectionProviderImpl:(166) - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://127.0.0.1:3306/test_data]
-2018-01-22 12:24:58 INFO  DriverManagerConnectionProviderImpl:(175) - HHH000046: Connection properties: {user=root}
-2018-01-22 12:24:58 INFO  DriverManagerConnectionProviderImpl:(180) - HHH000006: Autocommit mode: false
-2018-01-22 12:24:58 INFO  DriverManagerConnectionProviderImpl:(102) - HHH000115: Hibernate connection pool size: 20 (min=1)
-2018-01-22 12:24:59 INFO  Dialect:(145) - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2018-01-22 12:24:59 INFO  ASTQueryTranslatorFactory:(47) - HHH000397: Using ASTQueryTranslatorFactory
-2018-01-22 12:24:59 INFO  SchemaUpdate:(207) - HHH000228: Running hbm2ddl schema update
-2018-01-22 12:24:59 INFO  SchemaUpdate:(218) - HHH000102: Fetching database metadata
-2018-01-22 12:24:59 INFO  SchemaUpdate:(230) - HHH000396: Updating schema
-2018-01-22 12:24:59 INFO  TableMetadata:(65) - HHH000261: Table found: test_data.simpledata
-2018-01-22 12:24:59 INFO  TableMetadata:(66) - HHH000037: Columns: [userdata, password, id]
-2018-01-22 12:24:59 INFO  TableMetadata:(68) - HHH000108: Foreign keys: []
-2018-01-22 12:24:59 INFO  TableMetadata:(69) - HHH000126: Indexes: [primary]
-2018-01-22 12:24:59 INFO  SchemaUpdate:(267) - HHH000232: Schema update complete
-2018-01-22 12:25:02 INFO  Test77:(67) - Hibernate DataBase Authentication passed successfully with Login - nedved198725 and Password - nedved1987 Status-->Passed # 1
-2018-01-22 12:25:05 INFO  Test77:(67) - Hibernate DataBase Authentication passed successfully with Login - nedved198725 and Password - nedved1987 Status-->Passed # 2
-2018-01-22 12:25:08 INFO  Test77:(67) - Hibernate DataBase Authentication passed successfully with Login - nedved198725 and Password - nedved1987 Status-->Passed # 3
-2018-01-22 12:25:11 INFO  Test77:(67) - Hibernate DataBase Authentication passed successfully with Login - nedved198725 and Password - nedved1987 Status-->Passed # 4
-2018-01-22 12:25:13 INFO  Test77:(67) - Hibernate DataBase Authentication passed successfully with Login - nedved198725 and Password - nedved1987 Status-->Passed # 5
-2018-01-22 12:25:13 INFO  DriverManagerConnectionProviderImpl:(281) - HHH000030: Cleaning up connection pool [jdbc:mysql://127.0.0.1:3306/test_data]
-2018-01-22 12:25:15 INFO  Test77:(83) - Browser closed
-2018-01-22 13:26:04 INFO  Test11:(58) - User was logged in successfully
-2018-01-22 13:26:07 INFO  Test11:(67) - User profile page is open
-2018-01-22 13:26:07 INFO  Test11:(76) - User was successfully logged out
-2018-01-22 13:26:10 INFO  Test11:(93) - Array Authentication passed successfully with Login- nedved198725 and Password- nedved1987
-2018-01-22 13:26:13 INFO  Test11:(93) - Array Authentication passed successfully with Login- nedved198725 and Password- nedved1987
-2018-01-22 13:26:16 INFO  Test11:(93) - Array Authentication passed successfully with Login- nedved198725 and Password- nedved1987
-2018-01-22 13:26:19 INFO  Test11:(93) - Array Authentication passed successfully with Login- nedved198725 and Password- nedved1987
-2018-01-22 13:26:21 INFO  Test11:(103) - Browser closed
-2018-01-22 13:26:44 INFO  Test11:(58) - User was logged in successfully
-2018-01-22 13:26:47 INFO  Test11:(67) - User profile page is open
-2018-01-22 13:26:47 INFO  Test11:(76) - User was successfully logged out
-2018-01-22 13:26:50 INFO  Test11:(93) - Array Authentication passed successfully with Login- nedved198725 and Password- nedved1987
-2018-01-22 13:26:53 INFO  Test11:(93) - Array Authentication passed successfully with Login- nedved198725 and Password- nedved1987
-2018-01-22 13:26:56 INFO  Test11:(93) - Array Authentication passed successfully with Login- nedved198725 and Password- nedved1987
-2018-01-22 13:26:59 INFO  Test11:(93) - Array Authentication passed successfully with Login- nedved198725 and Password- nedved1987
-2018-01-22 13:27:01 INFO  Test11:(103) - Browser closed
+2018-01-23 16:37:33 INFO  Test22:(68) - Menu contain such category: Work.ua
+2018-01-23 16:37:33 INFO  Test22:(68) - Menu contain such category: MakeUp
+2018-01-23 16:37:33 INFO  Test22:(68) - Menu contain such category: Booking
+2018-01-23 16:37:33 INFO  Test22:(68) - Menu contain such category: LeBoutique
+2018-01-23 16:37:35 INFO  Test22:(101) - Browser closed
+2018-01-23 16:38:00 INFO  Test33:(38) - 'Find' button present!
+2018-01-23 16:38:02 INFO  Test33:(46) - 'Find' button doesn't present!
+2018-01-23 16:38:03 INFO  Test33:(63) - Browser closed
+2018-01-23 16:38:19 INFO  Test44:(38) - Found Main Links: 16
+2018-01-23 16:38:20 INFO  Test44:(45) - Colors of Main Links are 34, 87, 158
+2018-01-23 16:38:21 INFO  Test44:(50) - Browser closed
+2018-01-23 16:39:03 INFO  Test55:(65) - Search string nedved198725@gmail.com into input field
+2018-01-23 16:39:40 INFO  Test55:(74) - Your message has been successfully sent
+2018-01-23 16:39:44 INFO  Test55:(81) - Browser closed
