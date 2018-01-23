@@ -34,8 +34,8 @@
                     <testFailureIgnore>false</testFailureIgnore>
                     <suiteXmlFiles>
                           <suiteXmlFile>GroupsPageFactory.xml</suiteXmlFile>
-                        <!--  <suiteXmlFile>testng.xml</suiteXmlFile>
-                              <suiteXmlFile>testng-parallel.xml</suiteXmlFile>-->
+                        <!--  <suiteXmlFile>TestsPageObjectPattern.xml</suiteXmlFile>
+                              <suiteXmlFile>Parallel-Testing_PageObject.xml</suiteXmlFile>-->
                     </suiteXmlFiles>
                     <argLine>
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
