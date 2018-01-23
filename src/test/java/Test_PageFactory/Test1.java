@@ -59,7 +59,7 @@ public class Test1 extends MainTest  {
             logoutablePage.logOut();
             System.out.println(logoutablePage.toString());
             takeScreenShot(webDriver, ClassName + "_" + method.getName() + ".png");
-        }catch (NoSuchElementException e){e.getMessage();}
+        }catch (NoSuchElementException ex){ex.getMessage();}
     }
     @Test(groups = "HomePage", dataProvider = "Authentication_array")
     public void ArrayAuthentication(String USER_LOGIN, String USER_PASSWORD) {
@@ -78,7 +78,7 @@ public class Test1 extends MainTest  {
              logoutablePage.logOut();}
         } catch (Error e) {
         //Capture and append Exceptions/Errors
-        verificationErrors.append(e.toString());
+        verificationErrors.append(e.getMessage());
         }
     }
     @DataProvider(name = "Authentication_array")

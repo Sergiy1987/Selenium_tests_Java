@@ -92,9 +92,9 @@ public class Test11 {
             }
             Log.info("Array Authentication passed successfully with Login- " + USER_LOGIN +
                     " and Password- " + USER_PASSWORD);
-            } catch (Error e) {
+            } catch (Error ex) {
             //Capture and append Exceptions/Errors
-            verificationErrors.append(e.toString());
+            verificationErrors.append(ex.getMessage());
         }
     }
     @AfterClass

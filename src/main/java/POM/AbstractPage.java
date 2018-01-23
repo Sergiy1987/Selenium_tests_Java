@@ -8,4 +8,8 @@ public abstract class AbstractPage {
     protected AbstractPage(WebDriver webDriver) {
         this.webDriver = webDriver;
     }
-}
+    @Override
+    public String toString() {
+        return getClass().getName();
+    }
+   }

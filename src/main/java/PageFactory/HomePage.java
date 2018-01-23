@@ -55,4 +55,4 @@ public class HomePage extends AbstractPage {
         LOGIN_BUTTON.submit();
         return new HomePage(webDriver);
     }
- }
+}

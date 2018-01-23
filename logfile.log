@@ -18,3 +18,25 @@
 2018-01-23 16:40:59 INFO  Test66:(64) - DataBase Authentication passed successfully with Login - nedved198725 and Password - nedved1987
 2018-01-23 16:41:12 INFO  Test66:(64) - DataBase Authentication passed successfully with Login - nedved198725 and Password - nedved1987
 2018-01-23 16:41:14 INFO  Test66:(74) - Browser closed
+2018-01-23 21:33:05 INFO  Test22:(79) - File Authentication passed successfully with not correct Login -  and Password not correct - 
+2018-01-23 21:33:06 INFO  Test22:(79) - File Authentication passed successfully with not correct Login - nedved198725 and Password not correct - 
+2018-01-23 21:33:06 INFO  Test22:(79) - File Authentication passed successfully with not correct Login -  and Password not correct - nedved1985
+2018-01-23 21:33:06 INFO  Test22:(79) - File Authentication passed successfully with not correct Login - nedved198725 and Password not correct - nedved1986
+2018-01-23 21:33:07 INFO  Test22:(79) - File Authentication passed successfully with not correct Login - nedved198726 and Password not correct - nedved1987
+2018-01-23 21:33:07 INFO  Test22:(79) - File Authentication passed successfully with not correct Login - nedved198727 and Password not correct - nedved1988
+2018-01-23 21:33:07 INFO  Test22:(79) - File Authentication passed successfully with not correct Login - nedved198728 and Password not correct - nedved1989
+2018-01-23 21:33:08 INFO  Test22:(79) - File Authentication passed successfully with not correct Login - nedved198729 and Password not correct - nedved1990
+2018-01-23 21:33:09 INFO  Test22:(79) - File Authentication passed successfully with not correct Login - nedved198730 and Password not correct - nedved1991
+2018-01-23 21:33:10 INFO  Test22:(79) - File Authentication passed successfully with not correct Login - nedved198731 and Password not correct - nedved1992
+2018-01-23 21:33:10 INFO  Test22:(79) - File Authentication passed successfully with not correct Login - nedved198732 and Password not correct - nedved1993
+2018-01-23 21:33:11 INFO  Test22:(79) - File Authentication passed successfully with not correct Login - nedved198733 and Password not correct - nedved1994
+2018-01-23 21:33:11 INFO  Test22:(79) - File Authentication passed successfully with not correct Login - nedved198734 and Password not correct - nedved1995
+2018-01-23 21:33:11 INFO  Test22:(53) - Found Favourites Links: 6
+2018-01-23 21:33:11 INFO  Test22:(63) - Color of new category links is rgba(34, 87, 158, 1)
+2018-01-23 21:33:12 INFO  Test22:(68) - Menu contain such category: Rozetka
+2018-01-23 21:33:12 INFO  Test22:(68) - Menu contain such category: modnaKasta
+2018-01-23 21:33:12 INFO  Test22:(68) - Menu contain such category: Work.ua
+2018-01-23 21:33:12 INFO  Test22:(68) - Menu contain such category: MakeUp
+2018-01-23 21:33:12 INFO  Test22:(68) - Menu contain such category: Booking
+2018-01-23 21:33:12 INFO  Test22:(68) - Menu contain such category: LeBoutique
+2018-01-23 21:33:14 INFO  Test22:(101) - Browser closed

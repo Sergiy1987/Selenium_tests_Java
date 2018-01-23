@@ -57,7 +57,7 @@ public class Test22 {
         for (WebElement link : links){System.out.println(link.getText()); }
 
         final String color = webDriver.findElement(By.cssSelector(COLOR_FAVOURITES_LABELS)).getCssValue("color");
-        System.out.println("Color of Favourites Links: " + color.toString());
+        System.out.println("Color of Favourites Links: " + color);
         final boolean colorIsBlack = color.contains(RGB_OF_BLACK_COLOR);
         assertFalse(colorIsBlack, "Color of new category links isn't black.");
         Log.info("Color of new category links is " + color);
@@ -70,8 +70,8 @@ public class Test22 {
     }
     @Test(dataProvider = "empLogin")
     public void VerifyWithNotCorrectLoginData(String userName, String password) {
-       homePage.LoginDB(userName,password);
-       wait.waitForClickable(By.className(ERROR_DATA));
+        homePage.LoginDB(userName,password);
+        wait.waitForClickable(By.className(ERROR_DATA));
 
         String actualErrorDisplayed = webDriver.findElement(By.className(ERROR_DATA)).getText();
         String requiredErrorMessage = "Неправильно вказано логін чи пароль. Спробуйте знову.";

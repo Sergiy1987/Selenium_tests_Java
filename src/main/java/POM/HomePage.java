@@ -49,4 +49,4 @@ public class HomePage extends AbstractPage {
         Button.click();
         return new HomePage(webDriver);
     }
-   }
+}

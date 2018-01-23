@@ -10,4 +10,8 @@ import org.openqa.selenium.support.PageFactory;
         this.webDriver = webDriver;
         PageFactory.initElements(webDriver, this);
     }
- }
+    @Override
+    public String toString() {
+        return getClass().getName();
+    }
+}

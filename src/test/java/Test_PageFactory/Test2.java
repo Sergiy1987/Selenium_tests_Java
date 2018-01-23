@@ -27,7 +27,7 @@ public class Test2 extends MainTest {
         System.out.println(link.getText());
         test.pass("Found Favourites Link: " + link.getText());}
         final String color = COLOR_FAVOURITES_LABELS.getCssValue("color");
-        System.out.println("Color of Favourites Links: " + color.toString());
+        System.out.println("Color of Favourites Links: " + color);
         final boolean colorIsBlack = color.contains(RGB_OF_BLACK_COLOR);
         assertFalse(colorIsBlack, "Color of new category links isn't black.");
         test.pass(color + " Color of new category links isn't black("+ RGB_OF_BLACK_COLOR +")");
