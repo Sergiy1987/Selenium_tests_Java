@@ -19,7 +19,7 @@ public class Test3 extends MainTest {
         test.pass("SEARCH_BUTTON: " + SEARCH_BUTTON.getText() + " Status: " + SEARCH_BUTTON.isDisplayed() + " and is Displayed");
     }
     @Test(priority = 1, groups = "HomePage")
-    public void verifyThatFindButtonIsNotVisible() {
+    public void verifyThatFindButtonIsInVisible() {
         test = createTest("HomePage", "verifyThatFindButtonIsNotVisible");
         new HomePage(webDriver);
         JavascriptExecutor js = (JavascriptExecutor) webDriver;

@@ -51,3 +51,19 @@
 2018-01-22 12:25:13 INFO  Test77:(67) - Hibernate DataBase Authentication passed successfully with Login - nedved198725 and Password - nedved1987 Status-->Passed # 5
 2018-01-22 12:25:13 INFO  DriverManagerConnectionProviderImpl:(281) - HHH000030: Cleaning up connection pool [jdbc:mysql://127.0.0.1:3306/test_data]
 2018-01-22 12:25:15 INFO  Test77:(83) - Browser closed
+2018-01-22 13:26:04 INFO  Test11:(58) - User was logged in successfully
+2018-01-22 13:26:07 INFO  Test11:(67) - User profile page is open
+2018-01-22 13:26:07 INFO  Test11:(76) - User was successfully logged out
+2018-01-22 13:26:10 INFO  Test11:(93) - Array Authentication passed successfully with Login- nedved198725 and Password- nedved1987
+2018-01-22 13:26:13 INFO  Test11:(93) - Array Authentication passed successfully with Login- nedved198725 and Password- nedved1987
+2018-01-22 13:26:16 INFO  Test11:(93) - Array Authentication passed successfully with Login- nedved198725 and Password- nedved1987
+2018-01-22 13:26:19 INFO  Test11:(93) - Array Authentication passed successfully with Login- nedved198725 and Password- nedved1987
+2018-01-22 13:26:21 INFO  Test11:(103) - Browser closed
+2018-01-22 13:26:44 INFO  Test11:(58) - User was logged in successfully
+2018-01-22 13:26:47 INFO  Test11:(67) - User profile page is open
+2018-01-22 13:26:47 INFO  Test11:(76) - User was successfully logged out
+2018-01-22 13:26:50 INFO  Test11:(93) - Array Authentication passed successfully with Login- nedved198725 and Password- nedved1987
+2018-01-22 13:26:53 INFO  Test11:(93) - Array Authentication passed successfully with Login- nedved198725 and Password- nedved1987
+2018-01-22 13:26:56 INFO  Test11:(93) - Array Authentication passed successfully with Login- nedved198725 and Password- nedved1987
+2018-01-22 13:26:59 INFO  Test11:(93) - Array Authentication passed successfully with Login- nedved198725 and Password- nedved1987
+2018-01-22 13:27:01 INFO  Test11:(103) - Browser closed

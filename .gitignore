@@ -1,7 +1,10 @@
+/.idea
+/.allure
+**/ExtentReports/**
 **/target/**
 **/allure-results/**
+**/allure-report/**
 *.png
 *.jpg
 *.log.*
-/.idea
 *.iml

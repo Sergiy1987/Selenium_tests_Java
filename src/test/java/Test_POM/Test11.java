@@ -33,6 +33,7 @@ public class Test11 {
     private Wait wait;
     private String ClassName = this.getClass().getSimpleName();// Test11.class.getSimpleName();
     private Logger Log = Logger.getLogger(this.getClass().getName());
+    private StringBuffer verificationErrors;
 
     @BeforeClass
     public void setUp() {
@@ -77,7 +78,7 @@ public class Test11 {
     }
     @Test(dataProvider = "Authentication_array",dependsOnMethods = "verifyLogout")
     public void ArrayAuthentication(String USER_LOGIN, String USER_PASSWORD) {
-        StringBuffer verificationErrors = new StringBuffer();
+        verificationErrors = new StringBuffer();
         try {
             homePage.LoginDB(USER_LOGIN,USER_PASSWORD);
             wait.waitForPageLoaded();

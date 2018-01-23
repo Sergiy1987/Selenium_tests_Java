@@ -38,7 +38,7 @@ public class Test33 {
         Log.info("'Find' button present!");
     }
     @Test(priority = 1)
-    public void verifyThatFindButtonIsNotVisible() {
+    public void verifyThatFindButtonIsInVisible() {
         wait.waitForPageLoaded();
         JavascriptExecutor js = (JavascriptExecutor) webDriver;
         js.executeScript("arguments[0].style = 'display: none';", webDriver.findElement(By.cssSelector(SEARCH_BUTTON)));

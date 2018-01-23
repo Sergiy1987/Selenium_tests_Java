@@ -21,6 +21,7 @@ import static org.testng.AssertJUnit.assertTrue;
 public class Test1 extends MainTest  {
     private ExtentTest test;
     private String ClassName = this.getClass().getSimpleName();
+    private StringBuilder verificationErrors;
     @Test(groups = "HomePage")
     public void verifyLogin() {
         try {
@@ -62,7 +63,7 @@ public class Test1 extends MainTest  {
     }
     @Test(groups = "HomePage", dataProvider = "Authentication_array")
     public void ArrayAuthentication(String USER_LOGIN, String USER_PASSWORD) {
-        StringBuilder verificationErrors = new StringBuilder();
+        verificationErrors = new StringBuilder();
         try {
             test = createTest("HomePage", "Authentication_array");
             homePage.LoginDB(USER_LOGIN,USER_PASSWORD);

@@ -32,7 +32,6 @@ public class Test22 {
     private String menuCategoriesFromSite;
     private final String RGB_OF_BLACK_COLOR = "0, 0, 0";
     private Logger Log = Logger.getLogger(this.getClass().getName());
-
     @BeforeClass
     public void setUp() {
         System.setProperty("webdriver.chrome.driver", "Driver/chromedriver.exe");
