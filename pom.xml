@@ -33,7 +33,7 @@
                 <configuration>
                     <testFailureIgnore>false</testFailureIgnore>
                     <suiteXmlFiles>
-                          <suiteXmlFile>PageObjectAndPageFactoryTests.xml</suiteXmlFile>
+                          <suiteXmlFile>GroupsPageFactory.xml</suiteXmlFile>
                         <!--  <suiteXmlFile>TestsPageObjectPattern.xml</suiteXmlFile>
                               <suiteXmlFile>Parallel-Testing_PageObject.xml</suiteXmlFile>
                               <suiteXmlFile>PageObjectAndPageFactoryTests.xml</suiteXmlFile>-->
