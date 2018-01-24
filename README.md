@@ -6,22 +6,32 @@
 
 <i>verifyLogin(groups = "HomePage")</i>
 User input correct Login and Password and click button Login.
-<i>verifyUserProfileOpened</i> (groups ="ProfilePage",dependsOnMethods = "verifyLogin")
+<i>verifyUserProfileOpened (groups ="ProfilePage",dependsOnMethods = "verifyLogin")</i>
 User opened ProfilePage, User switches to parent opened window.
-<i>verifyLogout</i> (groups = "LogOutPage", dependsOnMethods = "verifyUserProfileOpened"), User LogOut from LogoutAblePage, screenshot the result when user LogOut.
-<i>Authentication_array</i> (groups = "HomePage", dataProvider = "Authentication_array"), Data Driven Testing (DDT), correct User and Password are located in the array testData.
+<i>verifyLogout (groups = "LogOutPage", dependsOnMethods = "verifyUserProfileOpened")</i>
+User LogOut from LogoutAblePage, screenshot the result when user LogOut.
+<i>Authentication_array (groups = "HomePage", dataProvider = "Authentication_array")</i>,
+Data Driven Testing (DDT), correct User and Password are located in the array testData.
 Test2: includes methods:
-<i>verifyNewFavouritesLabelsFromPage</i>(groups = "HomePage"). Method takes all links by tagname "a" on the left side of the site and check the color of the link.
-<i>verifyNewFavouritesLabelsFromFile</i>(dataProvider = "ExcelDataProvider",groups = "HomePage"). Method takes all links from Excel file and compare them with links which located on site.
-<i>VerifyInvalidLoginData</i>(dataProvider = "empLogin", groups = "HomePage"). Methods takes not correct Login and Password from Excel file.
-<i>Test3: includes methods:
-<i>verifyThatFindButtonIsVisible</i>(priority = 0, groups = "HomePage"). Method check button for visibility, with priority 0.
-<i>verifyThatFindButtonIsInVisible</i>(priority = 1, groups = "HomePage"). Method check button for invisibility, with priority 1.
+<i>verifyNewFavouritesLabelsFromPage(groups = "HomePage")</i>.
+Method takes all links by tagname "a" on the left side of the site and check the color of the link.
+<i>verifyNewFavouritesLabelsFromFile(dataProvider = "ExcelDataProvider",groups = "HomePage")</i>
+Method takes all links from Excel file and compare them with links which located on site.
+<i>VerifyInvalidLoginData(dataProvider = "empLogin", groups = "HomePage")</i>
+Methods takes not correct Login and Password from Excel file.
+Test3: includes methods:
+<i>verifyThatFindButtonIsVisible</i>(priority = 0, groups = "HomePage")</i>
+Method check button for visibility, with priority 0.
+<i>verifyThatFindButtonIsInVisible</i>(priority = 1, groups = "HomePage")</i>
+Method check button for invisibility, with priority 1.
 Test4: includes methods:
-<i>verifyTermColor</i>(groups = "HomePage"). Method takes all links by tagname "h2" on the main side of the site and check and compare the color of the link.
+<i>verifyTermColor(groups = "HomePage")</i>
+Method takes all links by tagname "h2" on the main side of the site and check and compare the color of the link.
 Test5: includes methods:
-<i>verifySearch</i>(groups = "SearchResultsPage"). Search String "*" into input field in searchResultsPage, User switches to new opened window, compare Required term with Actual term.
-<i>testSendEmail</i>(groups = "ProfilePage",dependsOnMethods = "verifySearch"). Test send message (switch to frame window)  and logout from searchResultsPage, depends on method verifySearch, screenshot the result when user send message).
+<i>verifySearch(groups = "SearchResultsPage")</i>
+Search String "*" into input field in searchResultsPage, User switches to new opened window, compare Required term with Actual term.
+<i>testSendEmail(groups = "ProfilePage",dependsOnMethods = "verifySearch")</i>
+Test send message (switch to frame window)  and logout from searchResultsPage, depends on method verifySearch, screenshot the result when user send message).
 
 ### 2.   Page Object Pattern
 
