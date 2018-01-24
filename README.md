@@ -1,4 +1,4 @@
-### 1.   Page Factory Pattern
+#### 1.   Page Factory Pattern
 
 <p>All tests include logging actions with using Allure and Extent reports. All tests extend from MainTest.</p>
 <b>Test1: includes methods:</b>
@@ -16,15 +16,15 @@ Method takes all links by tagname "a" on the left side of the site and check the
 Method takes all links from Excel file and compare them with links which located on site.
 <i>VerifyInvalidLoginData(dataProvider = "empLogin", groups = "HomePage")</i>
 Methods takes not correct Login and Password from Excel file.
-Test3: includes methods:
+<b>Test3: includes methods:</b>
 <i>verifyThatFindButtonIsVisible</i>(priority = 0, groups = "HomePage")</i>
 Method check button for visibility, with priority 0.
 <i>verifyThatFindButtonIsInVisible</i>(priority = 1, groups = "HomePage")</i>
 Method check button for invisibility, with priority 1.
-Test4: includes methods:
+<b>Test4: includes methods:</b>
 <i>verifyTermColor(groups = "HomePage")</i>
 Method takes all links by tagname "h2" on the main side of the site and check and compare the color of the link.
-Test5: includes methods:
+<b>Test5: includes methods:</b>
 <i>verifySearch(groups = "SearchResultsPage")</i>
 Search String "*" into input field in searchResultsPage, User switches to new opened window, compare Required term with Actual term.
 <i>testSendEmail(groups = "ProfilePage",dependsOnMethods = "verifySearch")</i>
