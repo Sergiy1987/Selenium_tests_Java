@@ -1,9 +1,9 @@
 ### 1.   Page Factory Pattern
 
-<p>All tests include logging actions with using Allure and Extent reports.</p>
-<p>All tests extend from MainTest.</p>
+<p>All tests include logging actions with using Allure and Extent reports. All tests extend from MainTest.</p>
 
-Test1: includes methods:
+<b>Test1: includes methods:</b>
+
 verifyLogin(groups = "HomePage"). 
 verifyUserProfileOpened (groups ="ProfilePage",dependsOnMethods = "verifyLogin"), User opened ProfilePage, User switches to parent opened window.
 verifyLogout (groups = "LogOutPage", dependsOnMethods = "verifyUserProfileOpened"), User LogOut from LogoutAblePage, screenshot the result when user LogOut.
