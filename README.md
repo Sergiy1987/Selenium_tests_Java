@@ -2,16 +2,16 @@
 
 <p>All tests include logging actions with using Allure and Extent reports. All tests extend from MainTest.</p>
 <b>Test1: includes methods:</b>
-<p><i>verifyLogin(groups = "HomePage")</i> User input correct Login and Password and click button Login.</p>
-<p><i>verifyUserProfileOpened (groups ="ProfilePage",dependsOnMethods = "verifyLogin")</i>
+<p><i>verifyLogin(groups = "HomePage")</i>. User input correct Login and Password and click button Login.</p>
+<p><i>verifyUserProfileOpened (groups ="ProfilePage",dependsOnMethods = "verifyLogin")</i>.
 User opened ProfilePage, User switches to parent opened window.</p>
-<i>verifyLogout (groups = "LogOutPage", dependsOnMethods = "verifyUserProfileOpened")</i>
-User LogOut from LogoutAblePage, screenshot the result when user LogOut.
-<i>Authentication_array (groups = "HomePage", dataProvider = "Authentication_array")</i>
-Data Driven Testing (DDT), correct User and Password are located in the array testData.
-Test2: includes methods:
-<i>verifyNewFavouritesLabelsFromPage(groups = "HomePage")</i>
-Method takes all links by tagname "a" on the left side of the site and check the color of the link.
+<p><i>verifyLogout (groups = "LogOutPage", dependsOnMethods = "verifyUserProfileOpened")</i>
+User LogOut from LogoutAblePage, screenshot the result when user LogOut.</p>
+<p><i>Authentication_array (groups = "HomePage", dataProvider = "Authentication_array")</i>
+Data Driven Testing (DDT), correct User and Password are located in the array testData.</p>
+<b>Test2: includes methods:</b>
+<p><i>verifyNewFavouritesLabelsFromPage(groups = "HomePage")</i>.
+Method takes all links by tagname "a" on the left side of the site and check the color of the link.</p>
 <i>verifyNewFavouritesLabelsFromFile(dataProvider = "ExcelDataProvider",groups = "HomePage")</i>
 Method takes all links from Excel file and compare them with links which located on site.
 <i>VerifyInvalidLoginData(dataProvider = "empLogin", groups = "HomePage")</i>
