@@ -1,7 +1,7 @@
 ### 1.   Page Factory Pattern
 
-All tests include logging actions with using Allure and Extent reports.
-*All tests extend from MainTest*.
+<p>All tests include logging actions with using Allure and Extent reports.</p>
+<p>All tests extend from MainTest.</p>
 
 Test1: includes methods:
 verifyLogin(groups = "HomePage"). 
