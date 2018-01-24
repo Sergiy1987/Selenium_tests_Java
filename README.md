@@ -4,16 +4,16 @@
 
 <b>Test1: includes methods:</b>
 
-<i>verifyLogin(groups = "HomePage")</i>
+<p><i>verifyLogin(groups = "HomePage")</i></p>
 User input correct Login and Password and click button Login.
 <i>verifyUserProfileOpened (groups ="ProfilePage",dependsOnMethods = "verifyLogin")</i>
 User opened ProfilePage, User switches to parent opened window.
 <i>verifyLogout (groups = "LogOutPage", dependsOnMethods = "verifyUserProfileOpened")</i>
 User LogOut from LogoutAblePage, screenshot the result when user LogOut.
-<i>Authentication_array (groups = "HomePage", dataProvider = "Authentication_array")</i>,
+<i>Authentication_array (groups = "HomePage", dataProvider = "Authentication_array")</i>
 Data Driven Testing (DDT), correct User and Password are located in the array testData.
 Test2: includes methods:
-<i>verifyNewFavouritesLabelsFromPage(groups = "HomePage")</i>.
+<i>verifyNewFavouritesLabelsFromPage(groups = "HomePage")</i>
 Method takes all links by tagname "a" on the left side of the site and check the color of the link.
 <i>verifyNewFavouritesLabelsFromFile(dataProvider = "ExcelDataProvider",groups = "HomePage")</i>
 Method takes all links from Excel file and compare them with links which located on site.
@@ -31,7 +31,7 @@ Test5: includes methods:
 <i>verifySearch(groups = "SearchResultsPage")</i>
 Search String "*" into input field in searchResultsPage, User switches to new opened window, compare Required term with Actual term.
 <i>testSendEmail(groups = "ProfilePage",dependsOnMethods = "verifySearch")</i>
-Test send message (switch to frame window)  and logout from searchResultsPage, depends on method verifySearch, screenshot the result when user send message).
+Test send message (switch to frame window)  and logout from searchResultsPage, depends on method verifySearch, screenshot the result when user send message.
 
 ### 2.   Page Object Pattern
 
