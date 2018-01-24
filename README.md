@@ -60,7 +60,9 @@ Test send message (switch to frame window)  and logout from searchResultsPage, d
 <b>Description and assignment of project files</b>
 
 DataProvider.java - java class with methods (getDataFromXLSFile, getExcelData).
+
 ExtentManager.java - java class with methods for the Extent Repotting.
+
 PropConfig.java - java class with methods for the configuring parameters: database and send a message.
 SendMailSSL.java - java class with method for send a message.
 SwitchToWindow.java - java class with methods for the switching between browser windows.
