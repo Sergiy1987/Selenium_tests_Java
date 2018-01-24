@@ -1,4 +1,4 @@
-### 1.   Page Factory Pattern
+## 1.   Page Factory Pattern
 
 <p>All tests include logging actions with using Allure and Extent reports. All tests extend from MainTest.</p>
 <b>Test1: includes methods:</b>
@@ -30,7 +30,7 @@ Search String "*" into input field in searchResultsPage, User switches to new op
 <p><i>testSendEmail(groups = "ProfilePage",dependsOnMethods = "verifySearch")</i>
 Test send message (switch to frame window)  and logout from searchResultsPage, depends on method verifySearch, screenshot the result when user send message.</p>
 
-### 2.   Page Object Pattern
+## 2.   Page Object Pattern
 
 <p>All tests include logging actions with using the configuration file (log4j.xml).</p>
 <b>Test11: includes methods:</b>
@@ -57,7 +57,7 @@ Test send message (switch to frame window)  and logout from searchResultsPage, d
 <b>Test88: includes methods:</b>
 <p><i>ResultSend_Message_DAO_DB</i> (method puts results into DB test_DAO and send them into email, variables message takes from file SendEmail.properties). Connection to the database using Data Access Object (DAO).</p>
 
-<b><center>Description and assignment of project files</center></b>
+<b>Description and assignment of project files</b>
 
 DataProvider.java - java class with methods (getDataFromXLSFile, getExcelData).
 
