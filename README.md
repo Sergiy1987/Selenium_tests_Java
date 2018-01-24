@@ -3,7 +3,7 @@
 <p>All tests include logging actions with using Allure and Extent reports. All tests extend from MainTest.</p>
 <b>Test1: includes methods:</b>
 <p><i>verifyLogin(groups = "HomePage")</i></p>
-User input correct Login and Password and click button Login.
+<p>User input correct Login and Password and click button Login.</p>
 <i>verifyUserProfileOpened (groups ="ProfilePage",dependsOnMethods = "verifyLogin")</i>
 User opened ProfilePage, User switches to parent opened window.
 <i>verifyLogout (groups = "LogOutPage", dependsOnMethods = "verifyUserProfileOpened")</i>
