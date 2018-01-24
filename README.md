@@ -92,6 +92,7 @@ GroupsPageFactory.xml - suite with tests and groups for the Page Factory Pattern
 TestsPageObjectPattern.xml - suite with tests for the Page Object Pattern.
 
 PageObjectAndPageFactoryTests.xml - suite consolidate all tests from GroupsPageFactory.xml and TestsPageObjectPattern.xml files.
+
 Parallel-Testing_PageObject.xml - suite with parallel tests for the Page Object Pattern.
 
 log4j.xml - file with parameters for the logging actions.
