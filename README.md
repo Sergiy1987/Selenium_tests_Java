@@ -1,5 +1,9 @@
-##  1.	Page Factory Pattern
-All tests include logging actions with using Allure and Extent reports. All tests extend from MainTest.
+### 1.   Page Factory Pattern
+
+All tests include logging actions with using Allure and Extent reports.
+
+All tests extend from MainTest.
+
 Test1: includes methods:
 verifyLogin(groups = "HomePage"). 
 verifyUserProfileOpened (groups ="ProfilePage",dependsOnMethods = "verifyLogin"), User opened ProfilePage, User switches to parent opened window.
@@ -18,7 +22,9 @@ Test5: includes methods:
 verifySearch(groups = "SearchResultsPage"). Search String "*" into input field in searchResultsPage, User switches to new opened window, compare Required term with Actual term.
 testSendEmail(groups = "ProfilePage",dependsOnMethods = "verifySearch"). Test send message (switch to frame window)  and logout from searchResultsPage, depends on method verifySearch, screenshot the result when user send message).
 
-## 2.	Page Object Pattern
+### 2.   Page Object Pattern
+
+
 All tests include logging actions with using the configuration file (log4j.xml).
 Test11: includes methods:
 verifyLogin (User input correct Login and Password).
