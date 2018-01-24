@@ -57,27 +57,43 @@ Test send message (switch to frame window)  and logout from searchResultsPage, d
 <b>Test88: includes methods:</b>
 <p><i>ResultSend_Message_DAO_DB</i> (method puts results into DB test_DAO and send them into email, variables message takes from file SendEmail.properties). Connection to the database using Data Access Object (DAO).</p>
 
-<b>Description and assignment of project files</b>
+<b><center>Description and assignment of project files</center></b>
 
 DataProvider.java - java class with methods (getDataFromXLSFile, getExcelData).
 
 ExtentManager.java - java class with methods for the Extent Repotting.
 
 PropConfig.java - java class with methods for the configuring parameters: database and send a message.
+
 SendMailSSL.java - java class with method for send a message.
+
 SwitchToWindow.java - java class with methods for the switching between browser windows.
+
 Tools.java - java class with method for the screenshot of the test results.
+
 Wait.java - java class with methods for wait and presence WebElement.
+
 persistence.xml - configuration file for set up Persistent Unit and database.
+
 creation.sql - file with sql queries to the database.
+
 DataBase.properties - file with  properties to set up database connection.
+
 SendEmail.properties - file with  properties to set up send a message.
+
 TestData.xls - file with test data for verify new links (Test22 and Test2, method VerifyNewLinks).
+
 User_Password.xls - file with correct test data for logging on the site (Test11 and Test1, method Authentication_array).
+
 User_Password_uncorrect.xls - file with correct test data for logging on the site (Test22 and Test2, method VerifyInvalidLoginData).
+
 GroupsPageFactory.xml - suite with tests and groups for the Page Factory Pattern.
+
 TestsPageObjectPattern.xml - suite with tests for the Page Object Pattern.
+
 PageObjectAndPageFactoryTests.xml - suite consolidate all tests from GroupsPageFactory.xml and TestsPageObjectPattern.xml files.
 Parallel-Testing_PageObject.xml - suite with parallel tests for the Page Object Pattern.
+
 log4j.xml - file with parameters for the logging actions.
+
 logfile.log - file with the logging actions.
