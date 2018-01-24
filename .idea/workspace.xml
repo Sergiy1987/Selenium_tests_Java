@@ -96,8 +96,8 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="59" column="49" selection-start-line="59" selection-start-column="49" selection-end-line="59" selection-end-column="49" />
+            <state relative-caret-position="221">
+              <caret line="34" column="87" selection-start-line="34" selection-start-column="87" selection-end-line="34" selection-end-column="87" />
               <folding />
             </state>
           </provider>
@@ -1080,7 +1080,7 @@
       <workItem from="1516694010957" duration="3937000" />
       <workItem from="1516698626348" duration="13508000" />
       <workItem from="1516735030772" duration="3271000" />
-      <workItem from="1516778622773" duration="6481000" />
+      <workItem from="1516778622773" duration="6618000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;Test Cases for UkrNet&quot;">
       <created>1515854240679</created>
@@ -1139,7 +1139,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="263020000" />
+    <option name="totallyTimeSpent" value="263157000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1571,8 +1571,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="59" column="49" selection-start-line="59" selection-start-column="49" selection-end-line="59" selection-end-column="49" />
+        <state relative-caret-position="221">
+          <caret line="34" column="87" selection-start-line="34" selection-start-column="87" selection-end-line="34" selection-end-column="87" />
           <folding />
         </state>
       </provider>

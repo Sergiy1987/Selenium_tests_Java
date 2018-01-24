@@ -32,7 +32,7 @@ Test send message (switch to frame window)  and logout from searchResultsPage, d
 
 ### 2.   Page Object Pattern
 
-All tests include logging actions with using the configuration file (log4j.xml).
+<p>All tests include logging actions with using the configuration file (log4j.xml).</p>
 <b>Test11: includes methods:</b>
 <p><i>verifyLogin</i> (User input correct Login and Password and click button Login).</p>
 <p><i>verifyUserProfileOpened</i> (depends on method verifyLogin), User opened ProfilePage, User switches to parent opened window.</p>
