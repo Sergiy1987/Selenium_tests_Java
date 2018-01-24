@@ -12,23 +12,23 @@ Data Driven Testing (DDT), correct User and Password are located in the array te
 <b>Test2: includes methods:</b>
 <p><i>verifyNewFavouritesLabelsFromPage(groups = "HomePage")</i>.
 Method takes all links by tagname "a" on the left side of the site and check the color of the link.</p>
-<i>verifyNewFavouritesLabelsFromFile(dataProvider = "ExcelDataProvider",groups = "HomePage")</i>
-Method takes all links from Excel file and compare them with links which located on site.
-<i>VerifyInvalidLoginData(dataProvider = "empLogin", groups = "HomePage")</i>
-Methods takes not correct Login and Password from Excel file.
+<p><i>verifyNewFavouritesLabelsFromFile(dataProvider = "ExcelDataProvider",groups = "HomePage")</i>
+Method takes all links from Excel file and compare them with links which located on site.</p>
+<p><i>VerifyInvalidLoginData(dataProvider = "empLogin", groups = "HomePage")</i>
+Methods takes not correct Login and Password from Excel file.</p>
 <b>Test3: includes methods:</b>
-<i>verifyThatFindButtonIsVisible</i>(priority = 0, groups = "HomePage")</i>
-Method check button for visibility, with priority 0.
-<i>verifyThatFindButtonIsInVisible</i>(priority = 1, groups = "HomePage")</i>
-Method check button for invisibility, with priority 1.
+<p><i>verifyThatFindButtonIsVisible</i>(priority = 0, groups = "HomePage")</i>
+Method check button for visibility, with priority 0.</p>
+<p><i>verifyThatFindButtonIsInVisible</i>(priority = 1, groups = "HomePage")</i>
+Method check button for invisibility, with priority 1.</p>
 <b>Test4: includes methods:</b>
-<i>verifyTermColor(groups = "HomePage")</i>
-Method takes all links by tagname "h2" on the main side of the site and check and compare the color of the link.
+<p><i>verifyTermColor(groups = "HomePage")</i>
+Method takes all links by tagname "h2" on the main side of the site and check and compare the color of the link.</p>
 <b>Test5: includes methods:</b>
-<i>verifySearch(groups = "SearchResultsPage")</i>
-Search String "*" into input field in searchResultsPage, User switches to new opened window, compare Required term with Actual term.
-<i>testSendEmail(groups = "ProfilePage",dependsOnMethods = "verifySearch")</i>
-Test send message (switch to frame window)  and logout from searchResultsPage, depends on method verifySearch, screenshot the result when user send message.
+<p><i>verifySearch(groups = "SearchResultsPage")</i>
+Search String "*" into input field in searchResultsPage, User switches to new opened window, compare Required term with Actual term.</p>
+<p><i>testSendEmail(groups = "ProfilePage",dependsOnMethods = "verifySearch")</i>
+Test send message (switch to frame window)  and logout from searchResultsPage, depends on method verifySearch, screenshot the result when user send message.</p>
 
 ### 2.   Page Object Pattern
 
