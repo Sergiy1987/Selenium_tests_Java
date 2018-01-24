@@ -10,11 +10,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-
 import java.util.concurrent.TimeUnit;
 
 import static PageFactory.AbstractPage.HOMEPAGE_URL;
-
 public abstract class MainTest {
     public WebDriver webDriver;
     public HomePage homePage;
@@ -23,7 +21,7 @@ public abstract class MainTest {
     public SearchResultsPage searchResultsPage;
     public Wait wait;
     ExtentReports extent;
-    @BeforeClass(alwaysRun = true, description = "Class Level setUp!")
+    @BeforeClass(alwaysRun = true, description = "Class Level setUp Page!")
     public void setUp() {
         System.setProperty("webdriver.chrome.driver", "Driver/chromedriver.exe");
         webDriver = new ChromeDriver();
@@ -38,7 +36,7 @@ public abstract class MainTest {
         wait = new Wait(webDriver);
         extent = ExtentManager.GetExtent();
     }
-    @AfterClass(alwaysRun = true, description = "Class Level tearDown!")
+    @AfterClass(alwaysRun = true, description = "Class Level tearDown Page!")
     public void tearDown() {
         extent.flush();
         webDriver.quit();

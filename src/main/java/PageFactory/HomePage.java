@@ -1,5 +1,6 @@
 package PageFactory;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
@@ -36,10 +37,10 @@ public class HomePage extends AbstractPage {
     public static List<WebElement> h2;
     @FindAll(@FindBy(how = How.CSS, using = "#feed"))
     public static List<WebElement> allElements;
-
     public HomePage(WebDriver webDriver) {
         super(webDriver);
      }
+    //@Step("Login Step with USER_LOGIN: {0} and USER_PASSWORD: {1}")
     public HomePage logIn() {
         LOGIN_FIELD.sendKeys(USER_LOGIN);
         PASSWORD_FIELD.sendKeys(USER_PASSWORD);
@@ -47,6 +48,7 @@ public class HomePage extends AbstractPage {
         return this;
         //return new HomePage(webDriver);
     }
+    @Step("Login Array Step with USER_LOGIN: {0} and USER_PASSWORD: {1}")
     public HomePage LoginDB(String USER_LOGIN, String USER_PASSWORD){
         LOGIN_FIELD.clear();
         LOGIN_FIELD.sendKeys(USER_LOGIN);

@@ -3,7 +3,10 @@ package Test_PageFactory;
 import Tools.SwitchToWindow;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
+import io.qameta.allure.*;
+import org.testng.TestListenerAdapter;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import java.lang.reflect.Method;
@@ -18,11 +21,17 @@ import static org.testng.AssertJUnit.assertTrue;
 //https://www.swtestacademy.com/allure-testng/
 //allure serve allure-results
 //allure generate allure-results/ -o allure-report
+@Listeners({TestListenerAdapter.class })
+@Epic("HomePage/ProfilePage/LogOutPage")
+@Feature("Login Tests/Profile Test/LogOut Test")
 public class Test1 extends MainTest  {
     private ExtentTest test;
     private String ClassName = this.getClass().getSimpleName();
     private StringBuilder verificationErrors;
-    @Test(groups = "HomePage")
+    @Test(groups = "HomePage", description = "Valid Login Scenario with correct username and password.")
+    @Description("Test Description: Login test with correct username and correct password.")
+    @Story("Valid username and password login test")
+
     public void verifyLogin() {
         try {
         test = createTest("HomePage", "VerifyLogin");
@@ -36,7 +45,9 @@ public class Test1 extends MainTest  {
         test.log(Status.ERROR, e.getMessage());
         }
     }
-    @Test(groups ="ProfilePage",dependsOnMethods = "verifyLogin")
+    @Test(groups ="ProfilePage",dependsOnMethods = "verifyLogin",description = "When Login Scenario is finished, go to the ProfilePage")
+    @Description("Test Description: User has moved to the ProfilePage.")
+    @Story("Verify Page UserProfile Open")
     public void verifyUserProfileOpened()  {
         //test = extent.createTest("ProfilePage", "verifyUserProfileOpened");
         test = createTest("ProfilePage", "verifyUserProfileOpened");
@@ -48,7 +59,9 @@ public class Test1 extends MainTest  {
         System.out.println(profilePage.toString());
         SwitchToWindow.Switch_to_parrent_opened_window(webDriver);
     }
-    @Test(groups = "LogOutPage", dependsOnMethods = "verifyUserProfileOpened")
+    @Test(groups = "LogOutPage", dependsOnMethods = "verifyUserProfileOpened",description = "LogOut Scenario from HomePage")
+    @Description("Test Description: User LogOutable from HomePage.")
+    @Story("LogOut from HomePage")
     public void verifyLogout(Method method) throws NoSuchElementException {
         test = createTest("LogOutPage", "verifyLogout");
         try {
@@ -61,7 +74,14 @@ public class Test1 extends MainTest  {
             takeScreenShot(webDriver, ClassName + "_" + method.getName() + ".png");
         }catch (NoSuchElementException ex){ex.getMessage();}
     }
-    @Test(groups = "HomePage", dataProvider = "Authentication_array")
+    /*
+       @Test(groups = "HomePage", description = "Valid Login Scenario with correct username and password.")
+    @Description("Test Description: Login test with correct username and correct password.")
+    @Story("Valid username and password login test")
+     */
+    @Test(groups = "HomePage", dataProvider = "Authentication_array",description = "Valid Login Scenario with correct username and password from array.")
+    @Description("Test Description: Array Authentication test with correct username and correct password.")
+    @Story("Array Authentication with valid username and password login test")
     public void ArrayAuthentication(String USER_LOGIN, String USER_PASSWORD) {
         verificationErrors = new StringBuilder();
         try {
