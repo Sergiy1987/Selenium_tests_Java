@@ -144,6 +144,11 @@
             <version>2.0-BETA21</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-java-commons</artifactId>
+            <version>2.0-BETA21</version>
+        </dependency>
             <!--http://automated-testing.info/t/allure-generiruet-pustoj-otchet-posle-vypolneniya-testa-java-testng-maven/16881/4
             https://qavalidation.com/2016/10/selenium-html-result-reporting-using-extentreports-3-x.html/-->
         <dependency>
@@ -151,15 +156,5 @@
             <artifactId>extentreports</artifactId>
             <version>3.1.2</version>
         </dependency>
-           <dependency>
-               <groupId>io.qameta.allure</groupId>
-               <artifactId>allure-java-commons</artifactId>
-               <version>2.0-BETA21</version>
-           </dependency>
-           <!--       <dependency>
-                      <groupId>ru.yandex.qatools.allure</groupId>
-                      <artifactId>allure-testng-adaptor</artifactId>
-                      <version>${allure.version}</version>
-                  </dependency>-->
-    </dependencies>
+       </dependencies>
 </project>
