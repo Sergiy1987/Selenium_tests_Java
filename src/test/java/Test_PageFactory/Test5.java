@@ -1,7 +1,6 @@
 package Test_PageFactory;
 
 import Tools.SwitchToWindow;
-import Tools.Tools;
 import com.aventstack.extentreports.ExtentTest;
 import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
@@ -14,8 +13,10 @@ import org.testng.annotations.Test;
 import java.lang.reflect.Method;
 
 import static PageFactory.ProfilePage.*;
-import static PageFactory.SearchResultsPage.*;
+import static PageFactory.SearchResultsPage.SEARCH_INPUT;
 import static Tools.ExtentManager.createTest;
+import static Tools.Tools.saveTextLog;
+import static Tools.Tools.takeScreenShot;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 @Epic("SearchResultsPage/ProfilePage")
@@ -58,7 +59,8 @@ public class Test5 extends MainTest  {
             profilePage.SendEmail();
             assertTrue(true, "Ваш лист надіслано");
             wait.waitForWebElementToBeClickAble(LINK_TEXT_SEND);
-            Tools.takeScreenShot(webDriver, ClassName + "_" + method.getName() + ".jpg");
+            takeScreenShot(webDriver, ClassName + "_" + method.getName() + ".jpg");
+            saveTextLog("Screenshot taken" + " from " + ClassName + "_" + method.getName());
             wait.waitForWebElementVisibility(USER_SIGNOUT_MENU);
             test.pass("USER_SIGNOUT_MENU: " + USER_SIGNOUT_MENU.getText() + " Status: " + USER_SIGNOUT_MENU.isEnabled() + " and is Enabled");
             profilePage.exit();

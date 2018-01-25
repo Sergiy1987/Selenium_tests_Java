@@ -3,7 +3,10 @@ package Test_PageFactory;
 import Tools.SwitchToWindow;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
-import io.qameta.allure.*;
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Story;
 import org.testng.TestListenerAdapter;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;
@@ -16,6 +19,7 @@ import static PageFactory.HomePage.LOGIN_BUTTON;
 import static PageFactory.LogoutAblePage.SIGNOUT_MENU;
 import static PageFactory.ProfilePage.USER_PROFILE_LINK;
 import static Tools.ExtentManager.createTest;
+import static Tools.Tools.saveTextLog;
 import static Tools.Tools.takeScreenShot;
 import static org.testng.AssertJUnit.assertTrue;
 //https://www.swtestacademy.com/allure-testng/
@@ -71,6 +75,7 @@ public class Test1 extends MainTest  {
             logoutablePage.logOut();
             System.out.println(logoutablePage.toString());
             takeScreenShot(webDriver, ClassName + "_" + method.getName() + ".png");
+            saveTextLog("Screenshot taken" + " from " + ClassName + "_" + method.getName());
         }catch (NoSuchElementException ex){ex.getMessage();}
     }
     @Test(groups = "HomePage", dataProvider = "Authentication_array",description = "Valid Login Scenario with correct username and password from array.")
