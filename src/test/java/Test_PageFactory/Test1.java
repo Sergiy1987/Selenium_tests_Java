@@ -31,7 +31,6 @@ public class Test1 extends MainTest  {
     @Test(groups = "HomePage", description = "Valid Login Scenario with correct username and password.")
     @Description("Test Description: Login test with correct username and correct password.")
     @Story("Valid username and password login test")
-
     public void verifyLogin() {
         try {
         test = createTest("HomePage", "VerifyLogin");
@@ -45,7 +44,7 @@ public class Test1 extends MainTest  {
         test.log(Status.ERROR, e.getMessage());
         }
     }
-    @Test(groups ="ProfilePage",dependsOnMethods = "verifyLogin",description = "When Login Scenario is finished, go to the ProfilePage")
+    @Test(groups ="ProfilePage",dependsOnMethods = "verifyLogin",description = "When Login Scenario is finished, User go to the ProfilePage")
     @Description("Test Description: User has moved to the ProfilePage.")
     @Story("Verify Page UserProfile Open")
     public void verifyUserProfileOpened()  {
@@ -74,11 +73,6 @@ public class Test1 extends MainTest  {
             takeScreenShot(webDriver, ClassName + "_" + method.getName() + ".png");
         }catch (NoSuchElementException ex){ex.getMessage();}
     }
-    /*
-       @Test(groups = "HomePage", description = "Valid Login Scenario with correct username and password.")
-    @Description("Test Description: Login test with correct username and correct password.")
-    @Story("Valid username and password login test")
-     */
     @Test(groups = "HomePage", dataProvider = "Authentication_array",description = "Valid Login Scenario with correct username and password from array.")
     @Description("Test Description: Array Authentication test with correct username and correct password.")
     @Story("Array Authentication with valid username and password login test")

@@ -3,24 +3,30 @@ package Test_PageFactory;
 import Tools.SwitchToWindow;
 import Tools.Tools;
 import com.aventstack.extentreports.ExtentTest;
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Story;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.testng.annotations.Test;
 
 import java.lang.reflect.Method;
 
-import static PageFactory.ProfilePage.USER_PROFILE_LINK;
-import static PageFactory.ProfilePage.USER_SIGNOUT_MENU;
+import static PageFactory.ProfilePage.*;
 import static PageFactory.SearchResultsPage.*;
 import static Tools.ExtentManager.createTest;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
-
+@Epic("SearchResultsPage/ProfilePage")
+@Feature("SearchTerm/SendMessage")
 public class Test5 extends MainTest  {
     private String ClassName = this.getClass().getSimpleName();
     private ExtentTest test;
     private final String searchTerm = "nedved198725@gmail.com";
-    @Test(groups = "SearchResultsPage")
+    @Test(groups = "SearchResultsPage", description = "Scenario: Search Term")
+    @Description("Test Description: Search Term on the SearchResultsPage.")
+    @Story("Search Term on the SearchResultsPage")
     public void verifySearch() throws StaleElementReferenceException {
         test = createTest("SearchResultsPage", "verifySearch");
         try {
@@ -41,13 +47,15 @@ public class Test5 extends MainTest  {
             }
         }catch (StaleElementReferenceException ex){ex.getMessage();}
     }
-    @Test(groups = "ProfilePage",dependsOnMethods = "verifySearch")
+    @Test(groups = "ProfilePage",dependsOnMethods = "verifySearch", description = "Scenario: Send Message")
+    @Description("Test Description: Send Message from the ProfilePage.")
+    @Story("Send Email from the ProfilePage")
     public void testSendEmail (Method method) throws NoSuchElementException {
             test = createTest("ProfilePage", "testSendEmail");
         try {
             wait.waitForPageLoaded();
             wait.waitForWebElementToBeClickAble(BUTTON_WRITE_EMAIL);
-            searchResultsPage.SendEmail();
+            profilePage.SendEmail();
             assertTrue(true, "Ваш лист надіслано");
             wait.waitForWebElementToBeClickAble(LINK_TEXT_SEND);
             Tools.takeScreenShot(webDriver, ClassName + "_" + method.getName() + ".jpg");

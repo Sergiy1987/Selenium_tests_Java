@@ -19,8 +19,7 @@ import java.lang.reflect.Method;
 import java.util.concurrent.TimeUnit;
 
 import static POM.AbstractPage.HOMEPAGE_URL;
-import static POM.ProfilePage.USER_PROFILE_LINK;
-import static POM.ProfilePage.USER_SIGNOUT_MENU;
+import static POM.ProfilePage.*;
 import static POM.SearchResultsPage.*;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
@@ -67,7 +66,7 @@ public class Test55 {
     @Test(dependsOnMethods = "verifySearch")
     public void testSendEmail (Method method){
         wait.waitForClickable(By.xpath(BUTTON_WRITE_EMAIL));
-        searchResultsPage.SendEmail();
+        profilePage.SendEmail();
         assertTrue(true,"Ваш лист надіслано");
         wait.waitForClickable(By.linkText(LINK_TEXT_SEND));
         Tools.takeScreenShot(webDriver, ClassName + "_" + method.getName()+ ".jpg");

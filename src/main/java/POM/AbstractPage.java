@@ -9,7 +9,5 @@ public abstract class AbstractPage {
         this.webDriver = webDriver;
     }
     @Override
-    public String toString() {
-        return getClass().getName();
-    }
+    public String toString() {return getClass().getName();}
    }
