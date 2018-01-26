@@ -7,7 +7,6 @@ import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
-import org.testng.TestListenerAdapter;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -18,9 +17,9 @@ import java.util.NoSuchElementException;
 import static PageFactory.HomePage.LOGIN_BUTTON;
 import static PageFactory.LogoutAblePage.SIGNOUT_MENU;
 import static PageFactory.ProfilePage.USER_PROFILE_LINK;
-import static Tools.ExtentManager.createTest;
 import static Test_PageFactory.Tools.saveTextLog;
 import static Test_PageFactory.Tools.takeScreenShot;
+import static Tools.ExtentManager.createTest;
 import static org.testng.AssertJUnit.assertTrue;
 //https://www.swtestacademy.com/allure-testng/
 //allure serve allure-results
@@ -29,7 +28,7 @@ import static org.testng.AssertJUnit.assertTrue;
 //mvn allure:report
 //mvn io.qameta.allure:allure-maven:serve
 
-@Listeners({TestListenerAdapter.class })
+@Listeners({Tools.class })
 @Epic("HomePage/ProfilePage/LogOutPage")
 @Feature("Login Tests/Profile Test/LogOut Test")
 public class Test1 extends MainTest  {

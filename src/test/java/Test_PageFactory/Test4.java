@@ -3,12 +3,14 @@ package Test_PageFactory;
 import com.aventstack.extentreports.ExtentTest;
 import io.qameta.allure.*;
 import org.openqa.selenium.WebElement;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import static PageFactory.HomePage.allElements;
 import static PageFactory.HomePage.h2;
 import static Tools.ExtentManager.createTest;
 import static org.testng.Assert.assertTrue;
+@Listeners({Tools.class })
 @Epic("HomePage")
 @Feature("VerifyTermsColorBlue")
 public class Test4 extends MainTest {

@@ -65,24 +65,14 @@ public class Tools extends MainTest implements ITestListener {
             System.out.println("Screenshot captured for test case:" + getTestMethodName(iTestResult));
             takeScreenShot(webDriver,"");
         }
-
-        //Save a log on allure.
         saveTextLog(getTestMethodName(iTestResult) + " failed and screenshot taken!");
-
-        //Take base64Screenshot screenshot for extent reports
-        String base64Screenshot = "data:image/png;base64,"+((TakesScreenshot)webDriver).
-                getScreenshotAs(OutputType.BASE64);
     }
-
     @Override
     public void onTestSkipped(ITestResult iTestResult) {
         System.out.println("I am in onTestSkipped method "+  getTestMethodName(iTestResult) + " skipped");
-
     }
-
     @Override
     public void onTestFailedButWithinSuccessPercentage(ITestResult iTestResult) {
         System.out.println("Test failed but it is in defined success ratio " + getTestMethodName(iTestResult));
     }
-
 }

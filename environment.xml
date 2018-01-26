@@ -2,13 +2,18 @@
     <id>2a54c4d7-7d79-4615-b80d-ffc1107016a1</id>
     <name>Allure sample test pack</name>
     <parameter>
+        <name>Operation System</name>
+        <key>Operation System</key>
+        <value>Windows 8.1</value>
+    </parameter>
+    <parameter>
         <name>Browser</name>
-        <key>my.properties.browser</key>
+        <key>Browser</key>
         <value>Chrome</value>
     </parameter>
     <parameter>
-        <name>Test stand</name>
-        <key>my.properties.url</key>
+        <name>Website URL</name>
+        <key>Website URL</key>
         <value>https://ukr.net</value>
     </parameter>
 </qa:environment>

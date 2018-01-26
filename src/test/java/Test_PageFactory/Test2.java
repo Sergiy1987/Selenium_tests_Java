@@ -4,6 +4,7 @@ import Tools.DataProvider;
 import com.aventstack.extentreports.ExtentTest;
 import io.qameta.allure.*;
 import org.openqa.selenium.WebElement;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
@@ -15,6 +16,7 @@ import static Tools.ExtentManager.createTest;
 import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;
 import static org.testng.AssertJUnit.assertEquals;
+@Listeners({Tools.class })
 @Epic("HomePage")
 @Feature("Login Tests with incorrect test data/Verify NewFavouritesLabelsFromPage&File")
 public class Test2 extends MainTest {

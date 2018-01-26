@@ -8,6 +8,7 @@ import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.StaleElementReferenceException;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import java.lang.reflect.Method;
@@ -19,6 +20,7 @@ import static Test_PageFactory.Tools.saveTextLog;
 import static Test_PageFactory.Tools.takeScreenShot;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
+@Listeners({Tools.class })
 @Epic("SearchResultsPage/ProfilePage")
 @Feature("SearchTerm/SendMessage")
 public class Test5 extends MainTest  {
@@ -51,7 +53,7 @@ public class Test5 extends MainTest  {
     @Test(groups = "ProfilePage",dependsOnMethods = "verifySearch", description = "Scenario: Send Message")
     @Description("Test Description: Send Message from the ProfilePage.")
     @Story("Send Email from the ProfilePage")
-    public void testSendEmail (Method method) throws NoSuchElementException {
+    public void testSendEmail(Method method) throws NoSuchElementException {
             test = createTest("ProfilePage", "testSendEmail");
         try {
             wait.waitForPageLoaded();

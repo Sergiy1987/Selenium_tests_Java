@@ -4,12 +4,14 @@ import PageFactory.HomePage;
 import com.aventstack.extentreports.ExtentTest;
 import io.qameta.allure.*;
 import org.openqa.selenium.JavascriptExecutor;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import static PageFactory.HomePage.SEARCH_BUTTON;
 import static Tools.ExtentManager.createTest;
 import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;
+@Listeners({Tools.class })
 @Epic("HomePage")
 @Feature("VerifyButtonForVisibleOrInVisible")
 public class Test3 extends MainTest {
