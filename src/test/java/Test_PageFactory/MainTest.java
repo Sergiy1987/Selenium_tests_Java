@@ -21,6 +21,10 @@ public abstract class MainTest {
     public SearchResultsPage searchResultsPage;
     public Wait wait;
     ExtentReports extent;
+    public WebDriver getDriver() {
+        return webDriver;
+    }
+
     @BeforeClass(alwaysRun = true, description = "Class Level setUp Page!")
     public void setUp() {
         System.setProperty("webdriver.chrome.driver", "Driver/chromedriver.exe");

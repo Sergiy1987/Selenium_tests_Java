@@ -4,7 +4,7 @@ import POM.HomePage;
 import POM.LogoutAblePage;
 import POM.ProfilePage;
 import Tools.SwitchToWindow;
-import Tools.Tools;
+import Test_PageFactory.Tools;
 import Tools.Wait;
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;

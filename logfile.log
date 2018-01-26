@@ -25,3 +25,21 @@
 2018-01-25 13:13:23 INFO  DriverManagerConnectionProviderImpl:(281) - HHH000030: Cleaning up connection pool [jdbc:mysql://127.0.0.1:3306/test_data]
 2018-01-25 13:13:25 INFO  Test77:(81) - Browser closed
 2018-01-25 13:14:17 INFO  Test88:(60) - Browser closed
+2018-01-26 10:39:03 INFO  Test22:(53) - Found Favourites Links: 6
+2018-01-26 10:39:04 INFO  Test22:(63) - Color of new category links is rgba(34, 87, 158, 1)
+2018-01-26 10:39:05 INFO  Test22:(101) - Browser closed
+2018-01-26 10:42:52 INFO  Test22:(101) - Browser closed
+2018-01-26 10:53:47 INFO  Test22:(79) - File Authentication passed successfully with not correct Login -  and Password not correct - 
+2018-01-26 10:53:47 INFO  Test22:(79) - File Authentication passed successfully with not correct Login - nedved198725 and Password not correct - 
+2018-01-26 10:53:48 INFO  Test22:(79) - File Authentication passed successfully with not correct Login -  and Password not correct - nedved1985
+2018-01-26 10:53:48 INFO  Test22:(79) - File Authentication passed successfully with not correct Login - nedved198725 and Password not correct - nedved1986
+2018-01-26 10:53:48 INFO  Test22:(79) - File Authentication passed successfully with not correct Login - nedved198726 and Password not correct - nedved1987
+2018-01-26 10:53:49 INFO  Test22:(79) - File Authentication passed successfully with not correct Login - nedved198727 and Password not correct - nedved1988
+2018-01-26 10:53:49 INFO  Test22:(79) - File Authentication passed successfully with not correct Login - nedved198728 and Password not correct - nedved1989
+2018-01-26 10:53:49 INFO  Test22:(79) - File Authentication passed successfully with not correct Login - nedved198729 and Password not correct - nedved1990
+2018-01-26 10:53:50 INFO  Test22:(79) - File Authentication passed successfully with not correct Login - nedved198730 and Password not correct - nedved1991
+2018-01-26 10:53:50 INFO  Test22:(79) - File Authentication passed successfully with not correct Login - nedved198731 and Password not correct - nedved1992
+2018-01-26 10:53:51 INFO  Test22:(79) - File Authentication passed successfully with not correct Login - nedved198732 and Password not correct - nedved1993
+2018-01-26 10:53:51 INFO  Test22:(79) - File Authentication passed successfully with not correct Login - nedved198733 and Password not correct - nedved1994
+2018-01-26 10:53:51 INFO  Test22:(79) - File Authentication passed successfully with not correct Login - nedved198734 and Password not correct - nedved1995
+2018-01-26 10:53:53 INFO  Test22:(101) - Browser closed

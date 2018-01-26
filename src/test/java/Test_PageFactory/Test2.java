@@ -51,7 +51,7 @@ public class Test2 extends MainTest {
     @Description("Test Description: Login test with not correct username and correct password.")
     @Story("Invalid username and password login test")
     public void VerifyInvalidLoginData(String userName, String password) {
-        test = createTest("HomePage " ,"VerifyInvalidLoginData");
+        test = createTest("HomePage" ,"VerifyInvalidLoginData");
         homePage.LoginDB(userName,password);
         wait.waitForWebElementToBeClickAble(ERROR_DATA);
         String actualErrorDisplayed = ERROR_DATA.getText();

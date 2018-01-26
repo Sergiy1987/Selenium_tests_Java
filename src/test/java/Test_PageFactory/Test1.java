@@ -19,12 +19,16 @@ import static PageFactory.HomePage.LOGIN_BUTTON;
 import static PageFactory.LogoutAblePage.SIGNOUT_MENU;
 import static PageFactory.ProfilePage.USER_PROFILE_LINK;
 import static Tools.ExtentManager.createTest;
-import static Tools.Tools.saveTextLog;
-import static Tools.Tools.takeScreenShot;
+import static Test_PageFactory.Tools.saveTextLog;
+import static Test_PageFactory.Tools.takeScreenShot;
 import static org.testng.AssertJUnit.assertTrue;
 //https://www.swtestacademy.com/allure-testng/
 //allure serve allure-results
 //allure generate allure-results/ -o allure-report
+// mvn allure:serve
+//mvn allure:report
+//mvn io.qameta.allure:allure-maven:serve
+
 @Listeners({TestListenerAdapter.class })
 @Epic("HomePage/ProfilePage/LogOutPage")
 @Feature("Login Tests/Profile Test/LogOut Test")
@@ -81,7 +85,7 @@ public class Test1 extends MainTest  {
     @Test(groups = "HomePage", dataProvider = "Authentication_array",description = "Valid Login Scenario with correct username and password from array.")
     @Description("Test Description: Array Authentication test with correct username and correct password.")
     @Story("Array Authentication with valid username and password login test")
-    public void ArrayAuthentication(String USER_LOGIN, String USER_PASSWORD) {
+    public void ArrayAuthentication(String USER_LOGIN,String USER_PASSWORD) {
         verificationErrors = new StringBuilder();
         try {
             test = createTest("HomePage", "Authentication_array");
