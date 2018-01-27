@@ -16,7 +16,7 @@ import static Tools.ExtentManager.createTest;
 import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;
 import static org.testng.AssertJUnit.assertEquals;
-@Listeners({Tools.class })
+@Listeners({Listener.class})
 @Epic("HomePage")
 @Feature("Login Tests with incorrect test data/Verify NewFavouritesLabelsFromPage&File")
 public class Test2 extends MainTest {

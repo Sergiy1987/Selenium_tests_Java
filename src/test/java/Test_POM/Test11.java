@@ -4,17 +4,14 @@ import POM.HomePage;
 import POM.LogoutAblePage;
 import POM.ProfilePage;
 import Tools.SwitchToWindow;
-import Test_PageFactory.Tools;
+import Test_PageFactory.Listener;
 import Tools.Wait;
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import java.lang.reflect.Method;
 import java.util.concurrent.TimeUnit;
@@ -24,7 +21,6 @@ import static POM.HomePage.LOGIN_BUTTON;
 import static POM.LogoutAblePage.SIGNOUT_MENU;
 import static POM.ProfilePage.USER_PROFILE_LINK;
 import static org.testng.AssertJUnit.assertTrue;
-
 public class Test11 {
     private WebDriver webDriver;
     private HomePage homePage;
@@ -74,7 +70,7 @@ public class Test11 {
         logoutablePage.logOut();
         System.out.println(logoutablePage.toString());
         Log.info("User was successfully logged out");
-        Tools.takeScreenShot(webDriver, ClassName + "_" + method.getName()+ ".jpg");
+        Listener.takeScreenShot(webDriver, ClassName + "_" + method.getName()+ ".jpg");
     }
     @Test(dataProvider = "Authentication_array",dependsOnMethods = "verifyLogout")
     public void ArrayAuthentication(String USER_LOGIN, String USER_PASSWORD) {

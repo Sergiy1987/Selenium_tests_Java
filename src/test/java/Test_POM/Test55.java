@@ -3,8 +3,8 @@ package Test_POM;
 import POM.HomePage;
 import POM.ProfilePage;
 import POM.SearchResultsPage;
+import Test_PageFactory.Listener;
 import Tools.SwitchToWindow;
-import Test_PageFactory.Tools;
 import Tools.Wait;
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
@@ -20,10 +20,9 @@ import java.util.concurrent.TimeUnit;
 
 import static POM.AbstractPage.HOMEPAGE_URL;
 import static POM.ProfilePage.*;
-import static POM.SearchResultsPage.*;
+import static POM.SearchResultsPage.SEARCH_INPUT;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
-
 public class Test55 {
     private WebDriver webDriver;
     private HomePage homePage;
@@ -69,7 +68,7 @@ public class Test55 {
         profilePage.SendEmail();
         assertTrue(true,"Ваш лист надіслано");
         wait.waitForClickable(By.linkText(LINK_TEXT_SEND));
-        Tools.takeScreenShot(webDriver, ClassName + "_" + method.getName()+ ".jpg");
+        Listener.takeScreenShot(webDriver, ClassName + "_" + method.getName()+ ".jpg");
         Log.info("Your message has been successfully sent");
         wait.waitForVisibility(By.cssSelector(USER_SIGNOUT_MENU));
         profilePage.exit();

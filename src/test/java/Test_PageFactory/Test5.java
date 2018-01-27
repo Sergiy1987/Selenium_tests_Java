@@ -16,11 +16,11 @@ import java.lang.reflect.Method;
 import static PageFactory.ProfilePage.*;
 import static PageFactory.SearchResultsPage.SEARCH_INPUT;
 import static Tools.ExtentManager.createTest;
-import static Test_PageFactory.Tools.saveTextLog;
-import static Test_PageFactory.Tools.takeScreenShot;
+import static Test_PageFactory.Listener.saveTextLog;
+import static Test_PageFactory.Listener.takeScreenShot;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
-@Listeners({Tools.class })
+@Listeners({Listener.class})
 @Epic("SearchResultsPage/ProfilePage")
 @Feature("SearchTerm/SendMessage")
 public class Test5 extends MainTest  {

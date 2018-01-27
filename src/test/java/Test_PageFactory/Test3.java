@@ -11,7 +11,7 @@ import static PageFactory.HomePage.SEARCH_BUTTON;
 import static Tools.ExtentManager.createTest;
 import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;
-@Listeners({Tools.class })
+@Listeners({Listener.class})
 @Epic("HomePage")
 @Feature("VerifyButtonForVisibleOrInVisible")
 public class Test3 extends MainTest {

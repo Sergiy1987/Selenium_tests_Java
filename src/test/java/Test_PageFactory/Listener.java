@@ -12,10 +12,13 @@ import org.testng.ITestResult;
 import java.io.File;
 import java.io.IOException;
 
-public class Tools extends MainTest implements ITestListener {
+public class Listener extends MainTest implements ITestListener {
 
     private static String getTestMethodName(ITestResult iTestResult) {
         return iTestResult.getMethod().getConstructorOrMethod().getName();
+    }
+    private static String getTestClassName(ITestResult iTestResult) {
+        return iTestResult.getTestClass().getName();
     }
 
     @Attachment(value = "Page screenshot", type = "image/png")
@@ -63,7 +66,7 @@ public class Tools extends MainTest implements ITestListener {
         //Allure ScreenShotRobot and SaveTestLog
         if (webDriver instanceof WebDriver) {
             System.out.println("Screenshot captured for test case:" + getTestMethodName(iTestResult));
-            takeScreenShot(webDriver,"");
+            takeScreenShot(webDriver,"Failure_" + getTestClassName(iTestResult) +"_"+ getTestMethodName(iTestResult)+ ".png");
         }
         saveTextLog(getTestMethodName(iTestResult) + " failed and screenshot taken!");
     }

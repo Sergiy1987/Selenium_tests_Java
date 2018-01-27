@@ -17,8 +17,8 @@ import java.util.NoSuchElementException;
 import static PageFactory.HomePage.LOGIN_BUTTON;
 import static PageFactory.LogoutAblePage.SIGNOUT_MENU;
 import static PageFactory.ProfilePage.USER_PROFILE_LINK;
-import static Test_PageFactory.Tools.saveTextLog;
-import static Test_PageFactory.Tools.takeScreenShot;
+import static Test_PageFactory.Listener.saveTextLog;
+import static Test_PageFactory.Listener.takeScreenShot;
 import static Tools.ExtentManager.createTest;
 import static org.testng.AssertJUnit.assertTrue;
 //https://www.swtestacademy.com/allure-testng/
@@ -28,7 +28,7 @@ import static org.testng.AssertJUnit.assertTrue;
 //mvn allure:report
 //mvn io.qameta.allure:allure-maven:serve
 
-@Listeners({Tools.class })
+@Listeners({Listener.class})
 @Epic("HomePage/ProfilePage/LogOutPage")
 @Feature("Login Tests/Profile Test/LogOut Test")
 public class Test1 extends MainTest  {
