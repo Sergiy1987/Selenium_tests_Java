@@ -14,12 +14,14 @@ import org.testng.annotations.Test;
 import java.lang.reflect.Method;
 import java.util.NoSuchElementException;
 
+import static PageFactory.HomePage.ERROR_DATA;
 import static PageFactory.HomePage.LOGIN_BUTTON;
 import static PageFactory.LogoutAblePage.SIGNOUT_MENU;
 import static PageFactory.ProfilePage.USER_PROFILE_LINK;
 import static Test_PageFactory.Listener.saveTextLog;
 import static Test_PageFactory.Listener.takeScreenShot;
 import static Tools.ExtentManager.createTest;
+import static org.testng.AssertJUnit.assertEquals;
 import static org.testng.AssertJUnit.assertTrue;
 //https://www.swtestacademy.com/allure-testng/
 //allure serve allure-results
@@ -35,6 +37,8 @@ public class Test1 extends MainTest  {
     private ExtentTest test;
     private String ClassName = this.getClass().getSimpleName();
     private StringBuilder verificationErrors;
+    private String requiredErrorMessage = "";
+
     @Test(groups = "HomePage", description = "Valid Login Scenario with correct username and password.")
     @Description("Test Description: Login test with correct username and correct password.")
     @Story("Valid username and password login test")
@@ -44,6 +48,9 @@ public class Test1 extends MainTest  {
         if (wait.elementDisplayedByWebElement(LOGIN_BUTTON)) {
         test.pass("LOGIN_BUTTON: " + LOGIN_BUTTON.getText() + " Status: " + LOGIN_BUTTON.isDisplayed() + " and is Displayed");
         homePage.logIn();
+        String actualErrorDisplayed = ERROR_DATA.getText();
+        assertEquals(requiredErrorMessage, actualErrorDisplayed);
+        //assertFalse(requiredErrorMessage, false);
         System.out.println(homePage.toString());
         } else {
         test.log(Status.FAIL,"LOGIN_BUTTON: " + LOGIN_BUTTON.getText() + " Status: " + LOGIN_BUTTON.isDisplayed() + " and doesn't Displayed");}

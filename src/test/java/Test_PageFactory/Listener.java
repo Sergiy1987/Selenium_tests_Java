@@ -18,7 +18,7 @@ public class Listener extends MainTest implements ITestListener {
         return iTestResult.getMethod().getConstructorOrMethod().getName();
     }
     private static String getTestClassName(ITestResult iTestResult) {
-        return iTestResult.getTestClass().getName();
+        return iTestResult.getTestClass().getName().replace("Test_PageFactory.","");
     }
 
     @Attachment(value = "Page screenshot", type = "image/png")

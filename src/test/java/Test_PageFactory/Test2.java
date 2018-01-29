@@ -23,6 +23,8 @@ public class Test2 extends MainTest {
     private String menuCategoriesFromSite;
     private final String RGB_OF_BLACK_COLOR = "0, 0, 0";
     private ExtentTest test;
+    private String requiredErrorMessage = "Неправильно вказано логін чи пароль. Спробуйте знову.";
+
     @Test(groups = "HomePage", description = "Scenario: Verify New Favourites Labels From HomePage")
     @Description("Test Description: Verify New Favourites Labels From HomePage.")
     @Story("Check New Favourites Labels From HomePage and Labels color")
@@ -57,7 +59,6 @@ public class Test2 extends MainTest {
         homePage.LoginDB(userName,password);
         wait.waitForWebElementToBeClickAble(ERROR_DATA);
         String actualErrorDisplayed = ERROR_DATA.getText();
-        String requiredErrorMessage = "Неправильно вказано логін чи пароль. Спробуйте знову.";
         assertEquals(requiredErrorMessage, actualErrorDisplayed);
         test.pass("USER_LOGIN: " + userName + ", USER_PASSWORD: " + password);
     }
