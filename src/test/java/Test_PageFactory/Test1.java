@@ -7,9 +7,7 @@ import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Listeners;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import java.lang.reflect.Method;
 import java.util.NoSuchElementException;
@@ -50,7 +48,7 @@ public class Test1 extends MainTest  {
         homePage.logIn();
         String actualErrorDisplayed = ERROR_DATA.getText();
         assertEquals(requiredErrorMessage, actualErrorDisplayed);
-        //assertFalse(requiredErrorMessage, false);
+
         System.out.println(homePage.toString());
         } else {
         test.log(Status.FAIL,"LOGIN_BUTTON: " + LOGIN_BUTTON.getText() + " Status: " + LOGIN_BUTTON.isDisplayed() + " and doesn't Displayed");}

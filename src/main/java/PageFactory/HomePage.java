@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+
 import java.util.List;
 
 public class HomePage extends AbstractPage {
@@ -46,6 +47,13 @@ public class HomePage extends AbstractPage {
         LOGIN_BUTTON.submit();
         return this;
         //return new HomePage(webDriver);
+    }
+    @Step("Step: Login Parameters with LOGIN and PASSWORD")
+    public HomePage LoginPar(String LOGIN, String PASSWORD){
+        LOGIN_FIELD.sendKeys(LOGIN);
+        PASSWORD_FIELD.sendKeys(PASSWORD);
+        LOGIN_BUTTON.submit();
+        return new HomePage(webDriver);
     }
     @Step("Step: Login Array with USER_LOGIN and USER_PASSWORD")
     public HomePage LoginDB(String USER_LOGIN, String USER_PASSWORD){
