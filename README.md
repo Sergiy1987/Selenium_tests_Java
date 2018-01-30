@@ -1,6 +1,9 @@
 ## 1.   Page Factory Pattern
 
 <p>All tests include logging actions with using Allure and Extent reports. All tests extend from MainTest.</p>
+<b>Test0: includes methods:</b>
+<p><i>LoginWithParameters(groups = "HomePage")</i>. Parametric test with two parameters (LOGIN and PASSWORD).
+Login in website with valid LOGIN and PASSWORD, which are located in the suite as parameters.</p>
 <b>Test1: includes methods:</b>
 <p><i>verifyLogin(groups = "HomePage")</i>. User input correct Login and Password and click button Login.</p>
 <p><i>verifyUserProfileOpened (groups ="ProfilePage",dependsOnMethods = "verifyLogin")</i>.
