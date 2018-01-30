@@ -49,7 +49,7 @@ public class HomePage extends AbstractPage {
         //return new HomePage(webDriver);
     }
     @Step("Step: Login Parameters with LOGIN and PASSWORD")
-    public HomePage LoginPar(String LOGIN, String PASSWORD){
+    public HomePage LoginParameters(String LOGIN, String PASSWORD){
         LOGIN_FIELD.sendKeys(LOGIN);
         PASSWORD_FIELD.sendKeys(PASSWORD);
         LOGIN_BUTTON.submit();
