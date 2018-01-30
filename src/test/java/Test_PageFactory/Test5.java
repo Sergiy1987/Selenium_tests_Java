@@ -15,9 +15,9 @@ import java.lang.reflect.Method;
 
 import static PageFactory.ProfilePage.*;
 import static PageFactory.SearchResultsPage.SEARCH_INPUT;
-import static Tools.ExtentManager.createTest;
 import static Test_PageFactory.Listener.saveTextLog;
 import static Test_PageFactory.Listener.takeScreenShot;
+import static Tools.ExtentManager.createTest;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 @Listeners({Listener.class})
@@ -27,9 +27,11 @@ public class Test5 extends MainTest  {
     private String ClassName = this.getClass().getSimpleName();
     private ExtentTest test;
     private final String searchTerm = "nedved198725@gmail.com";
+
     @Test(groups = "SearchResultsPage", description = "Scenario: Search Term")
     @Description("Test Description: Search Term on the SearchResultsPage.")
     @Story("Search Term on the SearchResultsPage")
+    //@Parameters({"Search"})
     public void verifySearch() throws StaleElementReferenceException {
         test = createTest("SearchResultsPage", "verifySearch");
         try {
