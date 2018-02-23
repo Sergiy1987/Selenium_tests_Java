@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="822fcde3-b23c-45ed-98c9-fc0f17a4c017" name="Default" comment="Test Cases for UkrNet">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+    <list default="true" id="822fcde3-b23c-45ed-98c9-fc0f17a4c017" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestsPageObjectPattern.xml" afterPath="$PROJECT_DIR$/TestsPageObjectPattern.xml" />
     </list>
     <ignored path="UkrNet.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -83,8 +79,8 @@
       <file leaf-file-name="TestsPageObjectPattern.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TestsPageObjectPattern.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
+            <state relative-caret-position="530">
+              <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -1162,7 +1158,7 @@
       <workItem from="1517245962892" duration="14231000" />
       <workItem from="1517302129239" duration="8190000" />
       <workItem from="1517335595096" duration="608000" />
-      <workItem from="1519420936989" duration="388000" />
+      <workItem from="1519420936989" duration="725000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;Test Cases for UkrNet&quot;">
       <created>1515854240679</created>
@@ -1185,7 +1181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1516030470627</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Develop">
+      <created>1519421603773</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1519421603773</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1221,7 +1224,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="400642000" />
+    <option name="totallyTimeSpent" value="400979000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1310,7 +1313,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="&quot;Test Cases for UkrNet&quot;" />
     <MESSAGE value="Test Cases for UkrNet" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test Cases for UkrNet" />
+    <MESSAGE value="Develop" />
+    <option name="LAST_COMMIT_MESSAGE" value="Develop" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1588,8 +1592,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TestsPageObjectPattern.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
+        <state relative-caret-position="530">
+          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding />
         </state>
       </provider>
