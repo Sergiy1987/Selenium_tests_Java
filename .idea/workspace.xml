@@ -83,8 +83,8 @@
       <file leaf-file-name="GroupsPageFactory.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/GroupsPageFactory.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="73" column="8" selection-start-line="73" selection-start-column="8" selection-end-line="73" selection-end-column="8" />
+            <state relative-caret-position="554">
+              <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -1141,7 +1141,7 @@
       <workItem from="1517335595096" duration="608000" />
       <workItem from="1519424857926" duration="17000" />
       <workItem from="1519426687901" duration="25000" />
-      <workItem from="1519427764872" duration="15000" />
+      <workItem from="1519427764872" duration="199000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;Test Cases for UkrNet&quot;">
       <created>1515854240679</created>
@@ -1200,7 +1200,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="400311000" />
+    <option name="totallyTimeSpent" value="400495000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1580,8 +1580,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/GroupsPageFactory.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="73" column="8" selection-start-line="73" selection-start-column="8" selection-end-line="73" selection-end-column="8" />
+        <state relative-caret-position="554">
+          <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
           <folding />
         </state>
       </provider>
