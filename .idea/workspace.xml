@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="822fcde3-b23c-45ed-98c9-fc0f17a4c017" name="Default" comment="" />
+    <list default="true" id="822fcde3-b23c-45ed-98c9-fc0f17a4c017" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestsPageObjectPattern.xml" afterPath="$PROJECT_DIR$/TestsPageObjectPattern.xml" />
+    </list>
     <ignored path="UkrNet.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -57,7 +59,7 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-527">
+            <state relative-caret-position="85">
               <caret line="5" column="97" selection-start-line="5" selection-start-column="97" selection-end-line="5" selection-end-column="97" />
               <folding />
             </state>
@@ -77,8 +79,8 @@
       <file leaf-file-name="TestsPageObjectPattern.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TestsPageObjectPattern.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="530">
-              <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+            <state relative-caret-position="519">
+              <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -90,6 +92,7 @@
             <state relative-caret-position="697">
               <caret line="50" column="59" selection-start-line="50" selection-start-column="59" selection-end-line="50" selection-end-column="59" />
               <folding>
+                <element signature="imports" expanded="false" />
                 <element signature="e#1465#1466#0" expanded="false" />
                 <element signature="e#1498#1499#0" expanded="false" />
               </folding>
@@ -233,6 +236,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane />
+      </pane>
       <pane id="Scope">
         <subPane subId="Problems" />
         <subPane subId="Changed Files">
@@ -293,9 +299,6 @@
             </PATH_ELEMENT>
           </PATH>
         </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane />
       </pane>
       <pane id="Scratches">
         <subPane />
@@ -1157,6 +1160,7 @@
       <workItem from="1517302129239" duration="8190000" />
       <workItem from="1517335595096" duration="608000" />
       <workItem from="1519420936989" duration="1351000" />
+      <workItem from="1519425104576" duration="9000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;Test Cases for UkrNet&quot;">
       <created>1515854240679</created>
@@ -1229,7 +1233,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="401605000" />
+    <option name="totallyTimeSpent" value="401614000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1241,7 +1245,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="-11" width="1378" height="780" extended-state="1" />
+    <frame x="-11" y="-11" width="1378" height="780" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1536,6 +1540,7 @@
         <state relative-caret-position="697">
           <caret line="50" column="59" selection-start-line="50" selection-start-column="59" selection-end-line="50" selection-end-column="59" />
           <folding>
+            <element signature="imports" expanded="false" />
             <element signature="e#1465#1466#0" expanded="false" />
             <element signature="e#1498#1499#0" expanded="false" />
           </folding>
@@ -1581,7 +1586,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-527">
+        <state relative-caret-position="85">
           <caret line="5" column="97" selection-start-line="5" selection-start-column="97" selection-end-line="5" selection-end-column="97" />
           <folding />
         </state>
@@ -1597,8 +1602,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TestsPageObjectPattern.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+        <state relative-caret-position="519">
+          <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
           <folding />
         </state>
       </provider>
