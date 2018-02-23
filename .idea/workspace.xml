@@ -1158,7 +1158,7 @@
       <workItem from="1517245962892" duration="14231000" />
       <workItem from="1517302129239" duration="8190000" />
       <workItem from="1517335595096" duration="608000" />
-      <workItem from="1519420936989" duration="725000" />
+      <workItem from="1519420936989" duration="786000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;Test Cases for UkrNet&quot;">
       <created>1515854240679</created>
@@ -1188,7 +1188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519421603773</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Develop">
+      <created>1519421676886</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1519421676886</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1224,7 +1231,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="400979000" />
+    <option name="totallyTimeSpent" value="401040000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
