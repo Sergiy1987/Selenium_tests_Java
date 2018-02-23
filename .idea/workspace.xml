@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="822fcde3-b23c-45ed-98c9-fc0f17a4c017" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+=======
+    <list default="true" id="822fcde3-b23c-45ed-98c9-fc0f17a4c017" name="Default" comment="Test Cases for UkrNet">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+>>>>>>> origin
     </list>
     <ignored path="UkrNet.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -89,10 +95,16 @@
       <file leaf-file-name="HomePage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/PageFactory/HomePage.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="697">
               <caret line="50" column="59" selection-start-line="50" selection-start-column="59" selection-end-line="50" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="false" />
+=======
+            <state relative-caret-position="816">
+              <caret line="50" column="59" selection-start-line="50" selection-start-column="59" selection-end-line="50" selection-end-column="59" />
+              <folding>
+>>>>>>> origin
                 <element signature="e#1465#1466#0" expanded="false" />
                 <element signature="e#1498#1499#0" expanded="false" />
               </folding>
@@ -236,6 +248,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane />
+      </pane>
       <pane id="PackagesPane">
         <subPane />
       </pane>
@@ -1159,8 +1174,12 @@
       <workItem from="1517245962892" duration="14231000" />
       <workItem from="1517302129239" duration="8190000" />
       <workItem from="1517335595096" duration="608000" />
+<<<<<<< HEAD
       <workItem from="1519420936989" duration="1351000" />
       <workItem from="1519425104576" duration="603000" />
+=======
+      <workItem from="1519424857926" duration="17000" />
+>>>>>>> origin
     </task>
     <task id="LOCAL-00001" summary="&quot;Test Cases for UkrNet&quot;">
       <created>1515854240679</created>
@@ -1233,7 +1252,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="402208000" />
+=======
+    <option name="totallyTimeSpent" value="400271000" />
+>>>>>>> origin
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1246,7 +1269,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1378" height="780" extended-state="0" />
+<<<<<<< HEAD
     <editor active="true" />
+=======
+    <editor active="false" />
+>>>>>>> origin
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32756633" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1259,7 +1286,11 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3217993" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27693474" sideWeight="0.48537004" order="0" side_tool="false" content_ui="combo" />
+=======
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27693474" sideWeight="0.48537004" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> origin
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15766738" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1537,10 +1568,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/PageFactory/HomePage.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="697">
           <caret line="50" column="59" selection-start-line="50" selection-start-column="59" selection-end-line="50" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="false" />
+=======
+        <state relative-caret-position="816">
+          <caret line="50" column="59" selection-start-line="50" selection-start-column="59" selection-end-line="50" selection-end-column="59" />
+          <folding>
+>>>>>>> origin
             <element signature="e#1465#1466#0" expanded="false" />
             <element signature="e#1498#1499#0" expanded="false" />
           </folding>
