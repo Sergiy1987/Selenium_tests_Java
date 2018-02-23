@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="822fcde3-b23c-45ed-98c9-fc0f17a4c017" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestsPageObjectPattern.xml" afterPath="$PROJECT_DIR$/TestsPageObjectPattern.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="UkrNet.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -1160,7 +1160,7 @@
       <workItem from="1517302129239" duration="8190000" />
       <workItem from="1517335595096" duration="608000" />
       <workItem from="1519420936989" duration="1351000" />
-      <workItem from="1519425104576" duration="9000" />
+      <workItem from="1519425104576" duration="603000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;Test Cases for UkrNet&quot;">
       <created>1515854240679</created>
@@ -1233,7 +1233,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="401614000" />
+    <option name="totallyTimeSpent" value="402208000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
