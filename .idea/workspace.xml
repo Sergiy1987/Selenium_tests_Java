@@ -126,8 +126,8 @@
       <file leaf-file-name="GroupsPageFactory.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/GroupsPageFactory.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="547">
-              <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+            <state relative-caret-position="554">
+              <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -263,6 +263,7 @@
     </navigator>
     <panes>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <pane id="PackagesPane">
         <subPane />
       </pane>
@@ -270,6 +271,34 @@
         <subPane />
       </pane>
 =======
+>>>>>>> master
+=======
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UkrNet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UkrNet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Selenium_tests_Java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane />
+      </pane>
+      <pane id="Scratches">
+        <subPane />
+      </pane>
 >>>>>>> master
       <pane id="Scope">
         <subPane subId="Problems" />
@@ -333,6 +362,7 @@
         </subPane>
       </pane>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
       <pane id="PackagesPane">
         <subPane />
@@ -361,6 +391,8 @@
           </PATH>
         </subPane>
       </pane>
+=======
+>>>>>>> master
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1206,6 +1238,10 @@
 >>>>>>> origin
 =======
       <workItem from="1519426687901" duration="25000" />
+<<<<<<< HEAD
+>>>>>>> master
+=======
+      <workItem from="1519427764872" duration="199000" />
 >>>>>>> master
     </task>
     <task id="LOCAL-00001" summary="&quot;Test Cases for UkrNet&quot;">
@@ -1281,12 +1317,16 @@
   <component name="TimeTrackingManager">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="402208000" />
 =======
     <option name="totallyTimeSpent" value="400271000" />
 >>>>>>> origin
 =======
     <option name="totallyTimeSpent" value="400296000" />
+>>>>>>> master
+=======
+    <option name="totallyTimeSpent" value="400495000" />
 >>>>>>> master
   </component>
   <component name="TodoView">
@@ -1683,8 +1723,13 @@
 =======
     <entry file="file://$PROJECT_DIR$/GroupsPageFactory.xml">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="547">
           <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+>>>>>>> master
+=======
+        <state relative-caret-position="554">
+          <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
 >>>>>>> master
           <folding />
         </state>
