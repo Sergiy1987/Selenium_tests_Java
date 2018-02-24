@@ -9,6 +9,7 @@
 *.jpg
 *.log.*
 *.iml
+*.name
 
 # User-specific stuff:
 .idea/**/workspace.xml
