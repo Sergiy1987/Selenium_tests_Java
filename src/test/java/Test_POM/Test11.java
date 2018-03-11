@@ -24,9 +24,9 @@ import static org.testng.AssertJUnit.assertTrue;
 public class Test11 {
     private WebDriver webDriver;
     private HomePage homePage;
-    private ProfilePage profilePage;
+    private ProfilePage profilePage; 
     private LogoutAblePage logoutablePage;
-    private Wait wait;
+    private Wait wait; 
     private String ClassName = this.getClass().getSimpleName();// Test11.class.getSimpleName();
     private Logger Log = Logger.getLogger(this.getClass().getName());
     private StringBuffer verificationErrors;
