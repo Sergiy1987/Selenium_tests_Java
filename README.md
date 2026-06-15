@@ -33,6 +33,7 @@ Search String "*" into input field in searchResultsPage, User switches to new op
 <p><i>testSendEmail(groups = "ProfilePage",dependsOnMethods = "verifySearch")</i>
 Test send message (switch to frame window)  and logout from searchResultsPage, depends on method verifySearch, screenshot the result when user send message.</p>
 
+
 ## 2.   Page Object Pattern
 
 <p>All tests include logging actions with using the configuration file (log4j.xml).</p>
