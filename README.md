@@ -102,3 +102,6 @@ Parallel-Testing_PageObject.xml - suite with parallel tests for the Page Object 
 log4j.xml - file with parameters for the logging actions.
 
 logfile.log - file with the logging actions.
+
+
+
